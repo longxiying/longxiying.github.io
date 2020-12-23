@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://emv.cool/2020/12/23/Complete-list-of-application-identifiers-AID/</loc>
+    
+    <lastmod>2020-12-23</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://emv.cool/2020/12/23/List-of-CA-Public-Keys/</loc>
     
     <lastmod>2020-12-23</lastmod>
@@ -94,13 +101,6 @@
   
   <url>
     <loc>http://emv.cool/about/index.html</loc>
-    
-    <lastmod>2020-12-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://emv.cool/2020/12/23/AID/</loc>
     
     <lastmod>2020-12-23</lastmod>
     
