@@ -1,0 +1,4366 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="google-site-verification" content="TZE0rZyIqLl10trYu3BWBWa1Vmz6HFwhb2OcNEK4u-s" />
+     <link rel="shortcut icon" href= /img/favicon.ico >
+    <title>
+        EMV.COOL
+    </title>
+    <meta name="description" content= Study!Study!Study! >
+    <meta name="keywords" content= Blog,Hexo,Theme,emv >
+    
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="EMV.COOL" type="application/atom+xml">
+</head>
+<body id="bodyx">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-home
+ replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            Complete list of SafeNet HSM commands
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <p>List of SafeNet (Gemalto) Luna EFT2 HSM commands with their description.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Function type</strong></td>
+<td><strong>Functions group</strong></td>
+<td><strong>Host Command (Response)</strong></td>
+<td><strong>Function</strong></td>
+<td><strong>Supported by BP-HSM</strong></td>
+<td><strong>Note</strong></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Admin</td>
+<td>EEBF29</td>
+<td>GET-KVC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>AMEX</td>
+<td>A8</td>
+<td>CALCULATE-CSC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>AMEX</td>
+<td>A9</td>
+<td>CREATE-CSCK</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>AMEX</td>
+<td>AA</td>
+<td>EXPORT-CSCK</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>AMEX</td>
+<td>AB</td>
+<td>IMPORT-CSCK</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>AMEX</td>
+<td>EE0501</td>
+<td>CALC-CSC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>AMEX</td>
+<td>EE0502</td>
+<td>VERIFY-CSC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE4003</td>
+<td>TERM-AUTH-1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE4004</td>
+<td>TERM-AUTH-2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE4005</td>
+<td>INIT-KEY-EXCH</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE4006</td>
+<td>PAN-KEY-EXCH</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE4007</td>
+<td>SIGN-FEP-PUB-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE4008</td>
+<td>IMP-ENC-PUB-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE9001</td>
+<td>GENERATE-RSA-KEY-PAIR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE9003</td>
+<td>IMPORT-PUBLIC-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE9004</td>
+<td>IMPORT-PUBLIC-KEY-CERTIFICATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE9005</td>
+<td>SIGN-DATA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE9006</td>
+<td>VERIFY-SIGNED-DATA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE9007</td>
+<td>GENERATE-MD5-HASH</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE9008</td>
+<td>GENERATE-SHA-HASH</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE9009</td>
+<td>PUBLIC-KEY-OPERATIONS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE9010</td>
+<td>PRIVATE-KEY-OPERATIONS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE9011</td>
+<td>IMPORT-EMV-CERTIFICATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE9012</td>
+<td>KEY-RETRIEVE-OPERATION</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE9101</td>
+<td>GENERATE-KEY-DIEBOLD</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE9102</td>
+<td>VERIFY-ATM-RESPONSE-DIEBOLD</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE9201</td>
+<td>GENERATE-KTM-NCR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE9202</td>
+<td>CREATE-X509-CERTIFICATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE9203</td>
+<td>IMPORT-TRANSPORT-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE9204</td>
+<td>CREATE-CSR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Remote ATM Initialization</td>
+<td>EE9205</td>
+<td>OAEP-ENCRYPT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>KM-encrypted PIN</td>
+<td>EE0640</td>
+<td>GEN-KM-ENC-PIN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>KM-encrypted PIN</td>
+<td>EE0641</td>
+<td>PRINT-KM-ENC-PIN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>KM-encrypted PIN</td>
+<td>EE0642</td>
+<td>VER-KM-ENC-PIN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>KM-encrypted PIN</td>
+<td>EE0643</td>
+<td>TRANS-KM-ENC-PIN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>KM-encrypted PIN</td>
+<td>EE0644</td>
+<td>MIGRATE-KM-ENC-PIN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EE2000</td>
+<td>EMV-AC-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EE2001</td>
+<td>EMV-AC-VERIFY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EE2002</td>
+<td>EMV-DAC-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EE2003</td>
+<td>EMV-DAC-VERIFY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EE2004</td>
+<td>EMV-ICC-DN-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EE2005</td>
+<td>EMV-ICC-DN-VERIFY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EE2006</td>
+<td>EMV-ARPC-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EE2007</td>
+<td>EMV-SCRIPT-CRYPTO</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EE2016</td>
+<td>EMV-PIN-CHANGE-UNBLOCK</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EE2017</td>
+<td>EMV-PIN-CHANGE-UNBLOCK-EMV-2000</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EE2018</td>
+<td>EMV-VERIFY-AC-GEN-ARPC</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EE2019</td>
+<td>EMV-AC-GEN-MULTI</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EE2020</td>
+<td>EMV-SCRIPT-CRYPTO-MULTI</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EE2021</td>
+<td>EMV-PIN-CHANGE-UNBLOCK-MULTI</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EE2022</td>
+<td>EMV-VERIFY-AC-GEN-ARPC-AES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EE2023</td>
+<td>EMV-AC-GEN-MULTI-AES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EE2024</td>
+<td>EMV-SCRIPT-CRYPTO-MULTI-AES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EE2025</td>
+<td>EMV-PIN-CHANGE-UNBLOCK-MULTI-AES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EF2010</td>
+<td>EMV-VERIFY-AC-EMV-2000</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EF2011</td>
+<td>EMV-VERIFY-AC-VISA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EF2012</td>
+<td>EMV-GENERATE-ARPC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EF2013</td>
+<td>EMV-SCRIPT-CRYPTO-EMV-2000</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EF2014</td>
+<td>EMV-SCRIPT-CRYPTO-VISA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV</td>
+<td>EF2015</td>
+<td>EMV-PIN-CHANGE-UNBLOCK-VISA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Key Exchange</td>
+<td>EE3030</td>
+<td>GETPUBLICKEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Key Exchange</td>
+<td>EE3031</td>
+<td>KIS-SEND</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Key Exchange</td>
+<td>EE3032</td>
+<td>KIR-REC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Key Exchange</td>
+<td>EE3033</td>
+<td>NODEPROOF</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Key Exchange</td>
+<td>EE3034</td>
+<td>NODERESP</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Key Mailer</td>
+<td>EE040B</td>
+<td>DUKPT-KEY-MAILER</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Key Mailer</td>
+<td>EE0E01</td>
+<td>KEY-MAILER</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Key Mailer</td>
+<td>EA0002</td>
+<td>PRINT-AND-GENERATE-KEY-COMPONENT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN</td>
+<td>EE0614</td>
+<td>DK-PRW-FK2-FUS-AES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN</td>
+<td>EE0616</td>
+<td>DK-TXN-PIN-MGT-AES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN</td>
+<td>EE0621</td>
+<td>FUEL-CARD-PIN-VER</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN</td>
+<td>EE0601</td>
+<td>MIGRATEPIN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN</td>
+<td>EE0602</td>
+<td>PIN-TRAN-2</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN</td>
+<td>EE060D</td>
+<td>PIN-TRAN-9</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN</td>
+<td>EE060A</td>
+<td>PIN-VER-IBM-AES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN</td>
+<td>EE0603</td>
+<td>PIN-VER-IBM-MULTI</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN</td>
+<td>EE0604</td>
+<td>PIN-OFF</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN</td>
+<td>EE060E</td>
+<td>PIN-OFF-AES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN</td>
+<td>EE0605</td>
+<td>PVV-VER</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN</td>
+<td>EE060B</td>
+<td>PVV-VER-AES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN</td>
+<td>EE0606</td>
+<td>PVV-CALC-3624</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN</td>
+<td>EE0607</td>
+<td>PVV-CALC</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN</td>
+<td>EE060C</td>
+<td>PVV-CALC-2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN</td>
+<td>EE0609</td>
+<td>PIN-FROM-OFF</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN</td>
+<td>EE060F</td>
+<td>PIN-FROM-OFF-AES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN</td>
+<td>EE0645</td>
+<td>TRANSLATE-SENSITIVE-DATA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN</td>
+<td>EF0E04</td>
+<td>VERIFY-PRW-MIGRATE-AES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>SECKEY</td>
+<td>EE0628</td>
+<td>GEN-TERMINAL-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>SEED</td>
+<td>EE0615</td>
+<td>PIN-TRANS-SEED-DES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>SEED</td>
+<td>EE0804</td>
+<td>ENCIPHER-3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>SEED</td>
+<td>EE0805</td>
+<td>DECIPHER-3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>SEED</td>
+<td>EE0806</td>
+<td>ENCIPHER-KTM1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>System</td>
+<td>01</td>
+<td>HSM-STATUS</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>System</td>
+<td>EE0003</td>
+<td>HSM-STATUS-REV2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>System</td>
+<td>EE0002</td>
+<td>GEN-RANDOM</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>System</td>
+<td>EE0202</td>
+<td>GET-KEY-DETAILS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>System</td>
+<td>EE0619</td>
+<td>ADVANCED-RANDOM-KEY-GENERATION</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>KM Migration</td>
+<td>11</td>
+<td>ESTABLISH-KM</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>KM Migration</td>
+<td>12</td>
+<td>KM-MIGRATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>KM Migration</td>
+<td>13</td>
+<td>ERASE-OLD-KM</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Transfer</td>
+<td>21</td>
+<td>RETRIEVE-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Transfer</td>
+<td>22</td>
+<td>STORE-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EFT</td>
+<td>47</td>
+<td>D51-PPK-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EFT</td>
+<td>49</td>
+<td>M-DPK-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EFT</td>
+<td>EA000A</td>
+<td>DERIVE-SESSION-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EFT</td>
+<td>EA000B</td>
+<td>GENERATE-EXPORT-INITIAL-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EFT</td>
+<td>EE0200</td>
+<td>KEY-IMPORT</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EFT</td>
+<td>EE0201</td>
+<td>KEY-EXPORT</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EFT</td>
+<td>EE0205</td>
+<td>KEY-IMPORT-AES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EFT</td>
+<td>EE0206</td>
+<td>KEY-EXPORT-AES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EFT</td>
+<td>EE0400</td>
+<td>IT-KEY-GEN</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EFT</td>
+<td>EE0401</td>
+<td>NT-KEY-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EFT</td>
+<td>EE0406</td>
+<td>TERM-VER-2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EFT</td>
+<td>EE0408</td>
+<td>BDKGEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EFT</td>
+<td>EE0409</td>
+<td>DERIVE-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EFT</td>
+<td>EE040A</td>
+<td>IPEK-DERIVE</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EFT</td>
+<td>EE040C</td>
+<td>IPEK-DERIVE-2</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EFT</td>
+<td>EE9013</td>
+<td>IMPORT-RSA-PRIVATE-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EFT</td>
+<td>EE9014</td>
+<td>TRANSLATE-DATA-RSA-TO-RSA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EFT</td>
+<td>EA0005</td>
+<td>TRANSLATE-MVD-FROM-RSA-TO-TDES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EFT</td>
+<td>EA0006</td>
+<td>STORE-MVD-REF</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EFT</td>
+<td>EA0007</td>
+<td>VERIFY-RSA-ENCRYPTED-MVD</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Interchange</td>
+<td>EE0402</td>
+<td>II-KEY-GEN</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Interchange</td>
+<td>EE0403</td>
+<td>II-KEY-RCV</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Interchange</td>
+<td>EE0404</td>
+<td>NI-KEY-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Interchange</td>
+<td>EE0405</td>
+<td>NI-KEY-RCV</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Magtek</td>
+<td>EE040D</td>
+<td>MAM-ACTIVATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Magtek</td>
+<td>EE040E</td>
+<td>MAM-DEACTIVATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>MAC</td>
+<td>73</td>
+<td>KB-MAC-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>MAC</td>
+<td>EE0700</td>
+<td>MAC-GEN-UPDATE</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>MAC</td>
+<td>EE0701</td>
+<td>MAC-GEN-FINAL</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>MAC</td>
+<td>EE0702</td>
+<td>MAC-VER-FINAL</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>MAC</td>
+<td>EE0703</td>
+<td>APACS-MAC-VER-REQUEST</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>MAC</td>
+<td>EE0704</td>
+<td>APACS-MAC-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>MAC</td>
+<td>EE0705</td>
+<td>APACS-MAC-VER-CONFIRM</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>MAC</td>
+<td>EE0712</td>
+<td>MAC-GEN-UPDATE-AES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>MAC</td>
+<td>EE0713</td>
+<td>MAC-GEN-FINAL-AES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>MAC</td>
+<td>EE0714</td>
+<td>MAC-VER-FINAL-AES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Data Management</td>
+<td>84</td>
+<td>B-ENCIPHER-ECB</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Data Management</td>
+<td>85</td>
+<td>B-DECIPHER-ECB</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Data Management</td>
+<td>EE0800</td>
+<td>ENCIPHER-2</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Data Management</td>
+<td>EE0801</td>
+<td>DECIPHER-2</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Data Management</td>
+<td>EE0807</td>
+<td>DECIPHER-4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Data Management</td>
+<td>EE0808</td>
+<td>ENCIPHER-AES</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Data Management</td>
+<td>EE0809</td>
+<td>DECIPHER-AES</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Data Management</td>
+<td>EE0810</td>
+<td>BPS-DECIPHER</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Data Management</td>
+<td>EE0811</td>
+<td>BPS-ENCIPHER</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>VISA</td>
+<td>EE0802</td>
+<td>CVV-GENERATE</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>VISA</td>
+<td>EE0803</td>
+<td>CVV-VERIFY</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PSMAIL</td>
+<td>EE0E02</td>
+<td>LOAD-PS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PSMAIL</td>
+<td>EE0E03</td>
+<td>PRINT-PS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN Generation</td>
+<td>EE0E04</td>
+<td>PIN-GENERATE</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN Generation</td>
+<td>EE0E08</td>
+<td>PIN-GENERATE-AES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN Printing</td>
+<td>EE0E05</td>
+<td>PIN-PRINT</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN Printing</td>
+<td>EE0E09</td>
+<td>PIN-PRINT-AES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN Mailer</td>
+<td>E2</td>
+<td>PIN-MAIL</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN Mailer</td>
+<td>EE0E06</td>
+<td>PIN-MAIL-2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>PIN Charset</td>
+<td>EE0E07</td>
+<td>LOAD-CHARSET</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>VCEPS</td>
+<td>EF0701</td>
+<td>VCEPS-VER-S1-GEN-S2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>VCEPS</td>
+<td>EF0702</td>
+<td>VCEPS-VER-SN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>VCEPS</td>
+<td>EF0703</td>
+<td>VCEPS-GEN-SN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>VCEPS</td>
+<td>EF0704</td>
+<td>VCEPS-MAC-VER-LSAM</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>VCEPS</td>
+<td>EF0F01</td>
+<td>VCEPS-GEN-HASH-CEP</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>User Storage</td>
+<td>EE4100</td>
+<td>WRITE-USER-STORE-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>User Storage</td>
+<td>EE4101</td>
+<td>READ-USER-STORE-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>User Storage</td>
+<td>EE4102</td>
+<td>WRITE-USER-STORE-DATA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>User Storage</td>
+<td>EE4103</td>
+<td>READ-USER-STORE-DATA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE0608</td>
+<td>PIN-TRAN-8</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE2040</td>
+<td>GENERATE-ISSUER-KEY-PAIR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE2041</td>
+<td>SELF-CERT-ISSUER-PUBLIC-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE2042</td>
+<td>VERIFY-CA-PUBLIC-KEY-MC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE2043</td>
+<td>VERIFY-ISSUER-PK-CERT-MC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE2044</td>
+<td>SELF-SIGN-ISSUER-PK-VISA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE2045</td>
+<td>VERIFY-CA-PK-VISA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE2046</td>
+<td>VERIFY-ISSUER-PK-CERT-VISA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE2047</td>
+<td>VERIFY-DETACHED-CERT-VISA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE2048</td>
+<td>GENERATE-ICC-KEYPAIR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE2049</td>
+<td>VERIFY-ICC-CERTIFICATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE204A</td>
+<td>DERIVE-ICC-MASTER-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE204B</td>
+<td>SIGN-ICC-STATIC-DATA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE204C</td>
+<td>VERIFY-ICC-STATIC-DATA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE204D</td>
+<td>VERIFY-ICC-DYNAMIC-DATA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE204E</td>
+<td>RSA-ENCIPHER-PIN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE204F</td>
+<td>GENERATE-RANDOM-PIN-EMV</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE2050</td>
+<td>EXPORT-PIN-EMV</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE2051</td>
+<td>KTK-KEY-EXPORT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE2052</td>
+<td>DERIVE-NEW-ICC-KEY-SET</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE2053</td>
+<td>DERIVE-NEW-ICC-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE2054</td>
+<td>GENERATE-DCV</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE2058</td>
+<td>GENERATE-ICC-CRT-KEYPAIR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>EMV Issuer</td>
+<td>EE205A</td>
+<td>GENERATE-ICC-CRT-KEYPAIR-PKCS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>ZKA</td>
+<td>EE0210</td>
+<td>ZKA-IMPORT-MK</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>ZKA</td>
+<td>EE0610</td>
+<td>ZKA-PIN-TRANS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>ZKA</td>
+<td>EE0611</td>
+<td>ZKA-PIN-VER</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>ZKA</td>
+<td>EE0612</td>
+<td>ZKA-CALC-PVN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>ZKA</td>
+<td>EE0613</td>
+<td>ZKA-PIN-TRANS-1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>ZKA</td>
+<td>EE0710</td>
+<td>ZKA-MAC-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>ZKA</td>
+<td>EE0711</td>
+<td>ZKA-MAC-GEN-1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Contactless Payment</td>
+<td>EE0010</td>
+<td>CVC3-GENERATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Contactless Payment</td>
+<td>EE0011</td>
+<td>CVC3-VERIFY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Contactless Payment</td>
+<td>EE0012</td>
+<td>DERIVE-CVC3-KD-IV</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Contactless Payment</td>
+<td>EE0013</td>
+<td>CREATE-ADDI-ICC-CERTIFICATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Contactless Payment</td>
+<td>EF8113</td>
+<td>CREATE-ADDI-ICC-CERTIFICATE-2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Contactless Payment</td>
+<td>EE0014</td>
+<td>dCVV-GENERATE</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Contactless Payment</td>
+<td>EE0015</td>
+<td>dCVV-VERIFY</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Contactless Payment</td>
+<td>EA0009</td>
+<td>DCVV-GENERATE-2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Contactless Payment</td>
+<td>EA0010</td>
+<td>DCVV-VERIFY-2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Netkey</td>
+<td>EE3102</td>
+<td>KEY-PACKAGE-STATUS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Netkey</td>
+<td>EE3103</td>
+<td>EXPORT-KEY-PACKAGE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Netkey</td>
+<td>EE3104</td>
+<td>IMPORT-KEY-PACKAGE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>TLS</td>
+<td>EE6000</td>
+<td>TLS-PRE-MASTER-KEY-GENERATION</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>TLS</td>
+<td>EE6001</td>
+<td>TLS-PRE-MASTER-KEY-SEND</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>TLS</td>
+<td>EE6002</td>
+<td>TLS-PRE-MASTER-KEY-RECEIVE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>TLS</td>
+<td>EE6003</td>
+<td>TLS-MASTER-KEY-DERIVATION</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>TLS</td>
+<td>EE6004</td>
+<td>TLS-ENCRYPTION-AND-MAC-KEY-DERIVATION</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Global Platform</td>
+<td>EE2059</td>
+<td>GP-MUTUAL-AUTHENTICATION</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Global Platform</td>
+<td>EE2060</td>
+<td>GP-CALC-CARD-CRYPTOGRAM</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Global Platform</td>
+<td>EE2061</td>
+<td>GP-SECURE-MESSAGING-COMMAND</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Global Platform</td>
+<td>EE2062</td>
+<td>GP-SECURE-MESSAGING-RESPONSE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Global Platform</td>
+<td>EE2063</td>
+<td>GP-SCP10-SESSION-KEY-TRANSPORT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Global Platform</td>
+<td>EE2064</td>
+<td>GP-SCP10-CALC-HASH-OF-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Global Platform</td>
+<td>EE2065</td>
+<td>GP-MUTUAL-AUTHENTICATION-SCP03</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Global Platform</td>
+<td>EE2066</td>
+<td>GP-SECURE-MESSAGING-COMMAND-SCP03</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>OBM</td>
+<td>EE3000</td>
+<td>OBM-GET-PUBLIC-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>OBM</td>
+<td>EE3001</td>
+<td>OBM-GEN-RANDOM-NUMBER</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>OBM</td>
+<td>EE3002</td>
+<td>OBM-VERIFY-PIN-3624</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>OBM</td>
+<td>EE3003</td>
+<td>OBM-CHANGE-PIN-3264</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>OBM</td>
+<td>EE3004</td>
+<td>OBM-SET-PIN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>OBM</td>
+<td>EE3005</td>
+<td>OBM-VERIFY-PIN-HASH</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>OBM</td>
+<td>EE3006</td>
+<td>OBM-CHANGE-PIN-HASH</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>OBM</td>
+<td>EE3008</td>
+<td>OBM-PRINT-PIN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>OBM</td>
+<td>EE3009</td>
+<td>OBM-MIGRATE-PIN-3624-TPV</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>OBM</td>
+<td>EE3016</td>
+<td>OBM-GET-PRINT-TOKEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>OBM</td>
+<td>EE3017</td>
+<td>OBM-GENERATE-RANDOM-PIN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>OBM</td>
+<td>EE3018</td>
+<td>OBM-PRINT-ENCRYPTED-PIN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>OBM</td>
+<td>EE3019</td>
+<td>OBM-TRANSLATE-PIN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>OBM</td>
+<td>EE3020</td>
+<td>OBM-SET-PIN-TPV</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>OBM</td>
+<td>EE3021</td>
+<td>OBM-GENERATE-RANDOM-PIN-2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>OBM</td>
+<td>EE3022</td>
+<td>OBM-DECRYPT-DATA-RSA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>OBM</td>
+<td>EE3023</td>
+<td>OBM-DECRYPT-DATA-SYMMETRIC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>GNET</td>
+<td>EF0616</td>
+<td>PIN-GENERATION</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>GNET</td>
+<td>EF0617</td>
+<td>AUTH-PARAM-GENERATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>GNET</td>
+<td>EF0618</td>
+<td>RANDOM-KEY-GENERATION</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Cloud Based Payments</td>
+<td>EE3050</td>
+<td>CHECK-AUTHENTICATION-CODE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Cloud Based Payments</td>
+<td>EE3051</td>
+<td>DERIVE-CLOUD-CMK</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Cloud Based Payments</td>
+<td>EE3052</td>
+<td>DERIVE-CBP-SESSION-KEYS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Cloud Based Payments</td>
+<td>EE3053</td>
+<td>VALIDATE-CLOUD-AC-GENERATE-ARPC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Cloud Based Payments</td>
+<td>EE3054</td>
+<td>VALIDATE-CBP-CVC3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Cloud Based Payments</td>
+<td>EE3055</td>
+<td>CALCULATE-IDN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Cloud Based Payments</td>
+<td>EE3056</td>
+<td>PROTECT-CLEAR-MOBILE-PIN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Cloud Based Payments</td>
+<td>EE3057</td>
+<td>PROTECT-ENCRYPTED-MOBILE-PIN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Cloud Based Payments</td>
+<td>EE3058</td>
+<td>CHECK-CLEAR-MOBILE-PIN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Cloud Based Payments</td>
+<td>EE3059</td>
+<td>CHECK-ENCRYPTED-MOBILE-PIN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Cloud Based Payments</td>
+<td>EE3060</td>
+<td>IMPORT-RSA-ENC-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Cloud Based Payments</td>
+<td>EE3061</td>
+<td>EXPORT-KEY-2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Cloud Based Payments</td>
+<td>EE305A</td>
+<td>DERIVE-MOBILE-SESSION-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Cloud Based Payments</td>
+<td>EE305B</td>
+<td>WEB-SERVICE-MESSAGE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Cloud Based Payments</td>
+<td>EE305C</td>
+<td>PROTECT-DC-FILE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Cloud Based Payments</td>
+<td>EE305D</td>
+<td>CCM-ENCRYPT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Cloud Based Payments</td>
+<td>EE305E</td>
+<td>CCM-DECRYPT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Cloud Based Payments</td>
+<td>EE305F</td>
+<td>RNS-MESSAGE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Visa Data Secure</td>
+<td>EA000D</td>
+<td>FPE-CRYPTO-SET</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Visa Data Secure</td>
+<td>EE080A</td>
+<td>VFPE-ENCRYPT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Visa Data Secure</td>
+<td>EE080B</td>
+<td>VFPE-DECRYPT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Visa Data Secure</td>
+<td>EE080C</td>
+<td>TRANSLATE-DATA-P2PE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Visa Data Secure</td>
+<td>EE080D</td>
+<td>TRANSLATE-VFPE-DATA-TO-ALPHABET</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Visa Data Secure</td>
+<td>EE080E</td>
+<td>TRANSLATE-VFPE-ALPHABET-TO-DATA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>CardProcess</td>
+<td>EF0E02</td>
+<td>PRV-GENERATION</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>CardProcess</td>
+<td>EF0E03</td>
+<td>PRV-VERIFICATION</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Japan PIN</td>
+<td>EF0601</td>
+<td>JAPPINTRAN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (Standard)</td>
+<td>Clear PIN</td>
+<td>EE0600</td>
+<td>CLEAR-PIN-ENCRYPT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>AMEX</td>
+<td>000A</td>
+<td>CALC-CSC-000A</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>AMEX</td>
+<td>000B</td>
+<td>VERIFY-CSC-000B</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>AMEX</td>
+<td>000C</td>
+<td>CREATE-CSCK-000C</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>AMEX</td>
+<td>000D</td>
+<td>EXPORT-CSCK-000D</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>AMEX</td>
+<td>000E</td>
+<td>IMPORT-CSCK-000E</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>AMEX</td>
+<td>000F</td>
+<td>CALC-CSC-1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>AMEX</td>
+<td>0010</td>
+<td>VERIFY-CSC-1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote ATM Initialization</td>
+<td>3B00</td>
+<td>AB-KEY-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote ATM Initialization</td>
+<td>3B10</td>
+<td>C-KEY-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote ATM Initialization</td>
+<td>3B20</td>
+<td>M-KEY-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote ATM Initialization</td>
+<td>3B30</td>
+<td>GENERATE-ATM-KEYS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote ATM Initialization</td>
+<td>5530</td>
+<td>GENERATE-MAC-NDC-ATM</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote ATM Initialization</td>
+<td>5630</td>
+<td>VERIFY-MAC-NDC-ATM</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote ATM Initialization</td>
+<td>C6B0</td>
+<td>LOAD-PUBLIC-KEY-NDC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote ATM Initialization</td>
+<td>C6C0</td>
+<td>SIGN-PUBLIC-KEY-NDC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote ATM Initialization</td>
+<td>C6D0</td>
+<td>VERIFY-EPP-NDC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote ATM Initialization</td>
+<td>C720</td>
+<td>NODE-KEK-SEND-NDC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote ATM Initialization</td>
+<td>C800</td>
+<td>VERIFY-CERTIFICATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote ATM Initialization</td>
+<td>C810</td>
+<td>SIGN-PUBLIC-PKCS10</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote ATM Initialization</td>
+<td>C850</td>
+<td>CONSTRUCT-TOKEN-B1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote ATM Initialization</td>
+<td>C860</td>
+<td>VERIFY-TOKEN-A2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>EMV</td>
+<td>8800</td>
+<td>EMV-DAC-GEN-8800</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>EMV</td>
+<td>8801</td>
+<td>EMV-DAC-VERIFY-8801</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>EMV</td>
+<td>8802</td>
+<td>EMV-ICC-DN-GEN-8802</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>EMV</td>
+<td>8803</td>
+<td>EMV-ICC-DN-VERIFY-8803</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>EMV</td>
+<td>8804</td>
+<td>EMV-AC-GEN-MULTI-8804</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>EMV</td>
+<td>8805</td>
+<td>EMV-VERIFY-AC-GEN-ARPC-8805</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>EMV</td>
+<td>8806</td>
+<td>EMV-SCRIPT-CRYPTO-8806</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>EMV</td>
+<td>8807</td>
+<td>EMV-PIN-CHANGE-UNBLOCK-8807</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>HouseKeeping</td>
+<td>0000</td>
+<td>ECHO-TEST</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>HouseKeeping</td>
+<td>0001</td>
+<td>HSM-STATUS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>HouseKeeping</td>
+<td>0002</td>
+<td>HSM-STATUS-EXTN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>HouseKeeping</td>
+<td>0005</td>
+<td>FUNCTION-STATUS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>HouseKeeping</td>
+<td>0006</td>
+<td>KM-STATUS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>HouseKeeping</td>
+<td>0007</td>
+<td>FORMAT-STATUS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>HouseKeeping</td>
+<td>0015</td>
+<td>SET-CLOCK</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>HouseKeeping</td>
+<td>0016</td>
+<td>GET-CLOCK</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>HouseKeeping</td>
+<td>0020</td>
+<td>MD5-GENERATOR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>HouseKeeping</td>
+<td>0021</td>
+<td>SHA1-GENERATOR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Key Management</td>
+<td>3144</td>
+<td>T-KEY-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Key Management</td>
+<td>3400</td>
+<td>KPV-SEND</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Key Management</td>
+<td>3410</td>
+<td>KPV-RECEIVE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Key Management</td>
+<td>3420</td>
+<td>KPVV-SEND</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Key Management</td>
+<td>3430</td>
+<td>KPVV-RECEIVE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Key Management</td>
+<td>4501</td>
+<td>VISA-RECEIVE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Key Management</td>
+<td>4502</td>
+<td>KEK-GEN-VISA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Key Management</td>
+<td>4503</td>
+<td>VISA-RECEIVE-IWK</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Key Management</td>
+<td>4504</td>
+<td>VISA-RECEIVE-AWK</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Key Management</td>
+<td>3A00</td>
+<td>NODE-KEY-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Key Management</td>
+<td>D501</td>
+<td>KEK-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Key Management</td>
+<td>D502</td>
+<td>KEK-REC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote Initialization</td>
+<td>B510</td>
+<td>SPONSOR-KEY-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote Initialization</td>
+<td>B570</td>
+<td>RAND-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote Initialization</td>
+<td>B580</td>
+<td>INITIAL-KEY-REC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote Initialization</td>
+<td>B590</td>
+<td>LOAD-KCA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote Initialization</td>
+<td>C630</td>
+<td>GET-PUB-PAIR-TCU</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote Initialization</td>
+<td>C640</td>
+<td>TCU-PUB-REC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote Initialization</td>
+<td>3633</td>
+<td>TERM-KEY-INIT-REMOTE-6.4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote Initialization</td>
+<td>3634</td>
+<td>TERM-KEY-REINIT-REMOTE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Remote Initialization</td>
+<td>3643</td>
+<td>TERM-KEY-INIT-REMOTE-6.2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Chess</td>
+<td>D001</td>
+<td>CHESS-KEK-GENERATE-6.3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Chess</td>
+<td>D002</td>
+<td>CHESS-KEK-RECEIVE-6.3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Miscellaneous</td>
+<td>E550</td>
+<td>PPID-ENCRYPT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Miscellaneous</td>
+<td>E501</td>
+<td>PPASN-VERIFY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Miscellaneous</td>
+<td>E530</td>
+<td>NODE-RESP-E530</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Miscellaneous</td>
+<td>E520</td>
+<td>NODEPROOF</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Host Keys</td>
+<td>F000</td>
+<td>PIN-TRANS-IBM3624-6.3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Host Keys</td>
+<td>F001</td>
+<td>PIN-TRANS-6.3-6.3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Host Keys</td>
+<td>F002</td>
+<td>T-KEY-GENERATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Host Keys</td>
+<td>F003</td>
+<td>PVV-GENERATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Host Keys</td>
+<td>F004</td>
+<td>PIN-VERIFY-VISA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Host Keys</td>
+<td>F005</td>
+<td>PIN-VERIFY-KPVV</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Data Management</td>
+<td>2021</td>
+<td>ENCIPHER-CFB-6.2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Data Management</td>
+<td>2121</td>
+<td>DECIPHER-CFB-6.2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Data Management</td>
+<td>2500</td>
+<td>ENCIPHER-2500</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Data Management</td>
+<td>2600</td>
+<td>DECIPHER-2600</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Data Management</td>
+<td>2700</td>
+<td>ENCIPHER-OFB</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Data Management</td>
+<td>2800</td>
+<td>DECIPHER-OFB</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>E601</td>
+<td>AP-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>2501</td>
+<td>ENCIPHER-6.2-ECB</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>2511</td>
+<td>ENCIPHER-6.2-CBC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>25A0</td>
+<td>ENCIPHER-6.2-OFB</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>2601</td>
+<td>DECIPHER-6.2-ECB</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>2611</td>
+<td>DECIPHER-6.2-CBC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>26A0</td>
+<td>DECIPHER-6.2-OFB</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>E510</td>
+<td>HOST-PROOF</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>B520</td>
+<td>KA-CALC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>B530</td>
+<td>KA-EXPORT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>B540</td>
+<td>KA-IMPORT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>B560</td>
+<td>KIA-REC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>B550</td>
+<td>KIA-SEND</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>5510</td>
+<td>MAC-GEN-6.2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>5610</td>
+<td>MAC-VERIFY-6.2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>5620</td>
+<td>MAC-VERIFY-6.2-COMP-CONF-MSG</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>6640</td>
+<td>PINBLOCK-TRANS-6.2-6.3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>6510</td>
+<td>PIN-VERIFY-6.4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>6511</td>
+<td>PIN-VERIFY-VISA-6.4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>3500</td>
+<td>TERM-KEY-GEN-1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>3510</td>
+<td>TERM-KEY-GEN-2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>3630</td>
+<td>TERM-KEY-INIT-6.4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>3640</td>
+<td>TERM-KEY-INIT-6.2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>3710</td>
+<td>TERM-KEY-UPDATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>E500</td>
+<td>TERM-PROOF-64</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Terminal To Node</td>
+<td>E540</td>
+<td>VERIFY-PPID</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Re-encrypt to Master Key</td>
+<td>4600</td>
+<td>KM-MIGRATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Re-encrypt to Master Key</td>
+<td>46A0</td>
+<td>PIN-KEY-TRANSLATION</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Re-encrypt to Master Key</td>
+<td>4500</td>
+<td>RTMK-4500</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Public Key</td>
+<td>4610</td>
+<td>KM-MIGRATE-DEA2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Public Key</td>
+<td>C500</td>
+<td>GET-PUBLIC-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Public Key</td>
+<td>C6A0</td>
+<td>LOAD-PUBLIC-KEY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Public Key</td>
+<td>C600</td>
+<td>NODE-KEK-SEND</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Public Key</td>
+<td>C603</td>
+<td>NODE-KEK-SEND-2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Public Key</td>
+<td>C610</td>
+<td>NODE-KEK-REC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Public Key</td>
+<td>C620</td>
+<td>GET-DEA2-PAIR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Public Key</td>
+<td>C700</td>
+<td>NODE-KEK-SEND-EXPORT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Public Key</td>
+<td>C710</td>
+<td>NODE-KEK-REC-EXPORT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Message Authentication</td>
+<td>5500</td>
+<td>MAC-GEN-6.3-6.4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Message Authentication</td>
+<td>5600</td>
+<td>MAC-VERIFY-6.3-6.4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>PIN Management</td>
+<td>60A0</td>
+<td>VERIFY-3624-eKPE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>PIN Management</td>
+<td>60A1</td>
+<td>VERIFY-VISA-3624-eKPE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>PIN Management</td>
+<td>60B0</td>
+<td>PVV-GEN-KPV-OFFSET</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>PIN Management</td>
+<td>6020</td>
+<td>VERIFY-3624-PIN-BLOCK</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>PIN Management</td>
+<td>6021</td>
+<td>VERIFY-VISA-3624-PIN-BLK</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>PIN Management</td>
+<td>6030</td>
+<td>ACQUIRER-VERIFY-6.2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>PIN Management</td>
+<td>6031</td>
+<td>ACQUIRER-VERIFY-VISA-6.2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>PIN Management</td>
+<td>6040</td>
+<td>ISSUER-VERIFY-6.2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>PIN Management</td>
+<td>6041</td>
+<td>ISSUER-VERIFY-VISA-6.2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>PIN Management</td>
+<td>6120</td>
+<td>TRANS-3624-TO-6.3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>PIN Management</td>
+<td>6130</td>
+<td>TRANS-6.2-6.3-EX-6.2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>PIN Management</td>
+<td>6500</td>
+<td>PIN-VERIFY-6.3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>PIN Management</td>
+<td>6501</td>
+<td>PIN-VERIFY-VISA-6.3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>PIN Management</td>
+<td>65B4</td>
+<td>PVV-GEN-GIVEN-PIN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>PIN Management</td>
+<td>6600</td>
+<td>TRANS-6.3-6.3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>PIN Management</td>
+<td>6610</td>
+<td>TRANS-6.4-6.3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>PIN Management</td>
+<td>6680</td>
+<td>TRANS-3624-6.3-eKPE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Key Verification Code</td>
+<td>7010</td>
+<td>KVC-REQUEST-DOUBLE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Key Verification Code</td>
+<td>7510</td>
+<td>KVC-REQUEST</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Card Verification Code</td>
+<td>8011</td>
+<td>CVC3-GENERATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Card Verification Code</td>
+<td>8012</td>
+<td>CVC3-VERIFY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Card Verification Code</td>
+<td>8013</td>
+<td>dCVV-GENERATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Card Verification Code</td>
+<td>8014</td>
+<td>dCVV-VERIFY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Card Verification Code</td>
+<td>8500</td>
+<td>CVV-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Card Verification Code</td>
+<td>8510</td>
+<td>CVV-KEY-IMPORT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Card Verification Code</td>
+<td>8520</td>
+<td>CVV-VERIFY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Card Verification Code</td>
+<td>8600</td>
+<td>CVV-KEY-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>MasterCard</td>
+<td>D010</td>
+<td>AMB-KPE-GENERATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>MasterCard</td>
+<td>D011</td>
+<td>AMB-KPE-RECEIVE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>MasterCard</td>
+<td>D012</td>
+<td>AMB-KMAC-GENERATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>MasterCard</td>
+<td>D013</td>
+<td>AMB-KMAC-RECEIVE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>MasterCard</td>
+<td>D014</td>
+<td>AMB-KD-GENERATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>MasterCard</td>
+<td>D015</td>
+<td>AMB-KD-RECEIVE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Host (AMB)</td>
+<td>Visa Stored Value Card</td>
+<td>A010</td>
+<td>SVC-LOAD-VERIFY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>PIN</td>
+<td>60</td>
+<td>PIN-TRAN</td>
+<td></td>
+<td>Spcd. by EE0602</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>PIN</td>
+<td>61</td>
+<td>PIN-VER-AS</td>
+<td></td>
+<td>Spcd. by EE0603</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>PIN</td>
+<td>62</td>
+<td>PIN-VER-PP</td>
+<td></td>
+<td>Spcd. by EE0603</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>PIN</td>
+<td>63</td>
+<td>PIN-TRAN-3624</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>PIN</td>
+<td>64</td>
+<td>KB-PIN-VER</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>PIN</td>
+<td>65</td>
+<td>D51-PIN-TRAN</td>
+<td></td>
+<td>Spcd. by EE0602</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>PIN</td>
+<td>66</td>
+<td>D51-PIN-VER</td>
+<td></td>
+<td>Spcd. by EE0603</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>PIN</td>
+<td>67</td>
+<td>VAR-PIN-VER</td>
+<td></td>
+<td>Spcd. by EE0603</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>PIN</td>
+<td>68</td>
+<td>VAR-PIN-VER-PP</td>
+<td></td>
+<td>Spcd. by EE0603</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>PIN</td>
+<td>69</td>
+<td>VAR-KB-PIN-VER</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>PIN</td>
+<td>6A</td>
+<td>PIN-OFF-AS</td>
+<td></td>
+<td>Spcd. by EE0604</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>PIN</td>
+<td>6B</td>
+<td>PIN-OFF-PP</td>
+<td></td>
+<td>Spcd. by EE0604</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>EFT</td>
+<td>41</td>
+<td>IT-PPK-GEN</td>
+<td></td>
+<td>Spcd. by EE0400</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>EFT</td>
+<td>42</td>
+<td>IT-MPK-GEN</td>
+<td></td>
+<td>Spcd. by EE0400</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>EFT</td>
+<td>43</td>
+<td>IT-DPK-GEN</td>
+<td></td>
+<td>Spcd. by EE0400</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>EFT</td>
+<td>44</td>
+<td>NT-PPK-GEN</td>
+<td></td>
+<td>Spcd. by EE0401</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>EFT</td>
+<td>45</td>
+<td>NT-MPK-GEN</td>
+<td></td>
+<td>Spcd. by EE0401</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>EFT</td>
+<td>46</td>
+<td>NT-DPK-GEN</td>
+<td></td>
+<td>Spcd. by EE0401</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>EFT</td>
+<td>4A</td>
+<td>GEN-SESS-KEYS</td>
+<td></td>
+<td>Spcd. by EE0400</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>EFT</td>
+<td>4C</td>
+<td>TERM-VER</td>
+<td></td>
+<td>Spcd. by EE0406</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>Interchange</td>
+<td>51</td>
+<td>II-PPK-GEN</td>
+<td>X</td>
+<td>Spcd. by EE0402</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>Interchange</td>
+<td>52</td>
+<td>II-MPK-GEN</td>
+<td></td>
+<td>Spcd. by EE0402</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>Interchange</td>
+<td>53</td>
+<td>II-DPK-GEN</td>
+<td></td>
+<td>Spcd. by EE0402</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>Interchange</td>
+<td>54</td>
+<td>II-PPK-RCV</td>
+<td></td>
+<td>Spcd. by EE0403</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>Interchange</td>
+<td>55</td>
+<td>II-MPK-RCV</td>
+<td></td>
+<td>Spcd. by EE0403</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>Interchange</td>
+<td>56</td>
+<td>II-DPK-RCV</td>
+<td></td>
+<td>Spcd. by EE0403</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>Interchange</td>
+<td>57</td>
+<td>NI-PPK-GEN</td>
+<td></td>
+<td>Spcd. by EE0404</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>Interchange</td>
+<td>58</td>
+<td>NI-MPK-GEN</td>
+<td></td>
+<td>Spcd. by EE0404</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>Interchange</td>
+<td>59</td>
+<td>NI-DPK-GEN</td>
+<td></td>
+<td>Spcd. by EE0404</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>Interchange</td>
+<td>5A</td>
+<td>NI-PPK-RCV</td>
+<td></td>
+<td>Spcd. by EE0405</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>Interchange</td>
+<td>5B</td>
+<td>NI-MPK-RCV</td>
+<td></td>
+<td>Spcd. by EE0405</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>Interchange</td>
+<td>5C</td>
+<td>NI-DPK-RCV</td>
+<td></td>
+<td>Spcd. by EE0405</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>MAC</td>
+<td>70</td>
+<td>MAC-GEN</td>
+<td></td>
+<td>Spcd. by EE0701</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>MAC</td>
+<td>71</td>
+<td>MAC-TRAN</td>
+<td></td>
+<td>Spcd. by EE0701</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>MAC</td>
+<td>72</td>
+<td>MAC-VER</td>
+<td></td>
+<td>Spcd. by EE0701</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>Data Management</td>
+<td>80</td>
+<td>ENCIPHER</td>
+<td></td>
+<td>Spcd. by EE0800</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>Data Management</td>
+<td>81</td>
+<td>DECIPHER</td>
+<td></td>
+<td>Spcd. by EE0801</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>Data Management</td>
+<td>82</td>
+<td>ENCIPHER-ECB</td>
+<td></td>
+<td>Spcd. by EE0800</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>Data Management</td>
+<td>83</td>
+<td>DECIPHER-ECB</td>
+<td></td>
+<td>Spcd. by EE0801</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>VISA</td>
+<td>90</td>
+<td>PVV-GEN-1</td>
+<td></td>
+<td>Spcd. by EE0606</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>VISA</td>
+<td>91</td>
+<td>PVV-VER-1</td>
+<td></td>
+<td>Spcd. by EE0605</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>VISA</td>
+<td>92</td>
+<td>PVV-VER-2</td>
+<td></td>
+<td>Spcd. by EE0605</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>VISA</td>
+<td>93</td>
+<td>PVV-VER-3</td>
+<td></td>
+<td>Spcd. by EE0605</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>VISA</td>
+<td>94</td>
+<td>PIN-TRAN-1</td>
+<td></td>
+<td>Spcd. by EE0602</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>VISA</td>
+<td>95</td>
+<td>PIN-TRAN-2-VISA</td>
+<td></td>
+<td>Spcd. by EE0602</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>VISA</td>
+<td>96</td>
+<td>PVV-GEN-2</td>
+<td>X</td>
+<td>Spcd. by EE0606</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>VISA</td>
+<td>97</td>
+<td>PVV-VER-4</td>
+<td></td>
+<td>Spcd. by EE0605</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>VISA</td>
+<td>98</td>
+<td>PVV-VER-5</td>
+<td></td>
+<td>Spcd. by EE0605</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>VISA</td>
+<td>99</td>
+<td>PVV-VER-6</td>
+<td></td>
+<td>Spcd. by EE0605</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>VISA</td>
+<td>9A</td>
+<td>PVV-CHANGE</td>
+<td></td>
+<td>Spcd. by EE0607</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>VISA</td>
+<td>9B</td>
+<td>CVV-GEN</td>
+<td>X</td>
+<td>Spcd. by EE0802</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>VISA</td>
+<td>9C</td>
+<td>CVV-VER</td>
+<td>X</td>
+<td>Spcd. by EE0803</td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>MasterCard</td>
+<td>A0</td>
+<td>MT-KPE-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>MasterCard</td>
+<td>A1</td>
+<td>MT-KPE-RCV</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>MasterCard</td>
+<td>A2</td>
+<td>MT-PIN-TRAN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>MasterCard</td>
+<td>A3</td>
+<td>MT-PIN-VER</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (Standard)</td>
+<td>MasterCard</td>
+<td>A7</td>
+<td>MT-PIN-VER-PVV</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Miscellaneous</td>
+<td>E000</td>
+<td>TERM-PROOF</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Miscellaneous</td>
+<td>E010</td>
+<td>HOST-PROOF-E010</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Miscellaneous</td>
+<td>E020</td>
+<td>NODE-PROOF</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Miscellaneous</td>
+<td>E030</td>
+<td>NODE-RESP-E030</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Miscellaneous</td>
+<td>E100</td>
+<td>AUTHENTICATION-PARAMETER-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Data Management</td>
+<td>2000</td>
+<td>ENCIPHER-ECB-2000</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Data Management</td>
+<td>2001</td>
+<td>ENCIPHER-ECB-6.2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Data Management</td>
+<td>2010</td>
+<td>ENCIPHER-CBC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Data Management</td>
+<td>2011</td>
+<td>ENCIPHER-CBC-6.2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Data Management</td>
+<td>2020</td>
+<td>ENCIPHER-CFB</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Data Management</td>
+<td>2100</td>
+<td>DECIPHER-ECB-2100</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Data Management</td>
+<td>2101</td>
+<td>DECIPHER-ECB-6.2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Data Management</td>
+<td>2110</td>
+<td>DECIPHER-CBC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Data Management</td>
+<td>2111</td>
+<td>DECIPHER-CBC-6.2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Data Management</td>
+<td>2120</td>
+<td>DECIPHER-CFB</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Key Management</td>
+<td>3000</td>
+<td>TERM-KEY-GEN-1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Key Management</td>
+<td>3010</td>
+<td>TERM-KEY-GEN-2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Key Management</td>
+<td>3130</td>
+<td>TERM-KEY-INIT-6.4-3130</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Key Management</td>
+<td>3140</td>
+<td>TERMKEYINIT-6.2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Key Management</td>
+<td>3200</td>
+<td>NODE-KEY-GEN-3200</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Key Management</td>
+<td>3300</td>
+<td>TERM-KEY-UPDATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Key Management</td>
+<td>3600</td>
+<td>AB-KEY-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Key Management</td>
+<td>3610</td>
+<td>C-KEY-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Key Management</td>
+<td>3620</td>
+<td>M-KEY-GEN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Re-encrypt to Master Key</td>
+<td>4000</td>
+<td>RTMK</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Re-encrypt to Master Key</td>
+<td>4100</td>
+<td>KM-MIGRATE-4100</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Message Authentication</td>
+<td>5000</td>
+<td>MAC-GEN-6.3-6.4-5000</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Message Authentication</td>
+<td>5010</td>
+<td>MAC-GEN-6.2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Message Authentication</td>
+<td>5100</td>
+<td>MAC-VERIFY-6.3-6.4-5100</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Message Authentication</td>
+<td>5110</td>
+<td>MAC-VERIFY-6.2-REQUEST</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Message Authentication</td>
+<td>5120</td>
+<td>MAC-VERIFY-6.2-COMPLETION</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>PIN Management</td>
+<td>6000</td>
+<td>VERIFY-6.3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>PIN Management</td>
+<td>6001</td>
+<td>VERIFY-VISA-6.3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>PIN Management</td>
+<td>6010</td>
+<td>VERIFY-6.4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>PIN Management</td>
+<td>6011</td>
+<td>VERIFY-VISA-6.4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>PIN Management</td>
+<td>60B4</td>
+<td>PVV-GEN-GIVEN-PIN-60B4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>PIN Management</td>
+<td>6100</td>
+<td>TRANS-6.3-TO-6.3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>PIN Management</td>
+<td>6110</td>
+<td>TRANS-6.4-TO-6.3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>PIN Management</td>
+<td>6140</td>
+<td>TRANS-6.2-TO-6.3-IN-6.2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>PIN Management</td>
+<td>6180</td>
+<td>TRANS-3624-TO-6.3-eKPE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Key Verification Code</td>
+<td>7000</td>
+<td>KVC-REQUEST-SINGLE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Card Verification Code</td>
+<td>8000</td>
+<td>CVV-GEN-8000</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Card Verification Code</td>
+<td>8010</td>
+<td>CVV-VERIFY-8010</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Public Key</td>
+<td>C000</td>
+<td>GET-PUBLIC-KEY-C000</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Public Key</td>
+<td>C100</td>
+<td>NODE-KEK-SEND-C100</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Legacy (AMB)</td>
+<td>Public Key</td>
+<td>C110</td>
+<td>NODE-KEK-REC-C110</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Deprecated</td>
+<td></td>
+<td>FFF0</td>
+<td>HSM-ERRORLOG-STATUS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Deprecated</td>
+<td></td>
+<td>FFF1</td>
+<td>HSM-GET-ERRORLOG</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Deprecated</td>
+<td></td>
+<td>FFF8</td>
+<td>RETRIEVE-HSM-UTIL-RECORDS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Deprecated</td>
+<td></td>
+<td>B100</td>
+<td>AMB-LOAD-HSM-SOFTWARE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Deprecated</td>
+<td></td>
+<td>B101</td>
+<td>AMB-HSM-SOFTWARE-STATUS</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+
+    </div>
+
+    
+</div>
+    <div class="footer" id="footer">
+    <p><h4>版权所有 © 2020 | 作者: Victor | 主题 By <a class="theme-author" target="_blank" rel="noopener" href="https://github.com/Xunzhuo/hexo-theme-coder" style="font-size:14px; color: #969696">Coder</a></h4>
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_container_site_pv">本站浏览总访问量: <span id="busuanzi_value_site_pv"></span></span>
+        <span class="post-meta-divider">|</span>
+        <span id="busuanzi_container_site_uv">本站访问人数: <span id="busuanzi_value_site_uv"></span></span>
+    
+    <label class="el-switch el-switch-blue el-switch-sm" style="vertical-align: sub;">
+        <input type="checkbox" name="switch" id="update_style">
+        <span class="el-switch-style"></span>
+    </label>
+
+    <!--         <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script> -->
+</p>
+</div>
+
+<input type="hidden" id="web_style" value="light">
+<input type="hidden" id="valine_appid" value="NOsswOncKgc8HOxqo9oxIWlX-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="z1FihjWEbS8uIfUQdmCtK7zz">
+
+<script src="/libs/jquery.min.js"></script>
+
+
+<script src="/libs/highlight/highlight.pack.js"></script>
+
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+
+<script src="/js/js.js"></script>
+
+<style type="text/css">
+.v * {
+color: #698fca;
+}
+.v .vlist .vcard .vhead .vsys {
+color: #3a3e4a;
+}
+.v .vlist .vcard .vh .vmeta .vat {
+color: #638fd5;
+}
+.v .vlist .vcard .vhead .vnick {
+color: #6ba1ff;
+}
+.v a {
+color: #8696b1;
+}
+.v .vlist .vcard .vhead .vnick:hover {
+color: #669bfc;
+}
+</style>
+    <script type="text/javascript" color="173,174,173" opacity='1' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+</body>
+</html>

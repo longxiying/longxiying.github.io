@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="google-site-verification" content="TZE0rZyIqLl10trYu3BWBWa1Vmz6HFwhb2OcNEK4u-s" />
+     <link rel="shortcut icon" href= /img/favicon.ico >
+    <title>
+        EMV.COOL
+    </title>
+    <meta name="description" content= Study!Study!Study! >
+    <meta name="keywords" content= Blog,Hexo,Theme,emv >
+    
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="EMV.COOL" type="application/atom+xml">
+</head>
+<body id="bodyx">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-home
+ replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            Complete list of APDU responses
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <table>
+<thead>
+<tr>
+<th><strong>SW1</strong></th>
+<th><strong>SW2</strong></th>
+<th><strong>Info/ Warning/ Error/ Security</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>6</td>
+<td></td>
+<td>E</td>
+<td>Class not supported.</td>
+</tr>
+<tr>
+<td><strong>61</strong></td>
+<td><strong>—</strong></td>
+<td><strong>I</strong></td>
+<td><strong>Response bytes still available</strong></td>
+</tr>
+<tr>
+<td>61</td>
+<td>XX</td>
+<td>I</td>
+<td>Command successfully executed; ‘XX’ bytes of data are available and can be requested using GET RESPONSE.</td>
+</tr>
+<tr>
+<td><strong>62</strong></td>
+<td><strong>—</strong></td>
+<td><strong>W</strong></td>
+<td><strong>State of non-volatile memory unchanged</strong></td>
+</tr>
+<tr>
+<td>62</td>
+<td>00</td>
+<td>W</td>
+<td>No information given (NV-Ram not changed)</td>
+</tr>
+<tr>
+<td>62</td>
+<td>01</td>
+<td>W</td>
+<td>NV-Ram not changed 1.</td>
+</tr>
+<tr>
+<td>62</td>
+<td>81</td>
+<td>W</td>
+<td>Part of returned data may be corrupted</td>
+</tr>
+<tr>
+<td>62</td>
+<td>82</td>
+<td>W</td>
+<td>End of file/record reached before reading Le bytes</td>
+</tr>
+<tr>
+<td>62</td>
+<td>83</td>
+<td>W</td>
+<td>Selected file invalidated</td>
+</tr>
+<tr>
+<td>62</td>
+<td>84</td>
+<td>W</td>
+<td>Selected file is not valid. FCI not formated according to ISO</td>
+</tr>
+<tr>
+<td>62</td>
+<td>85</td>
+<td>W</td>
+<td>No input data available from a sensor on the card. No Purse Engine enslaved for R3bc</td>
+</tr>
+<tr>
+<td>62</td>
+<td>A2</td>
+<td>W</td>
+<td>Wrong R-MAC</td>
+</tr>
+<tr>
+<td>62</td>
+<td>A4</td>
+<td>W</td>
+<td>Card locked (during reset( ))</td>
+</tr>
+<tr>
+<td>62</td>
+<td>CX</td>
+<td>W</td>
+<td>Counter with value x (command dependent)</td>
+</tr>
+<tr>
+<td>62</td>
+<td>F1</td>
+<td>W</td>
+<td>Wrong C-MAC</td>
+</tr>
+<tr>
+<td>62</td>
+<td>F3</td>
+<td>W</td>
+<td>Internal reset</td>
+</tr>
+<tr>
+<td>62</td>
+<td>F5</td>
+<td>W</td>
+<td>Default agent locked</td>
+</tr>
+<tr>
+<td>62</td>
+<td>F7</td>
+<td>W</td>
+<td>Cardholder locked</td>
+</tr>
+<tr>
+<td>62</td>
+<td>F8</td>
+<td>W</td>
+<td>Basement is current agent</td>
+</tr>
+<tr>
+<td>62</td>
+<td>F9</td>
+<td>W</td>
+<td>CALC Key Set not unblocked</td>
+</tr>
+<tr>
+<td>62</td>
+<td>FX</td>
+<td>W</td>
+<td>–</td>
+</tr>
+<tr>
+<td>62</td>
+<td>XX</td>
+<td>W</td>
+<td>RFU</td>
+</tr>
+<tr>
+<td><strong>63</strong></td>
+<td><strong>—</strong></td>
+<td><strong>W</strong></td>
+<td><strong>State of non-volatile memory changed</strong></td>
+</tr>
+<tr>
+<td>63</td>
+<td>00</td>
+<td>W</td>
+<td>No information given (NV-Ram changed)</td>
+</tr>
+<tr>
+<td>63</td>
+<td>81</td>
+<td>W</td>
+<td>File filled up by the last write. Loading/updating is not allowed.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>82</td>
+<td>W</td>
+<td>Card key not supported.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>83</td>
+<td>W</td>
+<td>Reader key not supported.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>84</td>
+<td>W</td>
+<td>Plaintext transmission not supported.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>85</td>
+<td>W</td>
+<td>Secured transmission not supported.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>86</td>
+<td>W</td>
+<td>Volatile memory is not available.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>87</td>
+<td>W</td>
+<td>Non-volatile memory is not available.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>88</td>
+<td>W</td>
+<td>Key number not valid.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>89</td>
+<td>W</td>
+<td>Key length is not correct.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>C0</td>
+<td>W</td>
+<td>Verify fail, no try left.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>C1</td>
+<td>W</td>
+<td>Verify fail, 1 try left.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>C2</td>
+<td>W</td>
+<td>Verify fail, 2 tries left.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>C3</td>
+<td>W</td>
+<td>Verify fail, 3 tries left.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>CX</td>
+<td>W</td>
+<td>The counter has reached the value ‘x’ (0 = x = 15) (command dependent).</td>
+</tr>
+<tr>
+<td>63</td>
+<td>F1</td>
+<td>W</td>
+<td>More data expected.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>F2</td>
+<td>W</td>
+<td>More data expected and proactive command pending.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>FX</td>
+<td>W</td>
+<td>–</td>
+</tr>
+<tr>
+<td>63</td>
+<td>XX</td>
+<td>W</td>
+<td>RFU</td>
+</tr>
+<tr>
+<td><strong>64</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td><strong>State of non-volatile memory unchanged</strong></td>
+</tr>
+<tr>
+<td>64</td>
+<td>00</td>
+<td>E</td>
+<td>No information given (NV-Ram not changed)</td>
+</tr>
+<tr>
+<td>64</td>
+<td>01</td>
+<td>E</td>
+<td>Command timeout. Immediate response required by the card.</td>
+</tr>
+<tr>
+<td>64</td>
+<td>XX</td>
+<td>E</td>
+<td>RFU</td>
+</tr>
+<tr>
+<td><strong>65</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td><strong>State of non-volatile memory changed</strong></td>
+</tr>
+<tr>
+<td>65</td>
+<td>00</td>
+<td>E</td>
+<td>No information given</td>
+</tr>
+<tr>
+<td>65</td>
+<td>01</td>
+<td>E</td>
+<td>Write error. Memory failure. There have been problems in writing or reading the EEPROM. Other hardware problems may also bring this error.</td>
+</tr>
+<tr>
+<td>65</td>
+<td>81</td>
+<td>E</td>
+<td>Memory failure</td>
+</tr>
+<tr>
+<td>65</td>
+<td>FX</td>
+<td>E</td>
+<td>–</td>
+</tr>
+<tr>
+<td>65</td>
+<td>XX</td>
+<td>E</td>
+<td>RFU</td>
+</tr>
+<tr>
+<td><strong>66</strong></td>
+<td><strong>—</strong></td>
+<td><strong>S</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>66</td>
+<td>00</td>
+<td>S</td>
+<td>Error while receiving (timeout)</td>
+</tr>
+<tr>
+<td>66</td>
+<td>01</td>
+<td>S</td>
+<td>Error while receiving (character parity error)</td>
+</tr>
+<tr>
+<td>66</td>
+<td>02</td>
+<td>S</td>
+<td>Wrong checksum</td>
+</tr>
+<tr>
+<td>66</td>
+<td>03</td>
+<td>S</td>
+<td>The current DF file without FCI</td>
+</tr>
+<tr>
+<td>66</td>
+<td>04</td>
+<td>S</td>
+<td>No SF or KF under the current DF</td>
+</tr>
+<tr>
+<td>66</td>
+<td>69</td>
+<td>S</td>
+<td>Incorrect Encryption/Decryption Padding</td>
+</tr>
+<tr>
+<td>66</td>
+<td>XX</td>
+<td>S</td>
+<td>–</td>
+</tr>
+<tr>
+<td><strong>67</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>67</td>
+<td>00</td>
+<td>E</td>
+<td>Wrong length</td>
+</tr>
+<tr>
+<td>67</td>
+<td>XX</td>
+<td>E</td>
+<td>length incorrect (procedure)(ISO 7816-3)</td>
+</tr>
+<tr>
+<td><strong>68</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td><strong>Functions in CLA not supported</strong></td>
+</tr>
+<tr>
+<td>68</td>
+<td>00</td>
+<td>E</td>
+<td>No information given (The request function is not supported by the card)</td>
+</tr>
+<tr>
+<td>68</td>
+<td>81</td>
+<td>E</td>
+<td>Logical channel not supported</td>
+</tr>
+<tr>
+<td>68</td>
+<td>82</td>
+<td>E</td>
+<td>Secure messaging not supported</td>
+</tr>
+<tr>
+<td>68</td>
+<td>83</td>
+<td>E</td>
+<td>Last command of the chain expected</td>
+</tr>
+<tr>
+<td>68</td>
+<td>84</td>
+<td>E</td>
+<td>Command chaining not supported</td>
+</tr>
+<tr>
+<td>68</td>
+<td>FX</td>
+<td>E</td>
+<td>–</td>
+</tr>
+<tr>
+<td>68</td>
+<td>XX</td>
+<td>E</td>
+<td>RFU</td>
+</tr>
+<tr>
+<td><strong>69</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td><strong>Command not allowed</strong></td>
+</tr>
+<tr>
+<td>69</td>
+<td>00</td>
+<td>E</td>
+<td>No information given (Command not allowed)</td>
+</tr>
+<tr>
+<td>69</td>
+<td>01</td>
+<td>E</td>
+<td>Command not accepted (inactive state)</td>
+</tr>
+<tr>
+<td>69</td>
+<td>81</td>
+<td>E</td>
+<td>Command incompatible with file structure</td>
+</tr>
+<tr>
+<td>69</td>
+<td>82</td>
+<td>E</td>
+<td>Security condition not satisfied.</td>
+</tr>
+<tr>
+<td>69</td>
+<td>83</td>
+<td>E</td>
+<td>Authentication method blocked</td>
+</tr>
+<tr>
+<td>69</td>
+<td>84</td>
+<td>E</td>
+<td>Referenced data reversibly blocked (invalidated)</td>
+</tr>
+<tr>
+<td>69</td>
+<td>85</td>
+<td>E</td>
+<td>Conditions of use not satisfied.</td>
+</tr>
+<tr>
+<td>69</td>
+<td>86</td>
+<td>E</td>
+<td>Command not allowed (no current EF)</td>
+</tr>
+<tr>
+<td>69</td>
+<td>87</td>
+<td>E</td>
+<td>Expected secure messaging (SM) object missing</td>
+</tr>
+<tr>
+<td>69</td>
+<td>88</td>
+<td>E</td>
+<td>Incorrect secure messaging (SM) data object</td>
+</tr>
+<tr>
+<td>69</td>
+<td>8D</td>
+<td></td>
+<td>Reserved</td>
+</tr>
+<tr>
+<td>69</td>
+<td>96</td>
+<td>E</td>
+<td>Data must be updated again</td>
+</tr>
+<tr>
+<td>69</td>
+<td>E1</td>
+<td>E</td>
+<td>POL1 of the currently Enabled Profile prevents this action.</td>
+</tr>
+<tr>
+<td>69</td>
+<td>F0</td>
+<td>E</td>
+<td>Permission Denied</td>
+</tr>
+<tr>
+<td>69</td>
+<td>F1</td>
+<td>E</td>
+<td>Permission Denied – Missing Privilege</td>
+</tr>
+<tr>
+<td>69</td>
+<td>FX</td>
+<td>E</td>
+<td>–</td>
+</tr>
+<tr>
+<td>69</td>
+<td>XX</td>
+<td>E</td>
+<td>RFU</td>
+</tr>
+<tr>
+<td><strong>6A</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td><strong>Wrong parameter(s) P1-P2</strong></td>
+</tr>
+<tr>
+<td>6A</td>
+<td>00</td>
+<td>E</td>
+<td>No information given (Bytes P1 and/or P2 are incorrect)</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>80</td>
+<td>E</td>
+<td>The parameters in the data field are incorrect.</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>81</td>
+<td>E</td>
+<td>Function not supported</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>82</td>
+<td>E</td>
+<td>File not found</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>83</td>
+<td>E</td>
+<td>Record not found</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>84</td>
+<td>E</td>
+<td>There is insufficient memory space in record or file</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>85</td>
+<td>E</td>
+<td>Lc inconsistent with TLV structure</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>86</td>
+<td>E</td>
+<td>Incorrect P1 or P2 parameter.</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>87</td>
+<td>E</td>
+<td>Lc inconsistent with P1-P2</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>88</td>
+<td>E</td>
+<td>Referenced data not found</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>89</td>
+<td>E</td>
+<td>File already exists</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>8A</td>
+<td>E</td>
+<td>DF name already exists.</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>F0</td>
+<td>E</td>
+<td>Wrong parameter value</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>FX</td>
+<td>E</td>
+<td>–</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>XX</td>
+<td>E</td>
+<td>RFU</td>
+</tr>
+<tr>
+<td><strong>6B</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>6B</td>
+<td>00</td>
+<td>E</td>
+<td>Wrong parameter(s) P1-P2</td>
+</tr>
+<tr>
+<td>6B</td>
+<td>XX</td>
+<td>E</td>
+<td>Reference incorrect (procedure byte), (ISO 7816-3)</td>
+</tr>
+<tr>
+<td><strong>6C</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td><strong>Wrong length Le</strong></td>
+</tr>
+<tr>
+<td>6C</td>
+<td>00</td>
+<td>E</td>
+<td>Incorrect P3 length.</td>
+</tr>
+<tr>
+<td>6C</td>
+<td>XX</td>
+<td>E</td>
+<td>Bad length value in Le; ‘xx’ is the correct exact Le</td>
+</tr>
+<tr>
+<td><strong>6D</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>6D</td>
+<td>00</td>
+<td>E</td>
+<td>Instruction code not supported or invalid</td>
+</tr>
+<tr>
+<td>6D</td>
+<td>XX</td>
+<td>E</td>
+<td>Instruction code not programmed or invalid (procedure byte), (ISO 7816-3)</td>
+</tr>
+<tr>
+<td><strong>6E</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>6E</td>
+<td>00</td>
+<td>E</td>
+<td>Class not supported</td>
+</tr>
+<tr>
+<td>6E</td>
+<td>XX</td>
+<td>E</td>
+<td>Instruction class not supported (procedure byte), (ISO 7816-3)</td>
+</tr>
+<tr>
+<td><strong>6F</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td><strong>Internal exception</strong></td>
+</tr>
+<tr>
+<td>6F</td>
+<td>00</td>
+<td>E</td>
+<td>Command aborted – more exact diagnosis not possible (e.g., operating system error).</td>
+</tr>
+<tr>
+<td>6F</td>
+<td>FF</td>
+<td>E</td>
+<td>Card dead (overuse, …)</td>
+</tr>
+<tr>
+<td>6F</td>
+<td>XX</td>
+<td>E</td>
+<td>No precise diagnosis (procedure byte), (ISO 7816-3)</td>
+</tr>
+<tr>
+<td><strong>9-</strong></td>
+<td><strong>—</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>90</td>
+<td>00</td>
+<td>I</td>
+<td>Command successfully executed (OK).</td>
+</tr>
+<tr>
+<td>90</td>
+<td>04</td>
+<td>W</td>
+<td>PIN not succesfully verified, 3 or more PIN tries left</td>
+</tr>
+<tr>
+<td>90</td>
+<td>08</td>
+<td></td>
+<td>Key/file not found</td>
+</tr>
+<tr>
+<td>90</td>
+<td>80</td>
+<td>W</td>
+<td>Unblock Try Counter has reached zero</td>
+</tr>
+<tr>
+<td>91</td>
+<td>00</td>
+<td></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>91</td>
+<td>01</td>
+<td></td>
+<td>States.activity, States.lock Status or States.lockable has wrong value</td>
+</tr>
+<tr>
+<td>91</td>
+<td>02</td>
+<td></td>
+<td>Transaction number reached its limit</td>
+</tr>
+<tr>
+<td>91</td>
+<td>0C</td>
+<td></td>
+<td>No changes</td>
+</tr>
+<tr>
+<td>91</td>
+<td>0E</td>
+<td></td>
+<td>Insufficient NV-Memory to complete command</td>
+</tr>
+<tr>
+<td>91</td>
+<td>1C</td>
+<td></td>
+<td>Command code not supported</td>
+</tr>
+<tr>
+<td>91</td>
+<td>1E</td>
+<td></td>
+<td>CRC or MAC does not match data</td>
+</tr>
+<tr>
+<td>91</td>
+<td>40</td>
+<td></td>
+<td>Invalid key number specified</td>
+</tr>
+<tr>
+<td>91</td>
+<td>7E</td>
+<td></td>
+<td>Length of command string invalid</td>
+</tr>
+<tr>
+<td>91</td>
+<td>9D</td>
+<td></td>
+<td>Not allow the requested command</td>
+</tr>
+<tr>
+<td>91</td>
+<td>9E</td>
+<td></td>
+<td>Value of the parameter invalid</td>
+</tr>
+<tr>
+<td>91</td>
+<td>A0</td>
+<td></td>
+<td>Requested AID not present on PICC</td>
+</tr>
+<tr>
+<td>91</td>
+<td>A1</td>
+<td></td>
+<td>Unrecoverable error within application</td>
+</tr>
+<tr>
+<td>91</td>
+<td>AE</td>
+<td></td>
+<td>Authentication status does not allow the requested command</td>
+</tr>
+<tr>
+<td>91</td>
+<td>AF</td>
+<td></td>
+<td>Additional data frame is expected to be sent</td>
+</tr>
+<tr>
+<td>91</td>
+<td>BE</td>
+<td></td>
+<td>Out of boundary</td>
+</tr>
+<tr>
+<td>91</td>
+<td>C1</td>
+<td></td>
+<td>Unrecoverable error within PICC</td>
+</tr>
+<tr>
+<td>91</td>
+<td>CA</td>
+<td></td>
+<td>Previous Command was not fully completed</td>
+</tr>
+<tr>
+<td>91</td>
+<td>CD</td>
+<td></td>
+<td>PICC was disabled by an unrecoverable error</td>
+</tr>
+<tr>
+<td>91</td>
+<td>CE</td>
+<td></td>
+<td>Number of Applications limited to 28</td>
+</tr>
+<tr>
+<td>91</td>
+<td>DE</td>
+<td></td>
+<td>File or application already exists</td>
+</tr>
+<tr>
+<td>91</td>
+<td>EE</td>
+<td></td>
+<td>Could not complete NV-write operation due to loss of power</td>
+</tr>
+<tr>
+<td>91</td>
+<td>F0</td>
+<td></td>
+<td>Specified file number does not exist</td>
+</tr>
+<tr>
+<td>91</td>
+<td>F1</td>
+<td></td>
+<td>Unrecoverable error within file</td>
+</tr>
+<tr>
+<td>92</td>
+<td>0x</td>
+<td>I</td>
+<td>Writing to EEPROM successful after ‘x’ attempts.</td>
+</tr>
+<tr>
+<td>92</td>
+<td>10</td>
+<td>E</td>
+<td>Insufficient memory. No more storage available.</td>
+</tr>
+<tr>
+<td>92</td>
+<td>40</td>
+<td>E</td>
+<td>Writing to EEPROM not successful.</td>
+</tr>
+<tr>
+<td>93</td>
+<td>01</td>
+<td></td>
+<td>Integrity error</td>
+</tr>
+<tr>
+<td>93</td>
+<td>02</td>
+<td></td>
+<td>Candidate S2 invalid</td>
+</tr>
+<tr>
+<td>93</td>
+<td>03</td>
+<td>E</td>
+<td>Application is permanently locked</td>
+</tr>
+<tr>
+<td>94</td>
+<td>00</td>
+<td>E</td>
+<td>No EF selected.</td>
+</tr>
+<tr>
+<td>94</td>
+<td>01</td>
+<td></td>
+<td>Candidate currency code does not match purse currency</td>
+</tr>
+<tr>
+<td>94</td>
+<td>02</td>
+<td></td>
+<td>Candidate amount too high</td>
+</tr>
+<tr>
+<td>94</td>
+<td>02</td>
+<td>E</td>
+<td>Address range exceeded.</td>
+</tr>
+<tr>
+<td>94</td>
+<td>03</td>
+<td></td>
+<td>Candidate amount too low</td>
+</tr>
+<tr>
+<td>94</td>
+<td>04</td>
+<td>E</td>
+<td>FID not found, record not found or comparison pattern not found.</td>
+</tr>
+<tr>
+<td>94</td>
+<td>05</td>
+<td></td>
+<td>Problems in the data field</td>
+</tr>
+<tr>
+<td>94</td>
+<td>06</td>
+<td>E</td>
+<td>Required MAC unavailable</td>
+</tr>
+<tr>
+<td>94</td>
+<td>07</td>
+<td></td>
+<td>Bad currency : purse engine has no slot with R3bc currency</td>
+</tr>
+<tr>
+<td>94</td>
+<td>08</td>
+<td></td>
+<td>R3bc currency not supported in purse engine</td>
+</tr>
+<tr>
+<td>94</td>
+<td>08</td>
+<td>E</td>
+<td>Selected file type does not match command.</td>
+</tr>
+<tr>
+<td>95</td>
+<td>80</td>
+<td></td>
+<td>Bad sequence</td>
+</tr>
+<tr>
+<td>96</td>
+<td>81</td>
+<td></td>
+<td>Slave not found</td>
+</tr>
+<tr>
+<td>97</td>
+<td>00</td>
+<td></td>
+<td>PIN blocked and Unblock Try Counter is 1 or 2</td>
+</tr>
+<tr>
+<td>97</td>
+<td>02</td>
+<td></td>
+<td>Main keys are blocked</td>
+</tr>
+<tr>
+<td>97</td>
+<td>04</td>
+<td></td>
+<td>PIN not succesfully verified, 3 or more PIN tries left</td>
+</tr>
+<tr>
+<td>97</td>
+<td>84</td>
+<td></td>
+<td>Base key</td>
+</tr>
+<tr>
+<td>97</td>
+<td>85</td>
+<td></td>
+<td>Limit exceeded – C-MAC key</td>
+</tr>
+<tr>
+<td>97</td>
+<td>86</td>
+<td></td>
+<td>SM error – Limit exceeded – R-MAC key</td>
+</tr>
+<tr>
+<td>97</td>
+<td>87</td>
+<td></td>
+<td>Limit exceeded – sequence counter</td>
+</tr>
+<tr>
+<td>97</td>
+<td>88</td>
+<td></td>
+<td>Limit exceeded – R-MAC length</td>
+</tr>
+<tr>
+<td>97</td>
+<td>89</td>
+<td></td>
+<td>Service not available</td>
+</tr>
+<tr>
+<td>98</td>
+<td>02</td>
+<td>E</td>
+<td>No PIN defined.</td>
+</tr>
+<tr>
+<td>98</td>
+<td>04</td>
+<td>E</td>
+<td>Access conditions not satisfied, authentication failed.</td>
+</tr>
+<tr>
+<td>98</td>
+<td>35</td>
+<td>E</td>
+<td>ASK RANDOM or GIVE RANDOM not executed.</td>
+</tr>
+<tr>
+<td>98</td>
+<td>40</td>
+<td>E</td>
+<td>PIN verification not successful.</td>
+</tr>
+<tr>
+<td>98</td>
+<td>50</td>
+<td>E</td>
+<td>INCREASE or DECREASE could not be executed because a limit has been reached.</td>
+</tr>
+<tr>
+<td>98</td>
+<td>62</td>
+<td>E</td>
+<td>Authentication Error, application specific (incorrect MAC)</td>
+</tr>
+<tr>
+<td>99</td>
+<td>00</td>
+<td></td>
+<td>1 PIN try left</td>
+</tr>
+<tr>
+<td>99</td>
+<td>04</td>
+<td></td>
+<td>PIN not succesfully verified, 1 PIN try left</td>
+</tr>
+<tr>
+<td>99</td>
+<td>85</td>
+<td></td>
+<td>Wrong status – Cardholder lock</td>
+</tr>
+<tr>
+<td>99</td>
+<td>86</td>
+<td>E</td>
+<td>Missing privilege</td>
+</tr>
+<tr>
+<td>99</td>
+<td>87</td>
+<td></td>
+<td>PIN is not installed</td>
+</tr>
+<tr>
+<td>99</td>
+<td>88</td>
+<td></td>
+<td>Wrong status – R-MAC state</td>
+</tr>
+<tr>
+<td>9A</td>
+<td>00</td>
+<td></td>
+<td>2 PIN try left</td>
+</tr>
+<tr>
+<td>9A</td>
+<td>04</td>
+<td></td>
+<td>PIN not succesfully verified, 2 PIN try left</td>
+</tr>
+<tr>
+<td>9A</td>
+<td>71</td>
+<td></td>
+<td>Wrong parameter value – Double agent AID</td>
+</tr>
+<tr>
+<td>9A</td>
+<td>72</td>
+<td></td>
+<td>Wrong parameter value – Double agent Type</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>05</td>
+<td>E</td>
+<td>Incorrect certificate type</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>07</td>
+<td>E</td>
+<td>Incorrect session data size</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>08</td>
+<td>E</td>
+<td>Incorrect DIR file record size</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>09</td>
+<td>E</td>
+<td>Incorrect FCI record size</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>0A</td>
+<td>E</td>
+<td>Incorrect code size</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>10</td>
+<td>E</td>
+<td>Insufficient memory to load application</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>11</td>
+<td>E</td>
+<td>Invalid AID</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>12</td>
+<td>E</td>
+<td>Duplicate AID</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>13</td>
+<td>E</td>
+<td>Application previously loaded</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>14</td>
+<td>E</td>
+<td>Application history list full</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>15</td>
+<td>E</td>
+<td>Application not open</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>17</td>
+<td>E</td>
+<td>Invalid offset</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>18</td>
+<td>E</td>
+<td>Application already loaded</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>19</td>
+<td>E</td>
+<td>Invalid certificate</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>1A</td>
+<td>E</td>
+<td>Invalid signature</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>1B</td>
+<td>E</td>
+<td>Invalid KTU</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>1D</td>
+<td>E</td>
+<td>MSM controls not set</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>1E</td>
+<td>E</td>
+<td>Application signature does not exist</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>1F</td>
+<td>E</td>
+<td>KTU does not exist</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>20</td>
+<td>E</td>
+<td>Application not loaded</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>21</td>
+<td>E</td>
+<td>Invalid Open command data length</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>30</td>
+<td>E</td>
+<td>Check data parameter is incorrect (invalid start address)</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>31</td>
+<td>E</td>
+<td>Check data parameter is incorrect (invalid length)</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>32</td>
+<td>E</td>
+<td>Check data parameter is incorrect (illegal memory check area)</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>40</td>
+<td>E</td>
+<td>Invalid MSM Controls ciphertext</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>41</td>
+<td>E</td>
+<td>MSM controls already set</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>42</td>
+<td>E</td>
+<td>Set MSM Controls data length less than 2 bytes</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>43</td>
+<td>E</td>
+<td>Invalid MSM Controls data length</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>44</td>
+<td>E</td>
+<td>Excess MSM Controls ciphertext</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>45</td>
+<td>E</td>
+<td>Verification of MSM Controls data failed</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>50</td>
+<td>E</td>
+<td>Invalid MCD Issuer production ID</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>51</td>
+<td>E</td>
+<td>Invalid MCD Issuer ID</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>52</td>
+<td>E</td>
+<td>Invalid set MSM controls data date</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>53</td>
+<td>E</td>
+<td>Invalid MCD number</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>54</td>
+<td>E</td>
+<td>Reserved field error</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>55</td>
+<td>E</td>
+<td>Reserved field error</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>56</td>
+<td>E</td>
+<td>Reserved field error</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>57</td>
+<td>E</td>
+<td>Reserved field error</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>60</td>
+<td>E</td>
+<td>MAC verification failed</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>61</td>
+<td>E</td>
+<td>Maximum number of unblocks reached</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>62</td>
+<td>E</td>
+<td>Card was not blocked</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>63</td>
+<td>E</td>
+<td>Crypto functions not available</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>64</td>
+<td>E</td>
+<td>No application loaded</td>
+</tr>
+<tr>
+<td>9E</td>
+<td>00</td>
+<td></td>
+<td>PIN not installed</td>
+</tr>
+<tr>
+<td>9E</td>
+<td>04</td>
+<td></td>
+<td>PIN not succesfully verified, PIN not installed</td>
+</tr>
+<tr>
+<td>9F</td>
+<td>00</td>
+<td></td>
+<td>PIN blocked and Unblock Try Counter is 3</td>
+</tr>
+<tr>
+<td>9F</td>
+<td>04</td>
+<td></td>
+<td>PIN not succesfully verified, PIN blocked and Unblock Try Counter is 3</td>
+</tr>
+<tr>
+<td>9F</td>
+<td>XX</td>
+<td></td>
+<td>Command successfully executed; ‘xx’ bytes of data are available and can be requested using GET RESPONSE.</td>
+</tr>
+<tr>
+<td>9x</td>
+<td>XX</td>
+<td></td>
+<td>Application related status, (ISO 7816-3)</td>
+</tr>
+</tbody></table>
+
+    </div>
+
+    
+</div>
+    <div class="footer" id="footer">
+    <p><h4>版权所有 © 2020 | 作者: Victor | 主题 By <a class="theme-author" target="_blank" rel="noopener" href="https://github.com/Xunzhuo/hexo-theme-coder" style="font-size:14px; color: #969696">Coder</a></h4>
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_container_site_pv">本站浏览总访问量: <span id="busuanzi_value_site_pv"></span></span>
+        <span class="post-meta-divider">|</span>
+        <span id="busuanzi_container_site_uv">本站访问人数: <span id="busuanzi_value_site_uv"></span></span>
+    
+    <label class="el-switch el-switch-blue el-switch-sm" style="vertical-align: sub;">
+        <input type="checkbox" name="switch" id="update_style">
+        <span class="el-switch-style"></span>
+    </label>
+
+    <!--         <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script> -->
+</p>
+</div>
+
+<input type="hidden" id="web_style" value="light">
+<input type="hidden" id="valine_appid" value="NOsswOncKgc8HOxqo9oxIWlX-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="z1FihjWEbS8uIfUQdmCtK7zz">
+
+<script src="/libs/jquery.min.js"></script>
+
+
+<script src="/libs/highlight/highlight.pack.js"></script>
+
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+
+<script src="/js/js.js"></script>
+
+<style type="text/css">
+.v * {
+color: #698fca;
+}
+.v .vlist .vcard .vhead .vsys {
+color: #3a3e4a;
+}
+.v .vlist .vcard .vh .vmeta .vat {
+color: #638fd5;
+}
+.v .vlist .vcard .vhead .vnick {
+color: #6ba1ff;
+}
+.v a {
+color: #8696b1;
+}
+.v .vlist .vcard .vhead .vnick:hover {
+color: #669bfc;
+}
+</style>
+    <script type="text/javascript" color="173,174,173" opacity='1' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+</body>
+</html>
