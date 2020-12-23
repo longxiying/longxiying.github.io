@@ -6,7 +6,7 @@
   <link href="http://emv.cool/atom.xml" rel="self"/>
   
   <link href="http://emv.cool/"/>
-  <updated>2020-12-23T06:57:54.936Z</updated>
+  <updated>2020-12-23T10:14:18.925Z</updated>
   <id>http://emv.cool/</id>
   
   <author>
@@ -15,6 +15,67 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Quick Chip</title>
+    <link href="http://emv.cool/2020/12/23/Quick-Chip/"/>
+    <id>http://emv.cool/2020/12/23/Quick-Chip/</id>
+    <published>2020-12-23T10:13:19.000Z</published>
+    <updated>2020-12-23T10:14:18.925Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/.cool//1826551598-2400x1300.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/.cool//1826551598-2400x1300.png&quot;&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>EMV TAG 9C 终端交易类型</title>
+    <link href="http://emv.cool/2020/12/23/EMV-TAG-9C-%E7%BB%88%E7%AB%AF%E4%BA%A4%E6%98%93%E7%B1%BB%E5%9E%8B/"/>
+    <id>http://emv.cool/2020/12/23/EMV-TAG-9C-%E7%BB%88%E7%AB%AF%E4%BA%A4%E6%98%93%E7%B1%BB%E5%9E%8B/</id>
+    <published>2020-12-23T10:12:55.000Z</published>
+    <updated>2020-12-23T10:13:01.811Z</updated>
+    
+    <content type="html"><![CDATA[<p>##EMV_TAG_TM_TRANSTYPE:<br>###1. Tag: 9C<br>###2. Length: 1<br>###3. Format: b<br>###4. Kernel: EMV<br>###5. Value: 0x00: Goods/ Service, 0x09: CashBack, 0x01: Cash, 0x20: Refund, 0x30: Balance Inquiry</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;##EMV_TAG_TM_TRANSTYPE:&lt;br&gt;###1. Tag: 9C&lt;br&gt;###2. Length: 1&lt;br&gt;###3. Format: b&lt;br&gt;###4. Kernel: EMV&lt;br&gt;###5. Value: 0x00: Goods/ Service,</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Contactless Magnetic Mode</title>
+    <link href="http://emv.cool/2020/12/23/Contactless-Magnetic-Mode/"/>
+    <id>http://emv.cool/2020/12/23/Contactless-Magnetic-Mode/</id>
+    <published>2020-12-23T10:12:07.000Z</published>
+    <updated>2020-12-23T10:12:36.698Z</updated>
+    
+    <content type="html"><![CDATA[<p>#####AMEX：<br>获取Tag DF8174，如果DF8174不为空，则为AMEX的Magnetic Mode，获取Tag5F30为等效二磁信息。<br>#####Track2 Equivalent Data：<br>| Field  | Name  |<br>| ———— | ———— |<br>|  Account Numer (PAN)|  15 |<br>|  Field Separator (“D”) | 1  |<br>|  Application Expiratin Date (YYMM) |  4 |<br>|  Service Code | 3  |<br>|  Application Effective Date (YYMM) |  4 |<br>|  Card Security Code |  5 |<br>|  Reserved Field |  3 |<br>|  Language Code| 2  |<br>|  Padding (‘F’) | 1  |<br>#####JCB：<br>获取Tag 82, 获取Tag 82的第二个字节第8位是0，则为Magnetic Mode。<br>#####MasterCard<br>获取Tag DF8178，如果为01，则为Magnetic Mode，Tag 9F6B位等效二磁信息，Tag 56位一磁信息。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;#####AMEX：&lt;br&gt;获取Tag DF8174，如果DF8174不为空，则为AMEX的Magnetic Mode，获取Tag5F30为等效二磁信息。&lt;br&gt;#####Track2 Equivalent Data：&lt;br&gt;| Field  | Name  |&lt;br&gt;| </summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Complete list of application identifiers (AID)</title>
