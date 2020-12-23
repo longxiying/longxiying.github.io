@@ -6,7 +6,7 @@
   <link href="http://emv.cool/atom.xml" rel="self"/>
   
   <link href="http://emv.cool/"/>
-  <updated>2020-12-23T10:26:44.204Z</updated>
+  <updated>2020-12-23T10:53:57.109Z</updated>
   <id>http://emv.cool/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Terminal Capabilities (9F33)</title>
+    <link href="http://emv.cool/2020/12/23/Terminal-Capabilities-9F33/"/>
+    <id>http://emv.cool/2020/12/23/Terminal-Capabilities-9F33/</id>
+    <published>2020-12-23T10:45:29.000Z</published>
+    <updated>2020-12-23T10:53:57.109Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Tag-9F33"><a href="#Tag-9F33" class="headerlink" title="Tag: 9F33"></a>Tag: 9F33</h3><h3 id="Length-3"><a href="#Length-3" class="headerlink" title="Length: 3"></a>Length: 3</h3><h3 id="Value"><a href="#Value" class="headerlink" title="Value:"></a>Value:</h3><table><thead><tr><th>b8</th><th>b7</th><th>b6</th><th>b5</th><th>b4</th><th>b3</th><th>b2</th><th>b1</th><th>Meaning</th></tr></thead><tbody><tr><td>Byte 1 Card Data Input Capability</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>X</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1= Manual key entry supported</td></tr><tr><td></td><td>X</td><td></td><td></td><td></td><td></td><td></td><td></td><td>1=Magnetic stripe supported</td></tr><tr><td></td><td></td><td>X</td><td></td><td></td><td></td><td></td><td></td><td>1=IC with contacts supported</td></tr><tr><td></td><td></td><td></td><td>0</td><td></td><td></td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td>0</td><td></td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td>0</td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>RFU</td></tr><tr><td>Byte 2 CVM Capability</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>X</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1 = Plaintext PIN for ICC verification</td></tr><tr><td></td><td>X</td><td></td><td></td><td></td><td></td><td></td><td></td><td>1 = Enciphered PIN for online verification</td></tr><tr><td></td><td></td><td>X</td><td></td><td></td><td></td><td></td><td></td><td>1 = Signature (paper)</td></tr><tr><td></td><td></td><td></td><td>X</td><td></td><td></td><td></td><td></td><td>1 = Enciphered PIN for offline verification</td></tr><tr><td></td><td></td><td></td><td></td><td>X</td><td></td><td></td><td></td><td>1= No CVM Required</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td>0</td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>RFU</td></tr><tr><td>Byte 3 Security Capability</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>X</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1 = SDA</td></tr><tr><td></td><td>X</td><td></td><td></td><td></td><td></td><td></td><td></td><td>1 = DDA</td></tr><tr><td></td><td></td><td>X</td><td></td><td></td><td></td><td></td><td></td><td>1= Card capture</td></tr><tr><td></td><td></td><td></td><td>0</td><td></td><td></td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td>X</td><td></td><td></td><td></td><td>1= CDA</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td>0</td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>RFU</td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;Tag-9F33&quot;&gt;&lt;a href=&quot;#Tag-9F33&quot; class=&quot;headerlink&quot; title=&quot;Tag: 9F33&quot;&gt;&lt;/a&gt;Tag: 9F33&lt;/h3&gt;&lt;h3 id=&quot;Length-3&quot;&gt;&lt;a href=&quot;#Length-3&quot; class=&quot;he</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Android GridView控件</title>
