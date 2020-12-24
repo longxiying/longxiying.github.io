@@ -63,8 +63,9 @@ a:hover {
 }
 
 .container {
-  width: 100%;
+  width: 70%;
   margin: 0 auto;
+  background:url(https://cn.bing.com/sa/simg/hpb/LaDigue_EN-CA1115245085_1366x768.jpg)
 }
 
 .index .post-list,
