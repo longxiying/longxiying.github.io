@@ -6,7 +6,8 @@
 html, body {
   font-size: 10px;
   letter-spacing: 0.01rem;
-  font-family: Consolas, "Liberation Mono", Menlo, Monaco, "Source Han Sans CN", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif
+  font-family: Consolas, "Liberation Mono", Menlo, Monaco, "Source Han Sans CN", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: url(https://cn.bing.com/sa/simg/hpb/LaDigue_EN-CA1115245085_1366x768.jpg)
 }
 
 body.hidden {
@@ -63,9 +64,8 @@ a:hover {
 }
 
 .container {
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
-  background:url(https://cn.bing.com/sa/simg/hpb/LaDigue_EN-CA1115245085_1366x768.jpg)
 }
 
 .index .post-list,
