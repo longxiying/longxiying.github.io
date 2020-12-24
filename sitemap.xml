@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://emv.cool/2020/12/24/Terminal-Transaction-Qualifiers-TTQ-9F66/</loc>
+    
+    <lastmod>2020-12-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/24/Terminal-Transaction-Qualifiers-TTQ-9F66-qPBOC/</loc>
+    
+    <lastmod>2020-12-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/24/Enhanced-Contactless-Reader-Capabilities-9F6E-AMEX/</loc>
+    
+    <lastmod>2020-12-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/24/Contactless-Reader-Capabilities-9F6D-AEMX/</loc>
+    
+    <lastmod>2020-12-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/23/Terminal-Capabilities-9F33/</loc>
+    
+    <lastmod>2020-12-24</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://emv.cool/2020/12/23/Android-GridView%E6%8E%A7%E4%BB%B6/</loc>
     
     <lastmod>2020-12-24</lastmod>
@@ -86,20 +121,6 @@
   </url>
   
   <url>
-    <loc>http://emv.cool/2020/12/24/Enhanced-Contactless-Reader-Capabilities-9F6E-AMEX/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://emv.cool/2020/12/24/Contactless-Reader-Capabilities-9F6D-AEMX/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://emv.cool/2020/12/23/EMV-TAG-9C-%E7%BB%88%E7%AB%AF%E4%BA%A4%E6%98%93%E7%B1%BB%E5%9E%8B/</loc>
     
     <lastmod>2020-12-24</lastmod>
@@ -156,27 +177,6 @@
   </url>
   
   <url>
-    <loc>http://emv.cool/2020/12/24/Terminal-Transaction-Qualifiers-TTQ-9F66-qPBOC/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://emv.cool/2020/12/24/Terminal-Transaction-Qualifiers-TTQ-9F66/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://emv.cool/2020/12/23/Terminal-Capabilities-9F33/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://emv.cool/categories/index.html</loc>
     
     <lastmod>2020-12-23</lastmod>
@@ -191,6 +191,13 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>http://emv.cool/tags/AMEX/</loc>
+    <lastmod>2020-12-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
   <url>
     <loc>http://emv.cool/tags/qPBOC/</loc>
@@ -214,14 +221,14 @@
   </url>
   
   <url>
-    <loc>http://emv.cool/tags/Android-GridView/</loc>
+    <loc>http://emv.cool/tags/Android/</loc>
     <lastmod>2020-12-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://emv.cool/tags/AMEX-EMV/</loc>
+    <loc>http://emv.cool/tags/GridView/</loc>
     <lastmod>2020-12-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

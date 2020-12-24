@@ -14,7 +14,9 @@
       
         <tags>
             
-            <tag> AMEX,EMV </tag>
+            <tag> AMEX </tag>
+            
+            <tag> EMV </tag>
             
         </tags>
       
@@ -33,7 +35,9 @@
       
         <tags>
             
-            <tag> AMEX,EMV </tag>
+            <tag> AMEX </tag>
+            
+            <tag> EMV </tag>
             
         </tags>
       
@@ -54,6 +58,8 @@
             
             <tag> qPBOC </tag>
             
+            <tag> EMV </tag>
+            
         </tags>
       
     </entry>
@@ -72,6 +78,8 @@
         <tags>
             
             <tag> PayWave </tag>
+            
+            <tag> EMV </tag>
             
         </tags>
       
@@ -107,6 +115,12 @@
       
       
       
+        <tags>
+            
+            <tag> EMV </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -122,7 +136,9 @@
       
         <tags>
             
-            <tag> Android,GridView </tag>
+            <tag> Android </tag>
+            
+            <tag> GridView </tag>
             
         </tags>
       
