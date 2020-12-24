@@ -155,11 +155,8 @@
 <td>ISO 9564-1: 2017 Format 4. Format 4 uses AES encryption. PIN Block is padded with fill digit ‘A’ and also with random random values from 0 to 15, and the first nibble (which identifies the block format) has the value 4.</td>
 </tr>
 </tbody></table>
-<p>##ISO-0 (FORMAT 0)</p>
-<p>Is the first and most common PIN block encoding format based on ISO 9564 – an international standard for personal identification number (PIN) management and security in retail banking.</p>
-<p>####CALCULATION STEPS:</p>
-<p>#####1. Prepare a PIN – L is length of the PIN, P is PIN digit, F is padding value “F”</p>
-<table>
+<h2 id="ISO-0-FORMAT-0"><a href="#ISO-0-FORMAT-0" class="headerlink" title="ISO-0 (FORMAT 0)"></a>ISO-0 (FORMAT 0)</h2><p>Is the first and most common PIN block encoding format based on ISO 9564 – an international standard for personal identification number (PIN) management and security in retail banking.</p>
+<h4 id="CALCULATION-STEPS"><a href="#CALCULATION-STEPS" class="headerlink" title="CALCULATION STEPS:"></a>CALCULATION STEPS:</h4><h5 id="1-Prepare-a-PIN-–-L-is-length-of-the-PIN-P-is-PIN-digit-F-is-padding-value-“F”"><a href="#1-Prepare-a-PIN-–-L-is-length-of-the-PIN-P-is-PIN-digit-F-is-padding-value-“F”" class="headerlink" title="1. Prepare a PIN – L is length of the PIN, P is PIN digit, F is padding value “F”"></a>1. Prepare a PIN – L is length of the PIN, P is PIN digit, F is padding value “F”</h5><table>
 <thead>
 <tr>
 <th><strong>1</strong></th>
@@ -199,8 +196,7 @@
 <td>P/F</td>
 </tr>
 </tbody></table>
-<p>#####2. Prepare PAN – take 12 rightmost digits of the primary account number (excluding the check digit)</p>
-<table>
+<h5 id="2-Prepare-PAN-–-take-12-rightmost-digits-of-the-primary-account-number-excluding-the-check-digit"><a href="#2-Prepare-PAN-–-take-12-rightmost-digits-of-the-primary-account-number-excluding-the-check-digit" class="headerlink" title="2. Prepare PAN – take 12 rightmost digits of the primary account number (excluding the check digit)"></a>2. Prepare PAN – take 12 rightmost digits of the primary account number (excluding the check digit)</h5><table>
 <thead>
 <tr>
 <th><strong>1</strong></th>
@@ -240,8 +236,7 @@
 <td>PAN</td>
 </tr>
 </tbody></table>
-<p>#####3. XOR both values</p>
-<table>
+<h5 id="3-XOR-both-values"><a href="#3-XOR-both-values" class="headerlink" title="3. XOR both values"></a>3. XOR both values</h5><table>
 <thead>
 <tr>
 <th><strong>1</strong></th>
@@ -317,14 +312,10 @@
 <td>PAN</td>
 </tr>
 </tbody></table>
-<p>####EXAMPLE:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line"></span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: Format 0 (ISO-0)  </span><br><span class="line"> </span><br><span class="line">Clear PIN block:0412AC89ABCDEF67</span><br></pre></td></tr></table></figure>
+<h4 id="EXAMPLE"><a href="#EXAMPLE" class="headerlink" title="EXAMPLE:"></a>EXAMPLE:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line"></span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: Format 0 (ISO-0)  </span><br><span class="line"> </span><br><span class="line">Clear PIN block:0412AC89ABCDEF67</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block decode operation finished  </span><br><span class="line"></span><br><span class="line">PIN block: 0412AC89ABCDEF67  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: Format 0 (ISO-0)  </span><br><span class="line"></span><br><span class="line">Decoded PIN: 1234</span><br></pre></td></tr></table></figure>
-<p>##ISO-1 (FORMAT 1)</p>
-<p>The ISO-1 PIN block format is equivalent to an ECI-4 PIN block format. The ISO-1 PIN block format supports a PIN from 4 to 12 digits in length. A PIN that is longer than 12 digits is truncated on the right.</p>
-<p>####CALCULATION STEPS:</p>
-<p>#####1. Prepare a PIN – L is length of the PIN, P is PIN digit, R is random value</p>
-<table>
+<h2 id="ISO-1-FORMAT-1"><a href="#ISO-1-FORMAT-1" class="headerlink" title="ISO-1 (FORMAT 1)"></a>ISO-1 (FORMAT 1)</h2><p>The ISO-1 PIN block format is equivalent to an ECI-4 PIN block format. The ISO-1 PIN block format supports a PIN from 4 to 12 digits in length. A PIN that is longer than 12 digits is truncated on the right.</p>
+<h4 id="CALCULATION-STEPS-1"><a href="#CALCULATION-STEPS-1" class="headerlink" title="CALCULATION STEPS:"></a>CALCULATION STEPS:</h4><h5 id="1-Prepare-a-PIN-–-L-is-length-of-the-PIN-P-is-PIN-digit-R-is-random-value"><a href="#1-Prepare-a-PIN-–-L-is-length-of-the-PIN-P-is-PIN-digit-R-is-random-value" class="headerlink" title="1. Prepare a PIN – L is length of the PIN, P is PIN digit, R is random value"></a>1. Prepare a PIN – L is length of the PIN, P is PIN digit, R is random value</h5><table>
 <thead>
 <tr>
 <th><strong>1</strong></th>
@@ -371,14 +362,10 @@
 <li><p>  R – is a random digit, which is a value from X’0′ to X’F’. Typically, this should be used for predetermined transaction unique data such as a sequence number.</p>
 </li>
 </ul>
-<p>####EXAMPLE:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">   </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: Format 1 (ISO-1)  </span><br><span class="line"></span><br><span class="line">Clear PIN block:141234CE8C767872</span><br></pre></td></tr></table></figure>
+<h4 id="EXAMPLE-1"><a href="#EXAMPLE-1" class="headerlink" title="EXAMPLE:"></a>EXAMPLE:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">   </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: Format 1 (ISO-1)  </span><br><span class="line"></span><br><span class="line">Clear PIN block:141234CE8C767872</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block decode operation finished  </span><br><span class="line">  </span><br><span class="line">PIN block: 141234CE8C767872  </span><br><span class="line">PAN: N&#x2F;A  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: Format 1 (ISO-1)  </span><br><span class="line"> </span><br><span class="line">Decoded PIN: 1234</span><br></pre></td></tr></table></figure>
-<p>##ISO-2 (FORMAT 2)</p>
-<p>Format 2 is for local use with off-line systems only (e.g. smart cards).</p>
-<p>####CALCULATION STEPS:</p>
-<p>#####1. Prepare a PIN – L is length of the PIN, P is PIN digit, F is padding value ‘F’</p>
-<table>
+<h2 id="ISO-2-FORMAT-2"><a href="#ISO-2-FORMAT-2" class="headerlink" title="ISO-2 (FORMAT 2)"></a>ISO-2 (FORMAT 2)</h2><p>Format 2 is for local use with off-line systems only (e.g. smart cards).</p>
+<h4 id="CALCULATION-STEPS-2"><a href="#CALCULATION-STEPS-2" class="headerlink" title="CALCULATION STEPS:"></a>CALCULATION STEPS:</h4><h5 id="1-Prepare-a-PIN-–-L-is-length-of-the-PIN-P-is-PIN-digit-F-is-padding-value-‘F’"><a href="#1-Prepare-a-PIN-–-L-is-length-of-the-PIN-P-is-PIN-digit-F-is-padding-value-‘F’" class="headerlink" title="1. Prepare a PIN – L is length of the PIN, P is PIN digit, F is padding value ‘F’"></a>1. Prepare a PIN – L is length of the PIN, P is PIN digit, F is padding value ‘F’</h5><table>
 <thead>
 <tr>
 <th><strong>1</strong></th>
@@ -425,13 +412,10 @@
 <li><p>  F – is a padding character, which is a value of X’F’.</p>
 </li>
 </ul>
-<p>####EXAMPLE:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: Format 2 (ISO-2)  </span><br><span class="line"></span><br><span class="line">Clear PIN block:241234FFFFFFFFFF</span><br></pre></td></tr></table></figure>
+<h4 id="EXAMPLE-2"><a href="#EXAMPLE-2" class="headerlink" title="EXAMPLE:"></a>EXAMPLE:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: Format 2 (ISO-2)  </span><br><span class="line"></span><br><span class="line">Clear PIN block:241234FFFFFFFFFF</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block decode operation finished  </span><br><span class="line">  </span><br><span class="line">PIN block: 241234FFFFFFFFFF  </span><br><span class="line">PAN: N&#x2F;A  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: Format 2 (ISO-2)  </span><br><span class="line"></span><br><span class="line">Decoded PIN: 1234</span><br></pre></td></tr></table></figure>
-<p>##ISO-3 (FORMAT 3)</p>
-<p>Format 3 is the same as format 0, except that the “fill” digits are random values from 10 to 15, and the first nibble (which identifies the block format) has the value 3.</p>
-<p>####CALCULATION STEPS:</p>
-<ol>
+<h2 id="ISO-3-FORMAT-3"><a href="#ISO-3-FORMAT-3" class="headerlink" title="ISO-3 (FORMAT 3)"></a>ISO-3 (FORMAT 3)</h2><p>Format 3 is the same as format 0, except that the “fill” digits are random values from 10 to 15, and the first nibble (which identifies the block format) has the value 3.</p>
+<h4 id="CALCULATION-STEPS-3"><a href="#CALCULATION-STEPS-3" class="headerlink" title="CALCULATION STEPS:"></a>CALCULATION STEPS:</h4><ol>
 <li> Prepare a PIN – L is length of the PIN, P is PIN digit, R is random value from X’0′ to X’F’</li>
 </ol>
 <table>
@@ -596,14 +580,10 @@
 <td>PAN</td>
 </tr>
 </tbody></table>
-<p>####EXAMPLE:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: Format 3 (ISO-3)  </span><br><span class="line"></span><br><span class="line">Clear PIN block:3412ACC9B98CDF43</span><br></pre></td></tr></table></figure>
+<h4 id="EXAMPLE-3"><a href="#EXAMPLE-3" class="headerlink" title="EXAMPLE:"></a>EXAMPLE:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: Format 3 (ISO-3)  </span><br><span class="line"></span><br><span class="line">Clear PIN block:3412ACC9B98CDF43</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block decode operation finished  </span><br><span class="line">  </span><br><span class="line">PIN block: 3412ACC9B98CDF43  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: Format 3 (ISO-3)  </span><br><span class="line"></span><br><span class="line">Decoded PIN: 1234</span><br></pre></td></tr></table></figure>
-<p>##ISO-4 (FORMAT 4)</p>
-<p>ISO 9564-1: 2017 Format 4. Format 4 uses AES-128 ECB encryption. PIN Block is padded with fill digit ‘A’ and also with random random values from 0 to 15, and the first nibble (which identifies the block format) has the value 4.</p>
-<p>####CALCULATION STEPS:</p>
-<p>#####1.  Prepare a PIN – L is length of the PIN, P is PIN digit, F is fill digit ‘A’. R is random value from X’0′ to X’F’</p>
-<table>
+<h2 id="ISO-4-FORMAT-4"><a href="#ISO-4-FORMAT-4" class="headerlink" title="ISO-4 (FORMAT 4)"></a>ISO-4 (FORMAT 4)</h2><p>ISO 9564-1: 2017 Format 4. Format 4 uses AES-128 ECB encryption. PIN Block is padded with fill digit ‘A’ and also with random random values from 0 to 15, and the first nibble (which identifies the block format) has the value 4.</p>
+<h4 id="CALCULATION-STEPS-4"><a href="#CALCULATION-STEPS-4" class="headerlink" title="CALCULATION STEPS:"></a>CALCULATION STEPS:</h4><h5 id="1-Prepare-a-PIN-–-L-is-length-of-the-PIN-P-is-PIN-digit-F-is-fill-digit-‘A’-R-is-random-value-from-X’0′-to-X’F’"><a href="#1-Prepare-a-PIN-–-L-is-length-of-the-PIN-P-is-PIN-digit-F-is-fill-digit-‘A’-R-is-random-value-from-X’0′-to-X’F’" class="headerlink" title="1.  Prepare a PIN – L is length of the PIN, P is PIN digit, F is fill digit ‘A’. R is random value from X’0′ to X’F’"></a>1.  Prepare a PIN – L is length of the PIN, P is PIN digit, F is fill digit ‘A’. R is random value from X’0′ to X’F’</h5><table>
 <thead>
 <tr>
 <th><strong>1</strong></th>
@@ -675,8 +655,7 @@
 <td>R</td>
 </tr>
 </tbody></table>
-<p>#####2.  Prepare PAN – take the primary account number – M is PAN length indicating PAN length of 12 plus the value of the field ‘0’-‘7’ (ranging then from 12 to 19). If the PAN is less than 12 digits, the digits are right justified and padded to the left with zeros and M is set to ‘0’. A is PAN digit, 0 is PAD digit ‘0’</p>
-<table>
+<h5 id="2-Prepare-PAN-–-take-the-primary-account-number-–-M-is-PAN-length-indicating-PAN-length-of-12-plus-the-value-of-the-field-‘0’-‘7’-ranging-then-from-12-to-19-If-the-PAN-is-less-than-12-digits-the-digits-are-right-justified-and-padded-to-the-left-with-zeros-and-M-is-set-to-‘0’-A-is-PAN-digit-0-is-PAD-digit-‘0’"><a href="#2-Prepare-PAN-–-take-the-primary-account-number-–-M-is-PAN-length-indicating-PAN-length-of-12-plus-the-value-of-the-field-‘0’-‘7’-ranging-then-from-12-to-19-If-the-PAN-is-less-than-12-digits-the-digits-are-right-justified-and-padded-to-the-left-with-zeros-and-M-is-set-to-‘0’-A-is-PAN-digit-0-is-PAD-digit-‘0’" class="headerlink" title="2.  Prepare PAN – take the primary account number – M is PAN length indicating PAN length of 12 plus the value of the field ‘0’-‘7’ (ranging then from 12 to 19). If the PAN is less than 12 digits, the digits are right justified and padded to the left with zeros and M is set to ‘0’. A is PAN digit, 0 is PAD digit ‘0’"></a>2.  Prepare PAN – take the primary account number – M is PAN length indicating PAN length of 12 plus the value of the field ‘0’-‘7’ (ranging then from 12 to 19). If the PAN is less than 12 digits, the digits are right justified and padded to the left with zeros and M is set to ‘0’. A is PAN digit, 0 is PAD digit ‘0’</h5><table>
 <thead>
 <tr>
 <th><strong>1</strong></th>
@@ -748,18 +727,11 @@
 <td>0</td>
 </tr>
 </tbody></table>
-<p>#####2.  PIN block is encrypted with AES key</p>
-<p>#####3.  The resulting Intermediate Block A is then XOR’ed with PAN Block</p>
-<p>#####4.  The resulting Intermediate Block B is enciphered with the AES key again so we get the Enciphered PIN Block</p>
-<p>####EXAMPLE:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 432198765432109870  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: Format 4 (ISO-4)  </span><br><span class="line"></span><br><span class="line">Clear PIN block:441234AAAAAAAAAA911B9B36BC7CE94E  </span><br><span class="line">Clear PAN block:64321987654321098700000000000000</span><br></pre></td></tr></table></figure>
+<h5 id="2-PIN-block-is-encrypted-with-AES-key"><a href="#2-PIN-block-is-encrypted-with-AES-key" class="headerlink" title="2.  PIN block is encrypted with AES key"></a>2.  PIN block is encrypted with AES key</h5><h5 id="3-The-resulting-Intermediate-Block-A-is-then-XOR’ed-with-PAN-Block"><a href="#3-The-resulting-Intermediate-Block-A-is-then-XOR’ed-with-PAN-Block" class="headerlink" title="3.  The resulting Intermediate Block A is then XOR’ed with PAN Block"></a>3.  The resulting Intermediate Block A is then XOR’ed with PAN Block</h5><h5 id="4-The-resulting-Intermediate-Block-B-is-enciphered-with-the-AES-key-again-so-we-get-the-Enciphered-PIN-Block"><a href="#4-The-resulting-Intermediate-Block-B-is-enciphered-with-the-AES-key-again-so-we-get-the-Enciphered-PIN-Block" class="headerlink" title="4.  The resulting Intermediate Block B is enciphered with the AES key again so we get the Enciphered PIN Block"></a>4.  The resulting Intermediate Block B is enciphered with the AES key again so we get the Enciphered PIN Block</h5><h4 id="EXAMPLE-4"><a href="#EXAMPLE-4" class="headerlink" title="EXAMPLE:"></a>EXAMPLE:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 432198765432109870  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: Format 4 (ISO-4)  </span><br><span class="line"></span><br><span class="line">Clear PIN block:441234AAAAAAAAAA911B9B36BC7CE94E  </span><br><span class="line">Clear PAN block:64321987654321098700000000000000</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block decode operation finished  </span><br><span class="line">  </span><br><span class="line">PIN block: 441234AAAAAAAAAA911B9B36BC7CE94E  </span><br><span class="line">PAN block: 64321987654321098700000000000000  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: Format 4 (ISO-4)  </span><br><span class="line"></span><br><span class="line">Decoded PIN: 1234  </span><br><span class="line">Decoded PAN: 432198765432109870</span><br></pre></td></tr></table></figure>
-<p>##ANSI X9.8</p>
-<p>Same as ISO-0.</p>
-<p>###OEM-1 / DIEBOLD / DOCUTEL / NCR</p>
-<p>The OEM-1 PIN block format is equivalent to the PIN block formats that Diebold, Docutel, and NCR define. The OEM-1 PIN block format supports a PIN from 4 to 12 digits in length. A PIN that is longer than 12 digits is truncated on the right.</p>
-<p>####CALCULATION STEPS:</p>
-<p>#####1.  Prepare a PIN – P is PIN digit, X is pad value, which is a 4-bit value from<br>    X’0′ to X’F’</p>
+<h2 id="ANSI-X9-8"><a href="#ANSI-X9-8" class="headerlink" title="ANSI X9.8"></a>ANSI X9.8</h2><p>Same as ISO-0.</p>
+<h3 id="OEM-1-DIEBOLD-DOCUTEL-NCR"><a href="#OEM-1-DIEBOLD-DOCUTEL-NCR" class="headerlink" title="OEM-1 / DIEBOLD / DOCUTEL / NCR"></a>OEM-1 / DIEBOLD / DOCUTEL / NCR</h3><p>The OEM-1 PIN block format is equivalent to the PIN block formats that Diebold, Docutel, and NCR define. The OEM-1 PIN block format supports a PIN from 4 to 12 digits in length. A PIN that is longer than 12 digits is truncated on the right.</p>
+<h4 id="CALCULATION-STEPS-5"><a href="#CALCULATION-STEPS-5" class="headerlink" title="CALCULATION STEPS:"></a>CALCULATION STEPS:</h4><h5 id="1-Prepare-a-PIN-–-P-is-PIN-digit-X-is-pad-value-which-is-a-4-bit-value-from"><a href="#1-Prepare-a-PIN-–-P-is-PIN-digit-X-is-pad-value-which-is-a-4-bit-value-from" class="headerlink" title="1.  Prepare a PIN – P is PIN digit, X is pad value, which is a 4-bit value from"></a>1.  Prepare a PIN – P is PIN digit, X is pad value, which is a 4-bit value from</h5><pre><code>X’0′ to X’F’</code></pre>
 <table>
 <thead>
 <tr>
@@ -807,16 +779,11 @@
 <li><p>X – is a pad value has a 4-bit value from X’0′ to X’F’ and must be different<br>  from any PIN digit. The number of pad values for this format is in the range<br>  from 4 to 12, and all the pad values must have the same value.</p>
 </li>
 </ul>
-<p>####EXAMPLE:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line"> </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: 5  </span><br><span class="line">Format: Diebold, Docutel, NCR  </span><br><span class="line">  </span><br><span class="line">Clear PIN block:1234555555555555</span><br></pre></td></tr></table></figure>
+<h4 id="EXAMPLE-5"><a href="#EXAMPLE-5" class="headerlink" title="EXAMPLE:"></a>EXAMPLE:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line"> </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: 5  </span><br><span class="line">Format: Diebold, Docutel, NCR  </span><br><span class="line">  </span><br><span class="line">Clear PIN block:1234555555555555</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block decode operation finished  </span><br><span class="line">  </span><br><span class="line">PIN block: 1234555555555555  </span><br><span class="line">PAN: N&#x2F;A  </span><br><span class="line">PAD: 5  </span><br><span class="line">Format: Diebold, Docutel, NCR  </span><br><span class="line">  </span><br><span class="line">Decoded PIN: 1234</span><br></pre></td></tr></table></figure>
-<p>##ECI-1 </p>
-<p>Same as ISO-0.</p>
-<p>##ECI-2</p>
-<p>The ECI-2 PIN block format supports a 4-digit PIN. A PIN that is longer than 4 digits is truncated on the right.</p>
-<p>####CALCULATION STEPS:</p>
-<p>#####1.  Prepare a PIN – P is PIN digit, R is random value</p>
-<table>
+<h2 id="ECI-1"><a href="#ECI-1" class="headerlink" title="ECI-1"></a>ECI-1</h2><p>Same as ISO-0.</p>
+<h2 id="ECI-2"><a href="#ECI-2" class="headerlink" title="ECI-2"></a>ECI-2</h2><p>The ECI-2 PIN block format supports a 4-digit PIN. A PIN that is longer than 4 digits is truncated on the right.</p>
+<h4 id="CALCULATION-STEPS-6"><a href="#CALCULATION-STEPS-6" class="headerlink" title="CALCULATION STEPS:"></a>CALCULATION STEPS:</h4><h5 id="1-Prepare-a-PIN-–-P-is-PIN-digit-R-is-random-value"><a href="#1-Prepare-a-PIN-–-P-is-PIN-digit-R-is-random-value" class="headerlink" title="1.  Prepare a PIN – P is PIN digit, R is random value"></a>1.  Prepare a PIN – P is PIN digit, R is random value</h5><table>
 <thead>
 <tr>
 <th><strong>1</strong></th>
@@ -863,13 +830,10 @@
 <li><p>R is a random pad value, which is a value from X’0′ to X’F’. This format<br>  contains 12 random pad values that can have different values.</p>
 </li>
 </ul>
-<p>####EXAMPLE:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: ECI-2  </span><br><span class="line"></span><br><span class="line">Clear PIN block:1234095621C2F02F</span><br></pre></td></tr></table></figure>
+<h4 id="EXAMPLE-6"><a href="#EXAMPLE-6" class="headerlink" title="EXAMPLE:"></a>EXAMPLE:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: ECI-2  </span><br><span class="line"></span><br><span class="line">Clear PIN block:1234095621C2F02F</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block decode operation finished  </span><br><span class="line">  </span><br><span class="line">PIN block: 1234095621C2F02F  </span><br><span class="line">PAN: N&#x2F;A  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: ECI-2  </span><br><span class="line"> </span><br><span class="line">Decoded PIN: 1234</span><br></pre></td></tr></table></figure>
-<p>##ECI-3 </p>
-<p>The ECI-3 PIN block format supports a PIN from 4 to 6 digits in length. A PIN that is longer than 6 digits is truncated on the right.</p>
-<p>####CALCULATION STEPS:</p>
-<p>#####1.  Prepare a PIN – L – is PIN length, P is PIN digit, 0 is padding character<br>    for PIN shorter than 6 digits, R is random value</p>
+<h2 id="ECI-3"><a href="#ECI-3" class="headerlink" title="ECI-3"></a>ECI-3</h2><p>The ECI-3 PIN block format supports a PIN from 4 to 6 digits in length. A PIN that is longer than 6 digits is truncated on the right.</p>
+<h4 id="CALCULATION-STEPS-7"><a href="#CALCULATION-STEPS-7" class="headerlink" title="CALCULATION STEPS:"></a>CALCULATION STEPS:</h4><h5 id="1-Prepare-a-PIN-–-L-–-is-PIN-length-P-is-PIN-digit-0-is-padding-character"><a href="#1-Prepare-a-PIN-–-L-–-is-PIN-length-P-is-PIN-digit-0-is-padding-character" class="headerlink" title="1.  Prepare a PIN – L – is PIN length, P is PIN digit, 0 is padding character"></a>1.  Prepare a PIN – L – is PIN length, P is PIN digit, 0 is padding character</h5><pre><code>for PIN shorter than 6 digits, R is random value</code></pre>
 <table>
 <thead>
 <tr>
@@ -921,16 +885,11 @@
 <li><p>R is a random pad value, which is a value from X’0′ to X’F’. This format<br>  contains 9 random pad values that can have different values.</p>
 </li>
 </ul>
-<p>####EXAMPLE:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: ECI-3  </span><br><span class="line">  </span><br><span class="line">Clear PIN block:41234E07180DD697</span><br></pre></td></tr></table></figure>
+<h4 id="EXAMPLE-7"><a href="#EXAMPLE-7" class="headerlink" title="EXAMPLE:"></a>EXAMPLE:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: ECI-3  </span><br><span class="line">  </span><br><span class="line">Clear PIN block:41234E07180DD697</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block decode operation finished  </span><br><span class="line">  </span><br><span class="line">PIN block: 41234E07180DD697  </span><br><span class="line">PAN: N&#x2F;A  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: ECI-3  </span><br><span class="line">  </span><br><span class="line">Decoded PIN: 1234</span><br></pre></td></tr></table></figure>
-<p>##ECI-4 </p>
-<p>Same as ISO-1.</p>
-<p>##IBM 3621</p>
-<p>The 3621 PIN block format supports a PIN from 1 to 12 digits in length. A PIN that is longer than 12 digits is truncated on the right.</p>
-<p>####CALCULATION STEPS:</p>
-<p>#####1.  Prepare a PIN – S1,S2,S3,S4 form a 2-byte sequence number that 3621 (or the originating terminal or node) assigns. P is PIN digit, X is defined padding value</p>
-<table>
+<h2 id="ECI-4"><a href="#ECI-4" class="headerlink" title="ECI-4"></a>ECI-4</h2><p>Same as ISO-1.</p>
+<h2 id="IBM-3621"><a href="#IBM-3621" class="headerlink" title="IBM 3621"></a>IBM 3621</h2><p>The 3621 PIN block format supports a PIN from 1 to 12 digits in length. A PIN that is longer than 12 digits is truncated on the right.</p>
+<h4 id="CALCULATION-STEPS-8"><a href="#CALCULATION-STEPS-8" class="headerlink" title="CALCULATION STEPS:"></a>CALCULATION STEPS:</h4><h5 id="1-Prepare-a-PIN-–-S1-S2-S3-S4-form-a-2-byte-sequence-number-that-3621-or-the-originating-terminal-or-node-assigns-P-is-PIN-digit-X-is-defined-padding-value"><a href="#1-Prepare-a-PIN-–-S1-S2-S3-S4-form-a-2-byte-sequence-number-that-3621-or-the-originating-terminal-or-node-assigns-P-is-PIN-digit-X-is-defined-padding-value" class="headerlink" title="1.  Prepare a PIN – S1,S2,S3,S4 form a 2-byte sequence number that 3621 (or the originating terminal or node) assigns. P is PIN digit, X is defined padding value"></a>1.  Prepare a PIN – S1,S2,S3,S4 form a 2-byte sequence number that 3621 (or the originating terminal or node) assigns. P is PIN digit, X is defined padding value</h5><table>
 <thead>
 <tr>
 <th><strong>1</strong></th>
@@ -979,14 +938,10 @@
 <li><p>X – is A pad value has a 4-bit value from X’0′ to X’F’ and must be different<br>  from any PIN digit. The number of pad values for this format are in the<br>  range from 0 to 11, and all the pad values must have the same value.</p>
 </li>
 </ul>
-<p>####EXAMPLE:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: 5  </span><br><span class="line">Format: IBM 3621  </span><br><span class="line">  </span><br><span class="line">Clear PIN block:0000123455555555</span><br></pre></td></tr></table></figure>
+<h4 id="EXAMPLE-8"><a href="#EXAMPLE-8" class="headerlink" title="EXAMPLE:"></a>EXAMPLE:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: 5  </span><br><span class="line">Format: IBM 3621  </span><br><span class="line">  </span><br><span class="line">Clear PIN block:0000123455555555</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block decode operation finished  </span><br><span class="line">  </span><br><span class="line">PIN block: 0000123455555555  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: IBM 3621  </span><br><span class="line">  </span><br><span class="line">Decoded PIN: 1234</span><br></pre></td></tr></table></figure>
-<p>##IBM 3624</p>
-<p>The 3624 PIN block format supports a PIN from 1 to 16 digits in length. A PIN that is longer than 16 digits is truncated on the right.</p>
-<p>####CALCULATION STEPS:</p>
-<p>#####1.  Prepare a PIN – P is PIN digit, X is defined padding value</p>
-<table>
+<h2 id="IBM-3624"><a href="#IBM-3624" class="headerlink" title="IBM 3624"></a>IBM 3624</h2><p>The 3624 PIN block format supports a PIN from 1 to 16 digits in length. A PIN that is longer than 16 digits is truncated on the right.</p>
+<h4 id="CALCULATION-STEPS-9"><a href="#CALCULATION-STEPS-9" class="headerlink" title="CALCULATION STEPS:"></a>CALCULATION STEPS:</h4><h5 id="1-Prepare-a-PIN-–-P-is-PIN-digit-X-is-defined-padding-value"><a href="#1-Prepare-a-PIN-–-P-is-PIN-digit-X-is-defined-padding-value" class="headerlink" title="1.  Prepare a PIN – P is PIN digit, X is defined padding value"></a>1.  Prepare a PIN – P is PIN digit, X is defined padding value</h5><table>
 <thead>
 <tr>
 <th><strong>1</strong></th>
@@ -1033,14 +988,10 @@
 <li><p>X – is A pad value has a 4-bit value from X’0′ to X’F’ and must be different<br>  from any PIN digit. The number of pad values for this format are in the<br>  range from 0 to 15, and all the pad values must have the same value.</p>
 </li>
 </ul>
-<p>####EXAMPLE:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: 5  </span><br><span class="line">Format: IBM 3624  </span><br><span class="line">  </span><br><span class="line">Clear PIN block:1234555555555555</span><br></pre></td></tr></table></figure>
+<h4 id="EXAMPLE-9"><a href="#EXAMPLE-9" class="headerlink" title="EXAMPLE:"></a>EXAMPLE:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: 5  </span><br><span class="line">Format: IBM 3624  </span><br><span class="line">  </span><br><span class="line">Clear PIN block:1234555555555555</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block decode operation finished  </span><br><span class="line">  </span><br><span class="line">PIN block: 1234555555555555  </span><br><span class="line">PAN: N&#x2F;A  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: IBM 3624  </span><br><span class="line">  </span><br><span class="line">Decoded PIN: 1234</span><br></pre></td></tr></table></figure>
-<p>##IBM 4704-EPP (ENCRYPTING PIN PAD)</p>
-<p>The 4704 encrypting PIN Pad PIN block format supports a PIN from 1 to 13 digits in length. A PIN that is longer than 13 digits is truncated on the right.</p>
-<p>####CALCULATION STEPS:</p>
-<p>#####1.  Prepare a PIN – L – is a PIN length, P is PIN digit, F is padding value ‘F’, S1 S2 is a 1-byte sequence number</p>
-<table>
+<h2 id="IBM-4704-EPP-ENCRYPTING-PIN-PAD"><a href="#IBM-4704-EPP-ENCRYPTING-PIN-PAD" class="headerlink" title="IBM 4704-EPP (ENCRYPTING PIN PAD)"></a>IBM 4704-EPP (ENCRYPTING PIN PAD)</h2><p>The 4704 encrypting PIN Pad PIN block format supports a PIN from 1 to 13 digits in length. A PIN that is longer than 13 digits is truncated on the right.</p>
+<h4 id="CALCULATION-STEPS-10"><a href="#CALCULATION-STEPS-10" class="headerlink" title="CALCULATION STEPS:"></a>CALCULATION STEPS:</h4><h5 id="1-Prepare-a-PIN-–-L-–-is-a-PIN-length-P-is-PIN-digit-F-is-padding-value-‘F’-S1-S2-is-a-1-byte-sequence-number"><a href="#1-Prepare-a-PIN-–-L-–-is-a-PIN-length-P-is-PIN-digit-F-is-padding-value-‘F’-S1-S2-is-a-1-byte-sequence-number" class="headerlink" title="1.  Prepare a PIN – L – is a PIN length, P is PIN digit, F is padding value ‘F’, S1 S2 is a 1-byte sequence number"></a>1.  Prepare a PIN – L – is a PIN length, P is PIN digit, F is padding value ‘F’, S1 S2 is a 1-byte sequence number</h5><table>
 <thead>
 <tr>
 <th><strong>1</strong></th>
@@ -1091,17 +1042,12 @@
 <li><p>  S1 S2 – is a 1-byte sequence number from X’00’ to X’FF’.</p>
 </li>
 </ul>
-<p>####EXAMPLE:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: IBM 4704 EPP  </span><br><span class="line">  </span><br><span class="line">Clear PIN block:41234FFFFFFFFF00</span><br></pre></td></tr></table></figure>
+<h4 id="EXAMPLE-10"><a href="#EXAMPLE-10" class="headerlink" title="EXAMPLE:"></a>EXAMPLE:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: IBM 4704 EPP  </span><br><span class="line">  </span><br><span class="line">Clear PIN block:41234FFFFFFFFF00</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block decode operation finished  </span><br><span class="line">  </span><br><span class="line">PIN block: 41234FFFFFFFFF00  </span><br><span class="line">PAN: N&#x2F;A  </span><br><span class="line">PAD: 5  </span><br><span class="line">Format: IBM 4704 EPP  </span><br><span class="line">  </span><br><span class="line">Decoded PIN: 1234</span><br></pre></td></tr></table></figure>
-<p>##IBM 5906 </p>
-<p>Same as IBM 3621.</p>
-<p>##VISA-1 </p>
-<p>Same as ISO-0.</p>
-<p>##VISA-2 </p>
-<p>The VISA-2 PIN block format supports a PIN from 4 to 6 digits in length. A PIN that is longer than 6 digits is truncated on the right.</p>
-<p>####CALCULATION STEPS:</p>
-<p>#####1.  Prepare a PIN – L – is PIN length, P is PIN digit, 0 is padding character<br>    for PIN shorter than 6 digits, D is decimal value</p>
+<h2 id="IBM-5906"><a href="#IBM-5906" class="headerlink" title="IBM 5906"></a>IBM 5906</h2><p>Same as IBM 3621.</p>
+<h2 id="VISA-1"><a href="#VISA-1" class="headerlink" title="VISA-1"></a>VISA-1</h2><p>Same as ISO-0.</p>
+<h2 id="VISA-2"><a href="#VISA-2" class="headerlink" title="VISA-2"></a>VISA-2</h2><p>The VISA-2 PIN block format supports a PIN from 4 to 6 digits in length. A PIN that is longer than 6 digits is truncated on the right.</p>
+<h4 id="CALCULATION-STEPS-11"><a href="#CALCULATION-STEPS-11" class="headerlink" title="CALCULATION STEPS:"></a>CALCULATION STEPS:</h4><h5 id="1-Prepare-a-PIN-–-L-–-is-PIN-length-P-is-PIN-digit-0-is-padding-character-1"><a href="#1-Prepare-a-PIN-–-L-–-is-PIN-length-P-is-PIN-digit-0-is-padding-character-1" class="headerlink" title="1.  Prepare a PIN – L – is PIN length, P is PIN digit, 0 is padding character"></a>1.  Prepare a PIN – L – is PIN length, P is PIN digit, 0 is padding character</h5><pre><code>for PIN shorter than 6 digits, D is decimal value</code></pre>
 <table>
 <thead>
 <tr>
@@ -1153,14 +1099,10 @@
 <li><p>D is a decimal pad value, which is a 4-bit value from X’0′ to X’9′. All nine<br>  pad values must have the same value.</p>
 </li>
 </ul>
-<p>####EXAMPLE:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: 5  </span><br><span class="line">Format: VISA-2  </span><br><span class="line">  </span><br><span class="line">Clear PIN block:4123400555555555</span><br></pre></td></tr></table></figure>
+<h4 id="EXAMPLE-11"><a href="#EXAMPLE-11" class="headerlink" title="EXAMPLE:"></a>EXAMPLE:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: 5  </span><br><span class="line">Format: VISA-2  </span><br><span class="line">  </span><br><span class="line">Clear PIN block:4123400555555555</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block decode operation finished  </span><br><span class="line">  </span><br><span class="line">PIN block: 4123400555555555  </span><br><span class="line">PAN: N&#x2F;A  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: VISA-2  </span><br><span class="line">  </span><br><span class="line">Decoded PIN: 1234</span><br></pre></td></tr></table></figure>
-<p>##VISA-3 </p>
-<p>The VISA-3 PIN block format supports a PIN from 4 to 12 digits in length. A PIN that is longer than 12 digits is truncated on the right.</p>
-<p>####CALCULATION STEPS:</p>
-<p>#####1.  Prepare a PIN – P is PIN digit, F is PIN delimiter, X is a pad value</p>
-<table>
+<h2 id="VISA-3"><a href="#VISA-3" class="headerlink" title="VISA-3"></a>VISA-3</h2><p>The VISA-3 PIN block format supports a PIN from 4 to 12 digits in length. A PIN that is longer than 12 digits is truncated on the right.</p>
+<h4 id="CALCULATION-STEPS-12"><a href="#CALCULATION-STEPS-12" class="headerlink" title="CALCULATION STEPS:"></a>CALCULATION STEPS:</h4><h5 id="1-Prepare-a-PIN-–-P-is-PIN-digit-F-is-PIN-delimiter-X-is-a-pad-value"><a href="#1-Prepare-a-PIN-–-P-is-PIN-digit-F-is-PIN-delimiter-X-is-a-pad-value" class="headerlink" title="1.  Prepare a PIN – P is PIN digit, F is PIN delimiter, X is a pad value"></a>1.  Prepare a PIN – P is PIN digit, F is PIN delimiter, X is a pad value</h5><table>
 <thead>
 <tr>
 <th><strong>1</strong></th>
@@ -1209,14 +1151,10 @@
 <li><p>X is a pad value, which is a 4-bit value from X’0′ to X’F’. All the pad<br>  values must have the same value.</p>
 </li>
 </ul>
-<p>####EXAMPLE:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: 5  </span><br><span class="line">Format: VISA-3  </span><br><span class="line">  </span><br><span class="line">Clear PIN block:1234F55555555555</span><br></pre></td></tr></table></figure>
+<h4 id="EXAMPLE-12"><a href="#EXAMPLE-12" class="headerlink" title="EXAMPLE:"></a>EXAMPLE:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: 5  </span><br><span class="line">Format: VISA-3  </span><br><span class="line">  </span><br><span class="line">Clear PIN block:1234F55555555555</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block decode operation finished  </span><br><span class="line">  </span><br><span class="line">PIN block: 1234F55555555555  </span><br><span class="line">PAN: N&#x2F;A  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: VISA-3  </span><br><span class="line">  </span><br><span class="line">Decoded PIN: 1234</span><br></pre></td></tr></table></figure>
-<p>##VISA-4 </p>
-<p>The VISA-4 PIN block format supports a PIN from 4 to 12 digits in length. A PIN that is longer than 12 digits is truncated on the right.</p>
-<p>####CALCULATION STEPS:</p>
-<p>#####1.  Prepare a PIN – 0 – is the value X’0′, L is length of the PIN, P is PIN digit, F – is the value X’F’ for the pad value, PAN is twelve 4-bit digits representing the leftmost 12 digits of the primary account number (excluding the check digit).</p>
-<table>
+<h2 id="VISA-4"><a href="#VISA-4" class="headerlink" title="VISA-4"></a>VISA-4</h2><p>The VISA-4 PIN block format supports a PIN from 4 to 12 digits in length. A PIN that is longer than 12 digits is truncated on the right.</p>
+<h4 id="CALCULATION-STEPS-13"><a href="#CALCULATION-STEPS-13" class="headerlink" title="CALCULATION STEPS:"></a>CALCULATION STEPS:</h4><h5 id="1-Prepare-a-PIN-–-0-–-is-the-value-X’0′-L-is-length-of-the-PIN-P-is-PIN-digit-F-–-is-the-value-X’F’-for-the-pad-value-PAN-is-twelve-4-bit-digits-representing-the-leftmost-12-digits-of-the-primary-account-number-excluding-the-check-digit"><a href="#1-Prepare-a-PIN-–-0-–-is-the-value-X’0′-L-is-length-of-the-PIN-P-is-PIN-digit-F-–-is-the-value-X’F’-for-the-pad-value-PAN-is-twelve-4-bit-digits-representing-the-leftmost-12-digits-of-the-primary-account-number-excluding-the-check-digit" class="headerlink" title="1.  Prepare a PIN – 0 – is the value X’0′, L is length of the PIN, P is PIN digit, F – is the value X’F’ for the pad value, PAN is twelve 4-bit digits representing the leftmost 12 digits of the primary account number (excluding the check digit)."></a>1.  Prepare a PIN – 0 – is the value X’0′, L is length of the PIN, P is PIN digit, F – is the value X’F’ for the pad value, PAN is twelve 4-bit digits representing the leftmost 12 digits of the primary account number (excluding the check digit).</h5><table>
 <thead>
 <tr>
 <th><strong>1</strong></th>
@@ -1256,8 +1194,7 @@
 <td>F</td>
 </tr>
 </tbody></table>
-<p>#####2.  Prepare PAN – take 12 leftmost digits of the primary account number (excluding the check digit)</p>
-<table>
+<h5 id="2-Prepare-PAN-–-take-12-leftmost-digits-of-the-primary-account-number-excluding-the-check-digit"><a href="#2-Prepare-PAN-–-take-12-leftmost-digits-of-the-primary-account-number-excluding-the-check-digit" class="headerlink" title="2.  Prepare PAN – take 12 leftmost digits of the primary account number (excluding the check digit)"></a>2.  Prepare PAN – take 12 leftmost digits of the primary account number (excluding the check digit)</h5><table>
 <thead>
 <tr>
 <th><strong>1</strong></th>
@@ -1297,8 +1234,7 @@
 <td>PAN</td>
 </tr>
 </tbody></table>
-<p>#####3.  XOR both values</p>
-<table>
+<h5 id="3-XOR-both-values-1"><a href="#3-XOR-both-values-1" class="headerlink" title="3.  XOR both values"></a>3.  XOR both values</h5><table>
 <thead>
 <tr>
 <th><strong>1</strong></th>
@@ -1387,14 +1323,10 @@
 <li><p>PAN – is twelve 4-bit digits representing the leftmost 12 digits of the<br>  primary account number (excluding the check digit). Each PAN digit has a<br>  value from X’0′ to X’9′.</p>
 </li>
 </ul>
-<p>####EXAMPLE:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: VISA-4  </span><br><span class="line">  </span><br><span class="line">Clear PIN block:041277DE6789ABCD</span><br></pre></td></tr></table></figure>
+<h4 id="EXAMPLE-13"><a href="#EXAMPLE-13" class="headerlink" title="EXAMPLE:"></a>EXAMPLE:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block encrypt operation finished  </span><br><span class="line">  </span><br><span class="line">PAN: 43219876543210987  </span><br><span class="line">PIN: 1234  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: VISA-4  </span><br><span class="line">  </span><br><span class="line">Clear PIN block:041277DE6789ABCD</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PIN blocks: PIN block decode operation finished  </span><br><span class="line">  </span><br><span class="line">PIN block: 041277DE6789ABCD  </span><br><span class="line">PAN: N&#x2F;A  </span><br><span class="line">PAD: N&#x2F;A  </span><br><span class="line">Format: VISA-4  </span><br><span class="line">  </span><br><span class="line">Decoded PIN: 1234</span><br></pre></td></tr></table></figure>
-<p>##AS2805 FORMAT 1</p>
-<p>The AS2805 Format 1 PIN block format is similar to an ISO-1 PIN block format. The PIN block format supports a PIN from 4 to 12 digits in length.</p>
-<p>####CALCULATION STEPS:</p>
-<p>#####1.  Prepare a PIN – L is length of the PIN, P is PIN digit, R is random value</p>
-<table>
+<h2 id="AS2805-FORMAT-1"><a href="#AS2805-FORMAT-1" class="headerlink" title="AS2805 FORMAT 1"></a>AS2805 FORMAT 1</h2><p>The AS2805 Format 1 PIN block format is similar to an ISO-1 PIN block format. The PIN block format supports a PIN from 4 to 12 digits in length.</p>
+<h4 id="CALCULATION-STEPS-14"><a href="#CALCULATION-STEPS-14" class="headerlink" title="CALCULATION STEPS:"></a>CALCULATION STEPS:</h4><h5 id="1-Prepare-a-PIN-–-L-is-length-of-the-PIN-P-is-PIN-digit-R-is-random-value-1"><a href="#1-Prepare-a-PIN-–-L-is-length-of-the-PIN-P-is-PIN-digit-R-is-random-value-1" class="headerlink" title="1.  Prepare a PIN – L is length of the PIN, P is PIN digit, R is random value"></a>1.  Prepare a PIN – L is length of the PIN, P is PIN digit, R is random value</h5><table>
 <thead>
 <tr>
 <th><strong>1</strong></th>
@@ -1441,11 +1373,8 @@
 <li><p>  R – is a random digit, which is a value from X’0′ to X’F’.</p>
 </li>
 </ul>
-<p>##AS2805 FORMAT 8 (FORMAT 46) </p>
-<p>The AS2805 Format 8 PIN block (format 46) is similar to an Format 1 PIN block format. The PIN block format supports zero length PIN Block.</p>
-<p>####CALCULATION STEPS:</p>
-<p>#####1.  Prepare a PIN – L is length of the PIN, P is PIN digit, R is random value</p>
-<table>
+<h2 id="AS2805-FORMAT-8-FORMAT-46"><a href="#AS2805-FORMAT-8-FORMAT-46" class="headerlink" title="AS2805 FORMAT 8 (FORMAT 46)"></a>AS2805 FORMAT 8 (FORMAT 46)</h2><p>The AS2805 Format 8 PIN block (format 46) is similar to an Format 1 PIN block format. The PIN block format supports zero length PIN Block.</p>
+<h4 id="CALCULATION-STEPS-15"><a href="#CALCULATION-STEPS-15" class="headerlink" title="CALCULATION STEPS:"></a>CALCULATION STEPS:</h4><h5 id="1-Prepare-a-PIN-–-L-is-length-of-the-PIN-P-is-PIN-digit-R-is-random-value-2"><a href="#1-Prepare-a-PIN-–-L-is-length-of-the-PIN-P-is-PIN-digit-R-is-random-value-2" class="headerlink" title="1.  Prepare a PIN – L is length of the PIN, P is PIN digit, R is random value"></a>1.  Prepare a PIN – L is length of the PIN, P is PIN digit, R is random value</h5><table>
 <thead>
 <tr>
 <th><strong>1</strong></th>
