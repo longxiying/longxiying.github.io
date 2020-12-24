@@ -4,6 +4,82 @@
   
     
     <entry>
+      <title>Enhanced Contactless Reader Capabilities(9F6E)(AMEX)</title>
+      <link href="2020/12/24/Enhanced-Contactless-Reader-Capabilities-9F6E-AMEX/"/>
+      <url>2020/12/24/Enhanced-Contactless-Reader-Capabilities-9F6E-AMEX/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Tag-9F6E"><a href="#Tag-9F6E" class="headerlink" title="Tag: 9F6E"></a>Tag: 9F6E</h3><h3 id="Length-4"><a href="#Length-4" class="headerlink" title="Length: 4"></a>Length: 4</h3><h3 id="Value"><a href="#Value" class="headerlink" title="Value:"></a>Value:</h3><table><thead><tr><th>Byte 1 Enhanced Contactless Reader Capabilities</th></tr></thead></table><table><thead><tr><th>b8</th><th>b7</th><th>b6</th><th>b5</th><th>b4</th><th>b3</th><th>b2</th><th>b1</th><th>Meaning</th></tr></thead><tbody><tr><td>X</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1= AEIPS contact mode supported</td></tr><tr><td></td><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td>Expresspay Magstripe Mode supported</td></tr><tr><td></td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>Expresspay EMV full online mode not supported</td></tr><tr><td></td><td></td><td></td><td>X</td><td></td><td></td><td></td><td></td><td>1 = Expresspay EMV partial online mode supported</td></tr><tr><td></td><td></td><td></td><td></td><td>X</td><td></td><td></td><td></td><td>1 = Expresspay Mobile supported</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td>0</td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>RFU</td></tr></tbody></table><table><thead><tr><th>Byte 2 Enhanced Contactless Reader CVM Capabilities</th></tr></thead></table><table><thead><tr><th>b8</th><th>b7</th><th>b6</th><th>b5</th><th>b4</th><th>b3</th><th>b2</th><th>b1</th><th>Meaning</th></tr></thead><tbody><tr><td>X</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1 = Mobile CVM supported</td></tr><tr><td></td><td>X</td><td></td><td></td><td></td><td></td><td></td><td></td><td>1 = Online PIN supported</td></tr><tr><td></td><td></td><td>X</td><td></td><td></td><td></td><td></td><td></td><td>1 = Signature</td></tr><tr><td></td><td></td><td></td><td>X</td><td></td><td></td><td></td><td></td><td>1 = Plaintext Offline PIN</td></tr><tr><td></td><td></td><td></td><td></td><td>0</td><td></td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td>0</td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>RFU</td></tr></tbody></table><table><thead><tr><th>Byte 3 Enhanced Contactless Reader Transaction Capabilities</th></tr></thead></table><table><thead><tr><th>b8</th><th>b7</th><th>b6</th><th>b5</th><th>b4</th><th>b3</th><th>b2</th><th>b1</th><th>Meaning</th></tr></thead><tbody><tr><td>X</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1 = Terminal is offline only</td></tr><tr><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td><strong>1 = CVM Required</strong></td></tr><tr><td></td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td>0</td><td></td><td></td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td>0</td><td></td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td>0</td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>RFU</td></tr></tbody></table><table><thead><tr><th>Byte 4 Enhanced Contactless Reader Capabilities</th></tr></thead></table><table><thead><tr><th>b8</th><th>b7</th><th>b6</th><th>b5</th><th>b4</th><th>b3</th><th>b2</th><th>b1</th><th>Meaning</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>All bits are RFU</td></tr></tbody></table>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> AMEX </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Contactless Reader Capabilities(9F6D)(AMEX)</title>
+      <link href="2020/12/24/Contactless-Reader-Capabilities-9F6D-AEMX/"/>
+      <url>2020/12/24/Contactless-Reader-Capabilities-9F6D-AEMX/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Tag-9F6D"><a href="#Tag-9F6D" class="headerlink" title="Tag: 9F6D"></a>Tag: 9F6D</h3><h3 id="Length-1"><a href="#Length-1" class="headerlink" title="Length: 1"></a>Length: 1</h3><h3 id="Value"><a href="#Value" class="headerlink" title="Value:"></a>Value:</h3><table><thead><tr><th>value</th><th>Meaning</th></tr></thead><tbody><tr><td>00 Expresspay 1.0</td><td></td></tr><tr><td>40 Expresspay 2.0 Magstripe Only, or Expresspay ≥ 3.0 Magstripe – CVM Not Required</td><td></td></tr><tr><td>48 Expresspay ≥ 3.0 Magstripe – CVM Required</td><td></td></tr><tr><td>80 Expresspay 2.0 – EMV and Magstripe</td><td></td></tr><tr><td>C0 Expresspay ≥ 3.0 EMV and Magstripe – CVM Not Required</td><td></td></tr><tr><td>C8 Expresspay ≥ 3.0 EMV and Magstripe – CVM Required</td><td></td></tr></tbody></table>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> AMEX </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Terminal Transaction Qualifiers(TTQ)(9F66)(qPBOC)</title>
+      <link href="2020/12/24/Terminal-Transaction-Qualifiers-TTQ-9F66-qPBOC/"/>
+      <url>2020/12/24/Terminal-Transaction-Qualifiers-TTQ-9F66-qPBOC/</url>
+      
+        <content type="html"><![CDATA[<h2 id="qPBOC"><a href="#qPBOC" class="headerlink" title="qPBOC"></a>qPBOC</h2><h3 id="TTQ-9F66"><a href="#TTQ-9F66" class="headerlink" title="TTQ (9F66)"></a>TTQ (9F66)</h3><h4 id="TTQ-byte-2-bits-8-7-are-transient-values-and-reset-to-zero-at-the-beginning-of-the-transaction-All-other-TTQ-bits-are-static-values-and-not-modified-based-on-transaction-conditions"><a href="#TTQ-byte-2-bits-8-7-are-transient-values-and-reset-to-zero-at-the-beginning-of-the-transaction-All-other-TTQ-bits-are-static-values-and-not-modified-based-on-transaction-conditions" class="headerlink" title="TTQ byte 2 bits 8-7 are transient values, and reset to zero at the beginning of the transaction. All other TTQ bits are static values, and not modified based on transaction conditions."></a>TTQ byte 2 bits 8-7 are transient values, and reset to zero at the beginning of the transaction. All other TTQ bits are static values, and not modified based on transaction conditions.</h4><h5 id="Tag-9F66"><a href="#Tag-9F66" class="headerlink" title="Tag: 9F66"></a>Tag: 9F66</h5><h5 id="Length-4"><a href="#Length-4" class="headerlink" title="Length: 4"></a>Length: 4</h5><h5 id="Value"><a href="#Value" class="headerlink" title="Value:"></a>Value:</h5><table><thead><tr><th>Byte 1</th></tr></thead></table><table><thead><tr><th>b8</th><th>b7</th><th>b6</th><th>b5</th><th>b4</th><th>b3</th><th>b2</th><th>b1</th><th>Meaning</th></tr></thead><tbody><tr><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>RFU</td></tr><tr><td></td><td>X</td><td></td><td></td><td></td><td></td><td></td><td></td><td>1=Contactless debit/credit application supported</td></tr><tr><td></td><td></td><td>X</td><td></td><td></td><td></td><td></td><td></td><td>1=qPBOC is supported</td></tr><tr><td></td><td></td><td></td><td>X</td><td></td><td></td><td></td><td></td><td>1=Contact debit/credit application supported</td></tr><tr><td></td><td></td><td></td><td></td><td>X</td><td></td><td></td><td></td><td>1=Offline-only reader</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td>X</td><td></td><td></td><td>1=Online PIN supported</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>X</td><td></td><td>1=Signature supported</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>RFU</td></tr></tbody></table><table><thead><tr><th>Byte 2</th></tr></thead></table><table><thead><tr><th>b8</th><th>b7</th><th>b6</th><th>b5</th><th>b4</th><th>b3</th><th>b2</th><th>b1</th><th>Meaning</th></tr></thead><tbody><tr><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1=Online cryptogram required</td></tr><tr><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td>1=CVM required</td></tr><tr><td></td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td>0</td><td></td><td></td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td>0</td><td></td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td>0</td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>RFU</td></tr></tbody></table><table><thead><tr><th>Byte 3</th></tr></thead></table><table><thead><tr><th>b8</th><th>b7</th><th>b6</th><th>b5</th><th>b4</th><th>b3</th><th>b2</th><th>b1</th><th>Meaning</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>All bits are RFU</td></tr></tbody></table><table><thead><tr><th>Byte 4</th></tr></thead></table><table><thead><tr><th>b8</th><th>b7</th><th>b6</th><th>b5</th><th>b4</th><th>b3</th><th>b2</th><th>b1</th><th>Meaning</th></tr></thead><tbody><tr><td>X</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1=fDDA Version Number ‘01’ is supported;0=fDDA Version Number ‘00’ only is supported</td></tr><tr><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>All bits are RFU</td></tr></tbody></table>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> qPBOC </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Terminal Transaction Qualifiers(TTQ)(9F66)(PayWave)</title>
+      <link href="2020/12/24/Terminal-Transaction-Qualifiers-TTQ-9F66/"/>
+      <url>2020/12/24/Terminal-Transaction-Qualifiers-TTQ-9F66/</url>
+      
+        <content type="html"><![CDATA[<h2 id="PayWave"><a href="#PayWave" class="headerlink" title="PayWave"></a>PayWave</h2><h3 id="TTQ-9F66"><a href="#TTQ-9F66" class="headerlink" title="TTQ (9F66)"></a>TTQ (9F66)</h3><h4 id="TTQ-byte-2-bits-8-7-are-transient-values-and-reset-to-zero-at-the-beginning-of-the-transaction-All-other-TTQ-bits-are-static-values-and-not-modified-based-on-transaction-conditions"><a href="#TTQ-byte-2-bits-8-7-are-transient-values-and-reset-to-zero-at-the-beginning-of-the-transaction-All-other-TTQ-bits-are-static-values-and-not-modified-based-on-transaction-conditions" class="headerlink" title="TTQ byte 2 bits 8-7 are transient values, and reset to zero at the beginning of the transaction. All other TTQ bits are static values, and not modified based on transaction conditions."></a>TTQ byte 2 bits 8-7 are transient values, and reset to zero at the beginning of the transaction. All other TTQ bits are static values, and not modified based on transaction conditions.</h4><h5 id="Tag-9F66"><a href="#Tag-9F66" class="headerlink" title="Tag: 9F66"></a>Tag: 9F66</h5><h5 id="Length-4"><a href="#Length-4" class="headerlink" title="Length: 4"></a>Length: 4</h5><h5 id="Value"><a href="#Value" class="headerlink" title="Value:"></a>Value:</h5><table><thead><tr><th>Byte 1</th></tr></thead></table><table><thead><tr><th>b8</th><th>b7</th><th>b6</th><th>b5</th><th>b4</th><th>b3</th><th>b2</th><th>b1</th><th>Meaning</th></tr></thead><tbody><tr><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0=MSD is not supported</td></tr><tr><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td>1</td><td></td><td></td><td></td><td></td><td></td><td>1=qVSDC supported</td></tr><tr><td></td><td></td><td></td><td>X</td><td></td><td></td><td></td><td></td><td>1=EMV contact chip supported</td></tr><tr><td></td><td></td><td></td><td></td><td>X</td><td></td><td></td><td></td><td>1=Offline-only reader</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td>X</td><td></td><td></td><td>1=Online PIN supported</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>X</td><td></td><td>1=Signature supported</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>X</td><td>1=Offline Data Authentication (ODA) for Online Authorizations supported</td></tr></tbody></table><table><thead><tr><th>Byte 2</th></tr></thead></table><table><thead><tr><th>b8</th><th>b7</th><th>b6</th><th>b5</th><th>b4</th><th>b3</th><th>b2</th><th>b1</th><th>Meaning</th></tr></thead><tbody><tr><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1=Online cryptogram required</td></tr><tr><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td>1=CVM required</td></tr><tr><td></td><td></td><td>X</td><td></td><td></td><td></td><td></td><td></td><td>1=(Contact Chip) Offline PIN supported</td></tr><tr><td></td><td></td><td></td><td>0</td><td></td><td></td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td>0</td><td></td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td>0</td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>RFU</td></tr></tbody></table><table><thead><tr><th>Byte 3</th></tr></thead></table><table><thead><tr><th>b8</th><th>b7</th><th>b6</th><th>b5</th><th>b4</th><th>b3</th><th>b2</th><th>b1</th><th>Meaning</th></tr></thead><tbody><tr><td>X</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1=Issuer Update Processing supported</td></tr><tr><td></td><td>X</td><td></td><td></td><td></td><td></td><td></td><td></td><td>1=Mobile functionality supported (Consumer Device CVM)</td></tr><tr><td></td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td>0</td><td></td><td></td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td>0</td><td></td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td>0</td><td></td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td></td><td>RFU</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>RFU</td></tr></tbody></table><table><thead><tr><th>Byte 4</th></tr></thead></table><table><thead><tr><th>b8</th><th>b7</th><th>b6</th><th>b5</th><th>b4</th><th>b3</th><th>b2</th><th>b1</th><th>Meaning</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>All bits are RFU</td></tr></tbody></table>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> PayWave </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Additional Terminal Capabilities (9F40)</title>
       <link href="2020/12/24/Additional-Terminal-Capabilities-9F40/"/>
       <url>2020/12/24/Additional-Terminal-Capabilities-9F40/</url>

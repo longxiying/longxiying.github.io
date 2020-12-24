@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://emv.cool/2020/12/24/Enhanced-Contactless-Reader-Capabilities-9F6E-AMEX/</loc>
+    
+    <lastmod>2020-12-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/24/Contactless-Reader-Capabilities-9F6D-AEMX/</loc>
+    
+    <lastmod>2020-12-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/24/Terminal-Transaction-Qualifiers-TTQ-9F66-qPBOC/</loc>
+    
+    <lastmod>2020-12-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/24/Terminal-Transaction-Qualifiers-TTQ-9F66/</loc>
+    
+    <lastmod>2020-12-24</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://emv.cool/2020/12/24/Additional-Terminal-Capabilities-9F40/</loc>
     
     <lastmod>2020-12-24</lastmod>
@@ -156,6 +184,27 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>http://emv.cool/tags/AMEX/</loc>
+    <lastmod>2020-12-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/tags/PayWave/</loc>
+    <lastmod>2020-12-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/tags/qPBOC/</loc>
+    <lastmod>2020-12-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 
   
