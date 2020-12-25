@@ -2,6 +2,118 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://emv.cool/2020/12/24/Terminal-Transaction-Qualifiers-TTQ-9F66/</loc>
+    
+    <lastmod>2020-12-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/24/Terminal-Transaction-Qualifiers-TTQ-9F66-qPBOC/</loc>
+    
+    <lastmod>2020-12-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/23/Terminal-Capabilities-9F33/</loc>
+    
+    <lastmod>2020-12-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/23/List-of-CA-Public-Keys/</loc>
+    
+    <lastmod>2020-12-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/23/EMV-TAG-9C-%E7%BB%88%E7%AB%AF%E4%BA%A4%E6%98%93%E7%B1%BB%E5%9E%8B/</loc>
+    
+    <lastmod>2020-12-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/23/Complete-list-of-SafeNet-HSM-commands/</loc>
+    
+    <lastmod>2020-12-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/23/Contactless-Magnetic-Mode/</loc>
+    
+    <lastmod>2020-12-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/23/Complete-list-of-Registered-Application-Provider/</loc>
+    
+    <lastmod>2020-12-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/23/Complete-list-of-PIN-blocks/</loc>
+    
+    <lastmod>2020-12-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/23/Complete-list-of-MicroFocus-HPE-Atalla-HSM/</loc>
+    
+    <lastmod>2020-12-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/23/Complete-list-of-EMV-NFC-tags/</loc>
+    
+    <lastmod>2020-12-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/23/Complete-list-of-ATRs/</loc>
+    
+    <lastmod>2020-12-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/23/Complete-list-of-application-identifiers-AID/</loc>
+    
+    <lastmod>2020-12-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/23/Complete-list-of-APDU-responses/</loc>
+    
+    <lastmod>2020-12-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/23/Android-GridView%E6%8E%A7%E4%BB%B6/</loc>
+    
+    <lastmod>2020-12-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/2020/12/24/Additional-Terminal-Capabilities-9F40/</loc>
+    
+    <lastmod>2020-12-25</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://emv.cool/about/index.html</loc>
     
     <lastmod>2020-12-25</lastmod>
@@ -12,20 +124,6 @@
     <loc>http://emv.cool/about/index-1.html</loc>
     
     <lastmod>2020-12-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://emv.cool/2020/12/24/Terminal-Transaction-Qualifiers-TTQ-9F66/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://emv.cool/2020/12/24/Terminal-Transaction-Qualifiers-TTQ-9F66-qPBOC/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
     
   </url>
   
@@ -44,83 +142,6 @@
   </url>
   
   <url>
-    <loc>http://emv.cool/2020/12/23/Terminal-Capabilities-9F33/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://emv.cool/2020/12/23/Android-GridView%E6%8E%A7%E4%BB%B6/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://emv.cool/2020/12/24/Additional-Terminal-Capabilities-9F40/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://emv.cool/2020/12/23/Complete-list-of-APDU-responses/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://emv.cool/2020/12/23/Complete-list-of-application-identifiers-AID/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://emv.cool/2020/12/23/Complete-list-of-ATRs/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://emv.cool/2020/12/23/Complete-list-of-EMV-NFC-tags/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://emv.cool/2020/12/23/Complete-list-of-MicroFocus-HPE-Atalla-HSM/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://emv.cool/2020/12/23/Complete-list-of-PIN-blocks/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://emv.cool/2020/12/23/Complete-list-of-Registered-Application-Provider/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://emv.cool/2020/12/23/Complete-list-of-SafeNet-HSM-commands/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://emv.cool/2020/12/23/Complete-list-of-Thales-HSM-commands/</loc>
     
     <lastmod>2020-12-24</lastmod>
@@ -128,28 +149,7 @@
   </url>
   
   <url>
-    <loc>http://emv.cool/2020/12/23/Contactless-Magnetic-Mode/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://emv.cool/2020/12/23/EMV-TAG-9C-%E7%BB%88%E7%AB%AF%E4%BA%A4%E6%98%93%E7%B1%BB%E5%9E%8B/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://emv.cool/2020/12/23/Glossary-of-Expressions-in-Payments-industry/</loc>
-    
-    <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://emv.cool/2020/12/23/List-of-CA-Public-Keys/</loc>
     
     <lastmod>2020-12-24</lastmod>
     
