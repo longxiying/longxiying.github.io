@@ -1,31 +1,1414 @@
-extends includes/layout.pug
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-block content
-  #post
-    if top_img === false
-      include includes/header/post-info.pug
+  <head>
+  <meta charset="utf-8">
+  <meta name="author" content="zchengsite, 1451426471@qq.com" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  
+  <title>Complete list of MicroFocus (HPE) Atalla HSM   | EMV.COOL</title>
 
-    article#article-container.post-content!=page.content
-    include includes/post/post-copyright.pug
-    .tag_share
-      if (theme.post_meta.post.tags)
-        .post-meta__tag-list
-          each item, index in page.tags.data
-            a(href=url_for(item.path)).post-meta__tags #[=item.name]
-      include includes/third-party/share/index.pug
-        
-    if theme.reward.enable
-      !=partial('includes/post/reward', {}, {cache:theme.fragment_cache})
+  
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+    <link rel="icon" href="/images/favicon.png">
+  
 
-    //- ad
-    if theme.ad && theme.ad.post
-      .ads-wrap!=theme.ad.post
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
-    include includes/pagination.pug
-    if theme.related_post && theme.related_post.enable
-      != related_posts(page,site.posts)
+  <!-- hexo site css -->
+  
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/github-markdown.css">
+<link rel="stylesheet" href="/css/highlight.css">
 
-    if page.comments !== false && theme.comments && theme.comments.use
-      - var commentsJsLoad = true
-      !=partial('includes/third-party/comments/index', {}, {cache:theme.fragment_cache})
+
+  <!-- jquery3.3.1 -->
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- fancybox -->
+  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
+  <script async src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  
+<script src="/js/fancybox.js"></script>
+
+
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144519052-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-144519052-1');
+    </script>
+  
+
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="EMV.COOL" type="application/atom+xml">
+</head>
+
+
+  <body>
+    <div id="app">
+      <div class="header">
+  <div class="avatar">
+    <a href="/">
+      <!-- 头像取消懒加载，添加no-lazy -->
       
+        <img src="/images/avatar.png" alt="">
+      
+    </a>
+    <div class="nickname"><a href="/">EMV.COOL</a></div>
+  </div>
+  <div class="navbar">
+    <ul>
+      
+        <li class="nav-item" data-path="/">
+          <a href="/">Home</a>
+        </li>
+      
+        <li class="nav-item" data-path="/archives/">
+          <a href="/archives/">Archives</a>
+        </li>
+      
+        <li class="nav-item" data-path="/tags/">
+          <a href="/tags/">Tags</a>
+        </li>
+      
+        <li class="nav-item" data-path="/friends/">
+          <a href="/friends/">Friends</a>
+        </li>
+      
+        <li class="nav-item" data-path="/about/">
+          <a href="/about/">About</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<script src="/js/activeNav.js"></script>
+
+
+
+      <div class="flex-container">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">Complete list of MicroFocus (HPE) Atalla HSM</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="Update time"></i>
+          2020-12-23
+        </span>
+        
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="Tags"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/EMV/" title="EMV">
+                    <b>#</b> EMV
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Host Command (Response)</strong></td>
+<td><strong>Function</strong></td>
+<td><strong>Supported by BP-HSM</strong></td>
+<td><strong>Note</strong></td>
+</tr>
+<tr>
+<td>00</td>
+<td>Echo Test Message</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Generate 3DES Working Key, Any Type</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Export a Working Key in AKB Format</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>Import a Working Key in AKB Format</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>Load ATM Master Key – IBM 3624</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>Load ATM Master Key – IBM 4731</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>Change ATM Communications Key – Docutel</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>Change ATM Communications Key – IBM 3624</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>Change ATM Communications Key – IBM 4731</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1A</td>
+<td>Export a Working Key to non-AKB Format</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>1E</td>
+<td>Generate New Initial Key for PIN Pad Using Visa DUKPT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>30</td>
+<td>Encrypt PIN – ANSI Format 0</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>31</td>
+<td>Translate PIN</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>31</td>
+<td>Translate PIN – Visa DUKPT</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>32</td>
+<td>Verify PIN – Atalla 2×2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>32</td>
+<td>Verify PIN – Atalla DES BiLevel</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>32</td>
+<td>Verify PIN – Burroughs</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>32</td>
+<td>Verify PIN – Clear-PIN Comparison</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>32</td>
+<td>Verify PIN – Diebold</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>32</td>
+<td>Verify PIN – IBM 3624</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>32</td>
+<td>Verify PIN – Identikey</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>32</td>
+<td>Verify PIN – NCR</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>32</td>
+<td>Verify PIN – PIN-Block Comparison</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>32</td>
+<td>Verify PIN – Visa</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>33</td>
+<td>Translate PIN – ANSI to IBM 4731</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>33</td>
+<td>Translate PIN – ANSI to PIN/Pad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>33</td>
+<td>Translate PIN – ANSI to PLUS and PLUS to ANSI</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>33</td>
+<td>Translate PIN – IBM 3624 to IBM 3624</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>33</td>
+<td>Translate PIN – IBM 3624 to PIN/Pad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>33</td>
+<td>Translate PIN – IBM 4731 to IBM 4731</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>33</td>
+<td>Translate PIN – IBM 4731 to PIN/Pad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>33</td>
+<td>Translate PIN – PIN/Pad or Docutel to IBM 4731</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>33</td>
+<td>Translate PIN – PIN/Pad or Docutel to PIN/Pad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>35</td>
+<td>Translate PIN – Double-Encrypted Input or Output</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>36</td>
+<td>Verify Double-Encrypted PIN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>37</td>
+<td>PIN Change – Atalla DES Bilevel</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>37</td>
+<td>PIN Change – Diebold</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>37</td>
+<td>PIN Change – IBM 3624</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>37</td>
+<td>PIN Change – Identikey</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>37</td>
+<td>PIN Change – NCR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>37</td>
+<td>PIN Change – Visa</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>39</td>
+<td>Translate PIN And Generate MAC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3A</td>
+<td>Verify Card and PIN – IBM3624</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>3A</td>
+<td>Verify Card and PIN – NCR</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>3A</td>
+<td>Verify Card and PIN – Visa</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>3D</td>
+<td>Generate PVN and IBM Offset</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>55</td>
+<td>Encrypt, Decrypt Or Translate Data</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>58</td>
+<td>MAC Translate</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>59</td>
+<td>Generate MAC and Encrypt or Translate Data</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5C</td>
+<td>Verify and Generate MAC for Visa DUKPT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5D</td>
+<td>Generate CVV/CVC</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>5E</td>
+<td>Verify CVV/CVC</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>5F</td>
+<td>Verify MAC and Decrypt PIN</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>70</td>
+<td>Load Volatile Table Value</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>71</td>
+<td>Delete Volatile Table Value</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>72</td>
+<td>Verify Volatile Table Value</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>7E</td>
+<td>Generate Check Digits</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>90</td>
+<td>Decrypt PIN</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>93</td>
+<td>Generate Random Number</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>94</td>
+<td>Generate Initialization Vector</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>95</td>
+<td>Reformat Initialization Vector</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>96</td>
+<td>Verify Initialization Vector</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>97</td>
+<td>Encrypt/Decrypt Data</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>98</td>
+<td>Generate MAC</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>99</td>
+<td>Verify MAC</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>9A</td>
+<td>Network Security Processor AKB header list</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9A</td>
+<td>Network Security Processor Clear Log</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9A</td>
+<td>Network Security Processor Configuration Status</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9A</td>
+<td>Network Security Processor Count Status</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9A</td>
+<td>Network Security Processor Crypto Test</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9A</td>
+<td>Network Security Processor Status ID</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9A</td>
+<td>Network Security Processor Status Key</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9B</td>
+<td>Verify ACR Response MAC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9E</td>
+<td>Translate Working Key from Current MFK to Pending MFK</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9F</td>
+<td>Replace the Current MFK with the Pending MFK</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>BA</td>
+<td>PIN Translate (ANSI to PIN/Pad) and MAC Verification</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>BB</td>
+<td>Translate PIN (ANSI to PLUS) and Verify MAC</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>BD</td>
+<td>Translate PIN and Generate MAC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>BE</td>
+<td>Verify VSVC S1 Signature and Generate VSVC S2 Signature</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>BF</td>
+<td>Verify VSVC S3 Signature</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D0</td>
+<td>Verify Clear PIN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>101</td>
+<td>Configure Network Security Processor Option</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>102</td>
+<td>Command Monitoring</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>105</td>
+<td>License Premium Value Commands and Options</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>106</td>
+<td>Define Temporary Serial Number</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>107</td>
+<td>Confirm Temporary Serial Number</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>108</td>
+<td>Define Security Policy</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>109</td>
+<td>Confirm Security Policy</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>113</td>
+<td>Translate an AKB to 3DES-ECB or 3DES-CBC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>117</td>
+<td>Import TR-31 Formatted Working Key</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>118</td>
+<td>Export Working Key in TR-31 Format</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>11B</td>
+<td>Import Non-AKB Formatted Working Keys</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>11C</td>
+<td>Convert Atalla DES Key to 3DES AKB Format</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11E</td>
+<td>Generate Atalla 2×2 PVN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>120</td>
+<td>Generate RSA Key Pair</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>121</td>
+<td>Load RSA Key into RSA Key Table</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>122</td>
+<td>Generate AKB for Root Public Key</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>123</td>
+<td>Verify Public Key and Generate AKBPUB</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>124</td>
+<td>Generate Digital Signature</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>125</td>
+<td>Verify Digital Signature</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>126</td>
+<td>Generate Message Digest</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12A</td>
+<td>Generate AKB of Root Public Key</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12B</td>
+<td>Translate Public or Private Key AKB from MFK to PMFK</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12C</td>
+<td>Verify or Delete RSA Key Table Entry</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12F</td>
+<td>Generate ATM Master Key and encrypt with public key</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>135</td>
+<td>Export RSA Private Key in ECB encrypted format</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>136</td>
+<td>Generate a TR-34 Key Block</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>138</td>
+<td>RSA Data Decrypt</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>139</td>
+<td>Sign TR-34 Message</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>304</td>
+<td>Verify CMAC using TDES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>305</td>
+<td>Generate CMAC using TDES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>30A</td>
+<td>Calculate PIN Offset</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>32C</td>
+<td>Verify ePIN</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>335</td>
+<td>PIN and PIN-Block Translate</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>346</td>
+<td>PIN Translate – DUKPT to 3DES and Verify MAC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>347</td>
+<td>PIN Translate – DUKPT to 3DES and Generate MAC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>348</td>
+<td>Verify DUKPT MAC</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>350</td>
+<td>Verify EMV ARQC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>351</td>
+<td>EMV PIN Change</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>352</td>
+<td>Generate EMV MAC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>354</td>
+<td>Generate EMV ICC Master Key</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>356</td>
+<td>Validate CAP Token</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>357</td>
+<td>Verify dCVV</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>358</td>
+<td>Generate ISO/IEC 9796-2 Digital Signature</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>359</td>
+<td>Verify dynamic CVC3</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>35A</td>
+<td>Verify AMEX CSC</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>35B</td>
+<td>Generate AMEX CSC</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>35F</td>
+<td>Verify Discover DCVV</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>365</td>
+<td>Verify Visa Cloud-Based Payments</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>36A</td>
+<td>Verify AMEX Expresspay value – Magstripe Mode</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>37B</td>
+<td>Generate ePIN Offset</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>386</td>
+<td>Generate DUKPT MAC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>388</td>
+<td>DES DUKPT Encrypt/Decrypt Data</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>38C</td>
+<td>Derive DUKPT Initial PIN Encryption Key</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>390</td>
+<td>Encrypt/Decrypt Data using AES</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>392</td>
+<td>Generate Check Digits for an AES Key</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>39A</td>
+<td>Generate AES or HMAC Symmetric Key</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>39B</td>
+<td>Generate MAC using HMAC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>39C</td>
+<td>Verify MAC using HMAC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3FC</td>
+<td>EMV PIN change from IBM3624 offset</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3FD</td>
+<td>Authenticate multiple EMV scripts</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1101</td>
+<td>Get ID of Current Image</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1104</td>
+<td>Get Temporary Serial Number Information</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1110</td>
+<td>Get System Configuration Information</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1111</td>
+<td>Get System Date and Time</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>1113</td>
+<td>Get Average CPU Utilization</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1120</td>
+<td>Get System Information</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1216</td>
+<td>Get Battery Life Remaining</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1221</td>
+<td>Return IP Address of Network Security Processor</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1223</td>
+<td>TCP/IP Socket Information</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1226</td>
+<td>Get Key Check Digits</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>1227</td>
+<td>Reset to Factory State</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1228</td>
+<td>Confirm Reset to Factory State</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2020/12/23/Complete-list-of-EMV-NFC-tags/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>Prev</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="Update time"></i>
+              2020-12-23
+            </span>
+            
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="Tags"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/EMV/" title="EMV">
+                        <b>#</b> EMV
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/2020/12/23/Complete-list-of-PIN-blocks/" target="_self">
+                <span>Next</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+    </div>
+    
+
+    
+      <div class="comments-container">
+        
+
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+  <div id="gitalk-container"></div>
+  <script src="/js/md5.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: '57cd3399b19f860fecc9',
+      clientSecret: '2190b5d0de9a59b3de639f23ad0b771ead37dcca',
+      repo: 'longxiying.github.io',
+      owner: 'longxiying',
+      admin: ['longxiying'],
+      id: md5(location.pathname),
+      distractionFreeMode: false
+    })
+
+    gitalk.render('gitalk-container')
+  </script>
+
+
+      </div>
+    
+  </div>
+
+
+        <div class="footer">
+  <div class="social">
+    <ul>
+      
+        <li>
+          <a title="github" target="_blank" rel="noopener" href="https://github.com/longxiying">
+            <i class="iconfont icon-github"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="email" href="mailto:longxiying@vip.qq.com">
+            <i class="iconfont icon-envelope"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="facebook" target="_blank" rel="noopener" href="https://www.facebook.com/abtswiath/">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="twitter" target="_blank" rel="noopener" href="https://twitter.com/longxiying">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="wechat" href="">
+            <i class="iconfont icon-wechat"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="weibo" target="_blank" rel="noopener" href="https://weibo.com/579081111/">
+            <i class="iconfont icon-weibo"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="rss" href="/atom.xml">
+            <i class="iconfont icon-rss"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+  
+    <div class="footer-more">
+      
+        <a href="https://emv.cool">Copyright © EMV.COOL 2020</a>
+        
+    </div>
+  
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Theme by Oranges | Powered by Hexo</a>
+        
+    </div>
+  
+</div>
+
+      </div>
+
+      <div class="back-to-top hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/js/backtotop.js"></script>
+
+
+
+      
+  <div class="search-icon" id="search-icon">
+    <a href="javascript: void(0)">
+      <i class="iconfont icon-search"></i>
+    </a>
+  </div>
+
+  <div class="search-overlay hidden">
+    <div class="search-content" tabindex="0">
+      <div class="search-title">
+        <span class="search-icon-input">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-search"></i>
+          </a>
+        </span>
+        
+          <input type="text" class="search-input" id="search-input" placeholder="Search...">
+        
+        <span class="search-close-icon" id="search-close-icon">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-close"></i>
+          </a>
+        </span>
+      </div>
+      <div class="search-result" id="search-result"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var inputArea = document.querySelector("#search-input")
+    var searchOverlayArea = document.querySelector(".search-overlay")
+
+    inputArea.onclick = function() {
+      getSearchFile()
+      this.onclick = null
+    }
+
+    inputArea.onkeydown = function() {
+      if(event.keyCode == 13)
+        return false
+    }
+
+    function openOrHideSearchContent() {
+      let isHidden = searchOverlayArea.classList.contains('hidden')
+      if (isHidden) {
+        searchOverlayArea.classList.remove('hidden')
+        document.body.classList.add('hidden')
+        // inputArea.focus()
+      } else {
+        searchOverlayArea.classList.add('hidden')
+        document.body.classList.remove('hidden')
+      }
+    }
+
+    function blurSearchContent(e) {
+      if (e.target === searchOverlayArea) {
+        openOrHideSearchContent()
+      }
+    }
+
+    document.querySelector("#search-icon").addEventListener("click", openOrHideSearchContent, false)
+    document.querySelector("#search-close-icon").addEventListener("click", openOrHideSearchContent, false)
+    searchOverlayArea.addEventListener("click", blurSearchContent, false)
+
+    var searchFunc = function (path, search_id, content_id) {
+      'use strict';
+      var $input = document.getElementById(search_id);
+      var $resultContent = document.getElementById(content_id);
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'>First search, index file loading, please wait...<span></ul>";
+      $.ajax({
+        // 0x01. load xml file
+        url: path,
+        dataType: "xml",
+        success: function (xmlResponse) {
+          // 0x02. parse xml file
+          var datas = $("entry", xmlResponse).map(function () {
+            return {
+              title: $("title", this).text(),
+              content: $("content", this).text(),
+              url: $("url", this).text()
+            };
+          }).get();
+          $resultContent.innerHTML = "";
+
+          $input.addEventListener('input', function () {
+            // 0x03. parse query to keywords list
+            var str = '<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length <= 0) {
+              return;
+            }
+            // 0x04. perform local searching
+            datas.forEach(function (data) {
+              var isMatch = true;
+              var content_index = [];
+              if (!data.title || data.title.trim() === '') {
+                data.title = "Untitled";
+              }
+              var orig_data_title = data.title.trim();
+              var data_title = orig_data_title.toLowerCase();
+              var orig_data_content = data.content.trim().replace(/<[^>]+>/g, "");
+              var data_content = orig_data_content.toLowerCase();
+              var data_url = data.url;
+              var index_title = -1;
+              var index_content = -1;
+              var first_occur = -1;
+              // only match artiles with not empty contents
+              if (data_content !== '') {
+                keywords.forEach(function (keyword, i) {
+                  index_title = data_title.indexOf(keyword);
+                  index_content = data_content.indexOf(keyword);
+
+                  if (index_title < 0 && index_content < 0) {
+                    isMatch = false;
+                  } else {
+                    if (index_content < 0) {
+                      index_content = 0;
+                    }
+                    if (i == 0) {
+                      first_occur = index_content;
+                    }
+                    // content_index.push({index_content:index_content, keyword_len:keyword_len});
+                  }
+                });
+              } else {
+                isMatch = false;
+              }
+              // 0x05. show search results
+              if (isMatch) {
+                str += "<li><a href='" + data_url + "' class='search-result-title'>" + orig_data_title + "</a>";
+                var content = orig_data_content;
+                if (first_occur >= 0) {
+                  // cut out 100 characters
+                  var start = first_occur - 20;
+                  var end = first_occur + 80;
+
+                  if (start < 0) {
+                    start = 0;
+                  }
+
+                  if (start == 0) {
+                    end = 100;
+                  }
+
+                  if (end > content.length) {
+                    end = content.length;
+                  }
+
+                  var match_content = content.substr(start, end);
+
+                  // highlight all keywords
+                  keywords.forEach(function (keyword) {
+                    var regS = new RegExp(keyword, "gi");
+                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
+                  });
+
+                  str += "<p class=\"search-result-abstract\">" + match_content + "...</p>"
+                }
+                str += "</li>";
+              }
+            });
+            str += "</ul>";
+            if (str.indexOf('<li>') === -1) {
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>No result<span></ul>";
+            }
+            $resultContent.innerHTML = str;
+          });
+        },
+        error: function(xhr, status, error) {
+          $resultContent.innerHTML = ""
+          if (xhr.status === 404) {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The search.xml file was not found, please refer to：<a href='https://github.com/zchengsite/hexo-theme-oranges#configuration' target='_black'>configuration</a><span></ul>";
+          } else {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The request failed, Try to refresh the page or try again later.<span></ul>";
+          }
+        }
+      });
+      $(document).on('click', '#search-close-icon', function() {
+        $('#search-input').val('');
+        $('#search-result').html('');
+      });
+    }
+
+    var getSearchFile = function() {
+        var path = "/search.xml";
+        searchFunc(path, 'search-input', 'search-result');
+    }
+  </script>
+
+
+
+
+    </div>
+  </body>
+</html>

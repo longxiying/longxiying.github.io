@@ -1,31 +1,1943 @@
-extends includes/layout.pug
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-block content
-  #post
-    if top_img === false
-      include includes/header/post-info.pug
+  <head>
+  <meta charset="utf-8">
+  <meta name="author" content="zchengsite, 1451426471@qq.com" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  
+  <title>Complete list of APDU responses   | EMV.COOL</title>
 
-    article#article-container.post-content!=page.content
-    include includes/post/post-copyright.pug
-    .tag_share
-      if (theme.post_meta.post.tags)
-        .post-meta__tag-list
-          each item, index in page.tags.data
-            a(href=url_for(item.path)).post-meta__tags #[=item.name]
-      include includes/third-party/share/index.pug
-        
-    if theme.reward.enable
-      !=partial('includes/post/reward', {}, {cache:theme.fragment_cache})
+  
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+    <link rel="icon" href="/images/favicon.png">
+  
 
-    //- ad
-    if theme.ad && theme.ad.post
-      .ads-wrap!=theme.ad.post
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
-    include includes/pagination.pug
-    if theme.related_post && theme.related_post.enable
-      != related_posts(page,site.posts)
+  <!-- hexo site css -->
+  
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/github-markdown.css">
+<link rel="stylesheet" href="/css/highlight.css">
 
-    if page.comments !== false && theme.comments && theme.comments.use
-      - var commentsJsLoad = true
-      !=partial('includes/third-party/comments/index', {}, {cache:theme.fragment_cache})
+
+  <!-- jquery3.3.1 -->
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- fancybox -->
+  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
+  <script async src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  
+<script src="/js/fancybox.js"></script>
+
+
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144519052-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-144519052-1');
+    </script>
+  
+
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="EMV.COOL" type="application/atom+xml">
+</head>
+
+
+  <body>
+    <div id="app">
+      <div class="header">
+  <div class="avatar">
+    <a href="/">
+      <!-- 头像取消懒加载，添加no-lazy -->
       
+        <img src="/images/avatar.png" alt="">
+      
+    </a>
+    <div class="nickname"><a href="/">EMV.COOL</a></div>
+  </div>
+  <div class="navbar">
+    <ul>
+      
+        <li class="nav-item" data-path="/">
+          <a href="/">Home</a>
+        </li>
+      
+        <li class="nav-item" data-path="/archives/">
+          <a href="/archives/">Archives</a>
+        </li>
+      
+        <li class="nav-item" data-path="/tags/">
+          <a href="/tags/">Tags</a>
+        </li>
+      
+        <li class="nav-item" data-path="/friends/">
+          <a href="/friends/">Friends</a>
+        </li>
+      
+        <li class="nav-item" data-path="/about/">
+          <a href="/about/">About</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<script src="/js/activeNav.js"></script>
+
+
+
+      <div class="flex-container">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">Complete list of APDU responses</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="Update time"></i>
+          2020-12-23
+        </span>
+        
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="Tags"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/EMV/" title="EMV">
+                    <b>#</b> EMV
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <table>
+<thead>
+<tr>
+<th><strong>SW1</strong></th>
+<th><strong>SW2</strong></th>
+<th><strong>Info/ Warning/ Error/ Security</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>6</td>
+<td></td>
+<td>E</td>
+<td>Class not supported.</td>
+</tr>
+<tr>
+<td><strong>61</strong></td>
+<td><strong>—</strong></td>
+<td><strong>I</strong></td>
+<td><strong>Response bytes still available</strong></td>
+</tr>
+<tr>
+<td>61</td>
+<td>XX</td>
+<td>I</td>
+<td>Command successfully executed; ‘XX’ bytes of data are available and can be requested using GET RESPONSE.</td>
+</tr>
+<tr>
+<td><strong>62</strong></td>
+<td><strong>—</strong></td>
+<td><strong>W</strong></td>
+<td><strong>State of non-volatile memory unchanged</strong></td>
+</tr>
+<tr>
+<td>62</td>
+<td>00</td>
+<td>W</td>
+<td>No information given (NV-Ram not changed)</td>
+</tr>
+<tr>
+<td>62</td>
+<td>01</td>
+<td>W</td>
+<td>NV-Ram not changed 1.</td>
+</tr>
+<tr>
+<td>62</td>
+<td>81</td>
+<td>W</td>
+<td>Part of returned data may be corrupted</td>
+</tr>
+<tr>
+<td>62</td>
+<td>82</td>
+<td>W</td>
+<td>End of file/record reached before reading Le bytes</td>
+</tr>
+<tr>
+<td>62</td>
+<td>83</td>
+<td>W</td>
+<td>Selected file invalidated</td>
+</tr>
+<tr>
+<td>62</td>
+<td>84</td>
+<td>W</td>
+<td>Selected file is not valid. FCI not formated according to ISO</td>
+</tr>
+<tr>
+<td>62</td>
+<td>85</td>
+<td>W</td>
+<td>No input data available from a sensor on the card. No Purse Engine enslaved for R3bc</td>
+</tr>
+<tr>
+<td>62</td>
+<td>A2</td>
+<td>W</td>
+<td>Wrong R-MAC</td>
+</tr>
+<tr>
+<td>62</td>
+<td>A4</td>
+<td>W</td>
+<td>Card locked (during reset( ))</td>
+</tr>
+<tr>
+<td>62</td>
+<td>CX</td>
+<td>W</td>
+<td>Counter with value x (command dependent)</td>
+</tr>
+<tr>
+<td>62</td>
+<td>F1</td>
+<td>W</td>
+<td>Wrong C-MAC</td>
+</tr>
+<tr>
+<td>62</td>
+<td>F3</td>
+<td>W</td>
+<td>Internal reset</td>
+</tr>
+<tr>
+<td>62</td>
+<td>F5</td>
+<td>W</td>
+<td>Default agent locked</td>
+</tr>
+<tr>
+<td>62</td>
+<td>F7</td>
+<td>W</td>
+<td>Cardholder locked</td>
+</tr>
+<tr>
+<td>62</td>
+<td>F8</td>
+<td>W</td>
+<td>Basement is current agent</td>
+</tr>
+<tr>
+<td>62</td>
+<td>F9</td>
+<td>W</td>
+<td>CALC Key Set not unblocked</td>
+</tr>
+<tr>
+<td>62</td>
+<td>FX</td>
+<td>W</td>
+<td>–</td>
+</tr>
+<tr>
+<td>62</td>
+<td>XX</td>
+<td>W</td>
+<td>RFU</td>
+</tr>
+<tr>
+<td><strong>63</strong></td>
+<td><strong>—</strong></td>
+<td><strong>W</strong></td>
+<td><strong>State of non-volatile memory changed</strong></td>
+</tr>
+<tr>
+<td>63</td>
+<td>00</td>
+<td>W</td>
+<td>No information given (NV-Ram changed)</td>
+</tr>
+<tr>
+<td>63</td>
+<td>81</td>
+<td>W</td>
+<td>File filled up by the last write. Loading/updating is not allowed.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>82</td>
+<td>W</td>
+<td>Card key not supported.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>83</td>
+<td>W</td>
+<td>Reader key not supported.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>84</td>
+<td>W</td>
+<td>Plaintext transmission not supported.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>85</td>
+<td>W</td>
+<td>Secured transmission not supported.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>86</td>
+<td>W</td>
+<td>Volatile memory is not available.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>87</td>
+<td>W</td>
+<td>Non-volatile memory is not available.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>88</td>
+<td>W</td>
+<td>Key number not valid.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>89</td>
+<td>W</td>
+<td>Key length is not correct.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>C0</td>
+<td>W</td>
+<td>Verify fail, no try left.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>C1</td>
+<td>W</td>
+<td>Verify fail, 1 try left.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>C2</td>
+<td>W</td>
+<td>Verify fail, 2 tries left.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>C3</td>
+<td>W</td>
+<td>Verify fail, 3 tries left.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>CX</td>
+<td>W</td>
+<td>The counter has reached the value ‘x’ (0 = x = 15) (command dependent).</td>
+</tr>
+<tr>
+<td>63</td>
+<td>F1</td>
+<td>W</td>
+<td>More data expected.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>F2</td>
+<td>W</td>
+<td>More data expected and proactive command pending.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>FX</td>
+<td>W</td>
+<td>–</td>
+</tr>
+<tr>
+<td>63</td>
+<td>XX</td>
+<td>W</td>
+<td>RFU</td>
+</tr>
+<tr>
+<td><strong>64</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td><strong>State of non-volatile memory unchanged</strong></td>
+</tr>
+<tr>
+<td>64</td>
+<td>00</td>
+<td>E</td>
+<td>No information given (NV-Ram not changed)</td>
+</tr>
+<tr>
+<td>64</td>
+<td>01</td>
+<td>E</td>
+<td>Command timeout. Immediate response required by the card.</td>
+</tr>
+<tr>
+<td>64</td>
+<td>XX</td>
+<td>E</td>
+<td>RFU</td>
+</tr>
+<tr>
+<td><strong>65</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td><strong>State of non-volatile memory changed</strong></td>
+</tr>
+<tr>
+<td>65</td>
+<td>00</td>
+<td>E</td>
+<td>No information given</td>
+</tr>
+<tr>
+<td>65</td>
+<td>01</td>
+<td>E</td>
+<td>Write error. Memory failure. There have been problems in writing or reading the EEPROM. Other hardware problems may also bring this error.</td>
+</tr>
+<tr>
+<td>65</td>
+<td>81</td>
+<td>E</td>
+<td>Memory failure</td>
+</tr>
+<tr>
+<td>65</td>
+<td>FX</td>
+<td>E</td>
+<td>–</td>
+</tr>
+<tr>
+<td>65</td>
+<td>XX</td>
+<td>E</td>
+<td>RFU</td>
+</tr>
+<tr>
+<td><strong>66</strong></td>
+<td><strong>—</strong></td>
+<td><strong>S</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>66</td>
+<td>00</td>
+<td>S</td>
+<td>Error while receiving (timeout)</td>
+</tr>
+<tr>
+<td>66</td>
+<td>01</td>
+<td>S</td>
+<td>Error while receiving (character parity error)</td>
+</tr>
+<tr>
+<td>66</td>
+<td>02</td>
+<td>S</td>
+<td>Wrong checksum</td>
+</tr>
+<tr>
+<td>66</td>
+<td>03</td>
+<td>S</td>
+<td>The current DF file without FCI</td>
+</tr>
+<tr>
+<td>66</td>
+<td>04</td>
+<td>S</td>
+<td>No SF or KF under the current DF</td>
+</tr>
+<tr>
+<td>66</td>
+<td>69</td>
+<td>S</td>
+<td>Incorrect Encryption/Decryption Padding</td>
+</tr>
+<tr>
+<td>66</td>
+<td>XX</td>
+<td>S</td>
+<td>–</td>
+</tr>
+<tr>
+<td><strong>67</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>67</td>
+<td>00</td>
+<td>E</td>
+<td>Wrong length</td>
+</tr>
+<tr>
+<td>67</td>
+<td>XX</td>
+<td>E</td>
+<td>length incorrect (procedure)(ISO 7816-3)</td>
+</tr>
+<tr>
+<td><strong>68</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td><strong>Functions in CLA not supported</strong></td>
+</tr>
+<tr>
+<td>68</td>
+<td>00</td>
+<td>E</td>
+<td>No information given (The request function is not supported by the card)</td>
+</tr>
+<tr>
+<td>68</td>
+<td>81</td>
+<td>E</td>
+<td>Logical channel not supported</td>
+</tr>
+<tr>
+<td>68</td>
+<td>82</td>
+<td>E</td>
+<td>Secure messaging not supported</td>
+</tr>
+<tr>
+<td>68</td>
+<td>83</td>
+<td>E</td>
+<td>Last command of the chain expected</td>
+</tr>
+<tr>
+<td>68</td>
+<td>84</td>
+<td>E</td>
+<td>Command chaining not supported</td>
+</tr>
+<tr>
+<td>68</td>
+<td>FX</td>
+<td>E</td>
+<td>–</td>
+</tr>
+<tr>
+<td>68</td>
+<td>XX</td>
+<td>E</td>
+<td>RFU</td>
+</tr>
+<tr>
+<td><strong>69</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td><strong>Command not allowed</strong></td>
+</tr>
+<tr>
+<td>69</td>
+<td>00</td>
+<td>E</td>
+<td>No information given (Command not allowed)</td>
+</tr>
+<tr>
+<td>69</td>
+<td>01</td>
+<td>E</td>
+<td>Command not accepted (inactive state)</td>
+</tr>
+<tr>
+<td>69</td>
+<td>81</td>
+<td>E</td>
+<td>Command incompatible with file structure</td>
+</tr>
+<tr>
+<td>69</td>
+<td>82</td>
+<td>E</td>
+<td>Security condition not satisfied.</td>
+</tr>
+<tr>
+<td>69</td>
+<td>83</td>
+<td>E</td>
+<td>Authentication method blocked</td>
+</tr>
+<tr>
+<td>69</td>
+<td>84</td>
+<td>E</td>
+<td>Referenced data reversibly blocked (invalidated)</td>
+</tr>
+<tr>
+<td>69</td>
+<td>85</td>
+<td>E</td>
+<td>Conditions of use not satisfied.</td>
+</tr>
+<tr>
+<td>69</td>
+<td>86</td>
+<td>E</td>
+<td>Command not allowed (no current EF)</td>
+</tr>
+<tr>
+<td>69</td>
+<td>87</td>
+<td>E</td>
+<td>Expected secure messaging (SM) object missing</td>
+</tr>
+<tr>
+<td>69</td>
+<td>88</td>
+<td>E</td>
+<td>Incorrect secure messaging (SM) data object</td>
+</tr>
+<tr>
+<td>69</td>
+<td>8D</td>
+<td></td>
+<td>Reserved</td>
+</tr>
+<tr>
+<td>69</td>
+<td>96</td>
+<td>E</td>
+<td>Data must be updated again</td>
+</tr>
+<tr>
+<td>69</td>
+<td>E1</td>
+<td>E</td>
+<td>POL1 of the currently Enabled Profile prevents this action.</td>
+</tr>
+<tr>
+<td>69</td>
+<td>F0</td>
+<td>E</td>
+<td>Permission Denied</td>
+</tr>
+<tr>
+<td>69</td>
+<td>F1</td>
+<td>E</td>
+<td>Permission Denied – Missing Privilege</td>
+</tr>
+<tr>
+<td>69</td>
+<td>FX</td>
+<td>E</td>
+<td>–</td>
+</tr>
+<tr>
+<td>69</td>
+<td>XX</td>
+<td>E</td>
+<td>RFU</td>
+</tr>
+<tr>
+<td><strong>6A</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td><strong>Wrong parameter(s) P1-P2</strong></td>
+</tr>
+<tr>
+<td>6A</td>
+<td>00</td>
+<td>E</td>
+<td>No information given (Bytes P1 and/or P2 are incorrect)</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>80</td>
+<td>E</td>
+<td>The parameters in the data field are incorrect.</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>81</td>
+<td>E</td>
+<td>Function not supported</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>82</td>
+<td>E</td>
+<td>File not found</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>83</td>
+<td>E</td>
+<td>Record not found</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>84</td>
+<td>E</td>
+<td>There is insufficient memory space in record or file</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>85</td>
+<td>E</td>
+<td>Lc inconsistent with TLV structure</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>86</td>
+<td>E</td>
+<td>Incorrect P1 or P2 parameter.</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>87</td>
+<td>E</td>
+<td>Lc inconsistent with P1-P2</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>88</td>
+<td>E</td>
+<td>Referenced data not found</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>89</td>
+<td>E</td>
+<td>File already exists</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>8A</td>
+<td>E</td>
+<td>DF name already exists.</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>F0</td>
+<td>E</td>
+<td>Wrong parameter value</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>FX</td>
+<td>E</td>
+<td>–</td>
+</tr>
+<tr>
+<td>6A</td>
+<td>XX</td>
+<td>E</td>
+<td>RFU</td>
+</tr>
+<tr>
+<td><strong>6B</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>6B</td>
+<td>00</td>
+<td>E</td>
+<td>Wrong parameter(s) P1-P2</td>
+</tr>
+<tr>
+<td>6B</td>
+<td>XX</td>
+<td>E</td>
+<td>Reference incorrect (procedure byte), (ISO 7816-3)</td>
+</tr>
+<tr>
+<td><strong>6C</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td><strong>Wrong length Le</strong></td>
+</tr>
+<tr>
+<td>6C</td>
+<td>00</td>
+<td>E</td>
+<td>Incorrect P3 length.</td>
+</tr>
+<tr>
+<td>6C</td>
+<td>XX</td>
+<td>E</td>
+<td>Bad length value in Le; ‘xx’ is the correct exact Le</td>
+</tr>
+<tr>
+<td><strong>6D</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>6D</td>
+<td>00</td>
+<td>E</td>
+<td>Instruction code not supported or invalid</td>
+</tr>
+<tr>
+<td>6D</td>
+<td>XX</td>
+<td>E</td>
+<td>Instruction code not programmed or invalid (procedure byte), (ISO 7816-3)</td>
+</tr>
+<tr>
+<td><strong>6E</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>6E</td>
+<td>00</td>
+<td>E</td>
+<td>Class not supported</td>
+</tr>
+<tr>
+<td>6E</td>
+<td>XX</td>
+<td>E</td>
+<td>Instruction class not supported (procedure byte), (ISO 7816-3)</td>
+</tr>
+<tr>
+<td><strong>6F</strong></td>
+<td><strong>—</strong></td>
+<td><strong>E</strong></td>
+<td><strong>Internal exception</strong></td>
+</tr>
+<tr>
+<td>6F</td>
+<td>00</td>
+<td>E</td>
+<td>Command aborted – more exact diagnosis not possible (e.g., operating system error).</td>
+</tr>
+<tr>
+<td>6F</td>
+<td>FF</td>
+<td>E</td>
+<td>Card dead (overuse, …)</td>
+</tr>
+<tr>
+<td>6F</td>
+<td>XX</td>
+<td>E</td>
+<td>No precise diagnosis (procedure byte), (ISO 7816-3)</td>
+</tr>
+<tr>
+<td><strong>9-</strong></td>
+<td><strong>—</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>90</td>
+<td>00</td>
+<td>I</td>
+<td>Command successfully executed (OK).</td>
+</tr>
+<tr>
+<td>90</td>
+<td>04</td>
+<td>W</td>
+<td>PIN not succesfully verified, 3 or more PIN tries left</td>
+</tr>
+<tr>
+<td>90</td>
+<td>08</td>
+<td></td>
+<td>Key/file not found</td>
+</tr>
+<tr>
+<td>90</td>
+<td>80</td>
+<td>W</td>
+<td>Unblock Try Counter has reached zero</td>
+</tr>
+<tr>
+<td>91</td>
+<td>00</td>
+<td></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>91</td>
+<td>01</td>
+<td></td>
+<td>States.activity, States.lock Status or States.lockable has wrong value</td>
+</tr>
+<tr>
+<td>91</td>
+<td>02</td>
+<td></td>
+<td>Transaction number reached its limit</td>
+</tr>
+<tr>
+<td>91</td>
+<td>0C</td>
+<td></td>
+<td>No changes</td>
+</tr>
+<tr>
+<td>91</td>
+<td>0E</td>
+<td></td>
+<td>Insufficient NV-Memory to complete command</td>
+</tr>
+<tr>
+<td>91</td>
+<td>1C</td>
+<td></td>
+<td>Command code not supported</td>
+</tr>
+<tr>
+<td>91</td>
+<td>1E</td>
+<td></td>
+<td>CRC or MAC does not match data</td>
+</tr>
+<tr>
+<td>91</td>
+<td>40</td>
+<td></td>
+<td>Invalid key number specified</td>
+</tr>
+<tr>
+<td>91</td>
+<td>7E</td>
+<td></td>
+<td>Length of command string invalid</td>
+</tr>
+<tr>
+<td>91</td>
+<td>9D</td>
+<td></td>
+<td>Not allow the requested command</td>
+</tr>
+<tr>
+<td>91</td>
+<td>9E</td>
+<td></td>
+<td>Value of the parameter invalid</td>
+</tr>
+<tr>
+<td>91</td>
+<td>A0</td>
+<td></td>
+<td>Requested AID not present on PICC</td>
+</tr>
+<tr>
+<td>91</td>
+<td>A1</td>
+<td></td>
+<td>Unrecoverable error within application</td>
+</tr>
+<tr>
+<td>91</td>
+<td>AE</td>
+<td></td>
+<td>Authentication status does not allow the requested command</td>
+</tr>
+<tr>
+<td>91</td>
+<td>AF</td>
+<td></td>
+<td>Additional data frame is expected to be sent</td>
+</tr>
+<tr>
+<td>91</td>
+<td>BE</td>
+<td></td>
+<td>Out of boundary</td>
+</tr>
+<tr>
+<td>91</td>
+<td>C1</td>
+<td></td>
+<td>Unrecoverable error within PICC</td>
+</tr>
+<tr>
+<td>91</td>
+<td>CA</td>
+<td></td>
+<td>Previous Command was not fully completed</td>
+</tr>
+<tr>
+<td>91</td>
+<td>CD</td>
+<td></td>
+<td>PICC was disabled by an unrecoverable error</td>
+</tr>
+<tr>
+<td>91</td>
+<td>CE</td>
+<td></td>
+<td>Number of Applications limited to 28</td>
+</tr>
+<tr>
+<td>91</td>
+<td>DE</td>
+<td></td>
+<td>File or application already exists</td>
+</tr>
+<tr>
+<td>91</td>
+<td>EE</td>
+<td></td>
+<td>Could not complete NV-write operation due to loss of power</td>
+</tr>
+<tr>
+<td>91</td>
+<td>F0</td>
+<td></td>
+<td>Specified file number does not exist</td>
+</tr>
+<tr>
+<td>91</td>
+<td>F1</td>
+<td></td>
+<td>Unrecoverable error within file</td>
+</tr>
+<tr>
+<td>92</td>
+<td>0x</td>
+<td>I</td>
+<td>Writing to EEPROM successful after ‘x’ attempts.</td>
+</tr>
+<tr>
+<td>92</td>
+<td>10</td>
+<td>E</td>
+<td>Insufficient memory. No more storage available.</td>
+</tr>
+<tr>
+<td>92</td>
+<td>40</td>
+<td>E</td>
+<td>Writing to EEPROM not successful.</td>
+</tr>
+<tr>
+<td>93</td>
+<td>01</td>
+<td></td>
+<td>Integrity error</td>
+</tr>
+<tr>
+<td>93</td>
+<td>02</td>
+<td></td>
+<td>Candidate S2 invalid</td>
+</tr>
+<tr>
+<td>93</td>
+<td>03</td>
+<td>E</td>
+<td>Application is permanently locked</td>
+</tr>
+<tr>
+<td>94</td>
+<td>00</td>
+<td>E</td>
+<td>No EF selected.</td>
+</tr>
+<tr>
+<td>94</td>
+<td>01</td>
+<td></td>
+<td>Candidate currency code does not match purse currency</td>
+</tr>
+<tr>
+<td>94</td>
+<td>02</td>
+<td></td>
+<td>Candidate amount too high</td>
+</tr>
+<tr>
+<td>94</td>
+<td>02</td>
+<td>E</td>
+<td>Address range exceeded.</td>
+</tr>
+<tr>
+<td>94</td>
+<td>03</td>
+<td></td>
+<td>Candidate amount too low</td>
+</tr>
+<tr>
+<td>94</td>
+<td>04</td>
+<td>E</td>
+<td>FID not found, record not found or comparison pattern not found.</td>
+</tr>
+<tr>
+<td>94</td>
+<td>05</td>
+<td></td>
+<td>Problems in the data field</td>
+</tr>
+<tr>
+<td>94</td>
+<td>06</td>
+<td>E</td>
+<td>Required MAC unavailable</td>
+</tr>
+<tr>
+<td>94</td>
+<td>07</td>
+<td></td>
+<td>Bad currency : purse engine has no slot with R3bc currency</td>
+</tr>
+<tr>
+<td>94</td>
+<td>08</td>
+<td></td>
+<td>R3bc currency not supported in purse engine</td>
+</tr>
+<tr>
+<td>94</td>
+<td>08</td>
+<td>E</td>
+<td>Selected file type does not match command.</td>
+</tr>
+<tr>
+<td>95</td>
+<td>80</td>
+<td></td>
+<td>Bad sequence</td>
+</tr>
+<tr>
+<td>96</td>
+<td>81</td>
+<td></td>
+<td>Slave not found</td>
+</tr>
+<tr>
+<td>97</td>
+<td>00</td>
+<td></td>
+<td>PIN blocked and Unblock Try Counter is 1 or 2</td>
+</tr>
+<tr>
+<td>97</td>
+<td>02</td>
+<td></td>
+<td>Main keys are blocked</td>
+</tr>
+<tr>
+<td>97</td>
+<td>04</td>
+<td></td>
+<td>PIN not succesfully verified, 3 or more PIN tries left</td>
+</tr>
+<tr>
+<td>97</td>
+<td>84</td>
+<td></td>
+<td>Base key</td>
+</tr>
+<tr>
+<td>97</td>
+<td>85</td>
+<td></td>
+<td>Limit exceeded – C-MAC key</td>
+</tr>
+<tr>
+<td>97</td>
+<td>86</td>
+<td></td>
+<td>SM error – Limit exceeded – R-MAC key</td>
+</tr>
+<tr>
+<td>97</td>
+<td>87</td>
+<td></td>
+<td>Limit exceeded – sequence counter</td>
+</tr>
+<tr>
+<td>97</td>
+<td>88</td>
+<td></td>
+<td>Limit exceeded – R-MAC length</td>
+</tr>
+<tr>
+<td>97</td>
+<td>89</td>
+<td></td>
+<td>Service not available</td>
+</tr>
+<tr>
+<td>98</td>
+<td>02</td>
+<td>E</td>
+<td>No PIN defined.</td>
+</tr>
+<tr>
+<td>98</td>
+<td>04</td>
+<td>E</td>
+<td>Access conditions not satisfied, authentication failed.</td>
+</tr>
+<tr>
+<td>98</td>
+<td>35</td>
+<td>E</td>
+<td>ASK RANDOM or GIVE RANDOM not executed.</td>
+</tr>
+<tr>
+<td>98</td>
+<td>40</td>
+<td>E</td>
+<td>PIN verification not successful.</td>
+</tr>
+<tr>
+<td>98</td>
+<td>50</td>
+<td>E</td>
+<td>INCREASE or DECREASE could not be executed because a limit has been reached.</td>
+</tr>
+<tr>
+<td>98</td>
+<td>62</td>
+<td>E</td>
+<td>Authentication Error, application specific (incorrect MAC)</td>
+</tr>
+<tr>
+<td>99</td>
+<td>00</td>
+<td></td>
+<td>1 PIN try left</td>
+</tr>
+<tr>
+<td>99</td>
+<td>04</td>
+<td></td>
+<td>PIN not succesfully verified, 1 PIN try left</td>
+</tr>
+<tr>
+<td>99</td>
+<td>85</td>
+<td></td>
+<td>Wrong status – Cardholder lock</td>
+</tr>
+<tr>
+<td>99</td>
+<td>86</td>
+<td>E</td>
+<td>Missing privilege</td>
+</tr>
+<tr>
+<td>99</td>
+<td>87</td>
+<td></td>
+<td>PIN is not installed</td>
+</tr>
+<tr>
+<td>99</td>
+<td>88</td>
+<td></td>
+<td>Wrong status – R-MAC state</td>
+</tr>
+<tr>
+<td>9A</td>
+<td>00</td>
+<td></td>
+<td>2 PIN try left</td>
+</tr>
+<tr>
+<td>9A</td>
+<td>04</td>
+<td></td>
+<td>PIN not succesfully verified, 2 PIN try left</td>
+</tr>
+<tr>
+<td>9A</td>
+<td>71</td>
+<td></td>
+<td>Wrong parameter value – Double agent AID</td>
+</tr>
+<tr>
+<td>9A</td>
+<td>72</td>
+<td></td>
+<td>Wrong parameter value – Double agent Type</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>05</td>
+<td>E</td>
+<td>Incorrect certificate type</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>07</td>
+<td>E</td>
+<td>Incorrect session data size</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>08</td>
+<td>E</td>
+<td>Incorrect DIR file record size</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>09</td>
+<td>E</td>
+<td>Incorrect FCI record size</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>0A</td>
+<td>E</td>
+<td>Incorrect code size</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>10</td>
+<td>E</td>
+<td>Insufficient memory to load application</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>11</td>
+<td>E</td>
+<td>Invalid AID</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>12</td>
+<td>E</td>
+<td>Duplicate AID</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>13</td>
+<td>E</td>
+<td>Application previously loaded</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>14</td>
+<td>E</td>
+<td>Application history list full</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>15</td>
+<td>E</td>
+<td>Application not open</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>17</td>
+<td>E</td>
+<td>Invalid offset</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>18</td>
+<td>E</td>
+<td>Application already loaded</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>19</td>
+<td>E</td>
+<td>Invalid certificate</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>1A</td>
+<td>E</td>
+<td>Invalid signature</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>1B</td>
+<td>E</td>
+<td>Invalid KTU</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>1D</td>
+<td>E</td>
+<td>MSM controls not set</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>1E</td>
+<td>E</td>
+<td>Application signature does not exist</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>1F</td>
+<td>E</td>
+<td>KTU does not exist</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>20</td>
+<td>E</td>
+<td>Application not loaded</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>21</td>
+<td>E</td>
+<td>Invalid Open command data length</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>30</td>
+<td>E</td>
+<td>Check data parameter is incorrect (invalid start address)</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>31</td>
+<td>E</td>
+<td>Check data parameter is incorrect (invalid length)</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>32</td>
+<td>E</td>
+<td>Check data parameter is incorrect (illegal memory check area)</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>40</td>
+<td>E</td>
+<td>Invalid MSM Controls ciphertext</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>41</td>
+<td>E</td>
+<td>MSM controls already set</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>42</td>
+<td>E</td>
+<td>Set MSM Controls data length less than 2 bytes</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>43</td>
+<td>E</td>
+<td>Invalid MSM Controls data length</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>44</td>
+<td>E</td>
+<td>Excess MSM Controls ciphertext</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>45</td>
+<td>E</td>
+<td>Verification of MSM Controls data failed</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>50</td>
+<td>E</td>
+<td>Invalid MCD Issuer production ID</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>51</td>
+<td>E</td>
+<td>Invalid MCD Issuer ID</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>52</td>
+<td>E</td>
+<td>Invalid set MSM controls data date</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>53</td>
+<td>E</td>
+<td>Invalid MCD number</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>54</td>
+<td>E</td>
+<td>Reserved field error</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>55</td>
+<td>E</td>
+<td>Reserved field error</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>56</td>
+<td>E</td>
+<td>Reserved field error</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>57</td>
+<td>E</td>
+<td>Reserved field error</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>60</td>
+<td>E</td>
+<td>MAC verification failed</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>61</td>
+<td>E</td>
+<td>Maximum number of unblocks reached</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>62</td>
+<td>E</td>
+<td>Card was not blocked</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>63</td>
+<td>E</td>
+<td>Crypto functions not available</td>
+</tr>
+<tr>
+<td>9D</td>
+<td>64</td>
+<td>E</td>
+<td>No application loaded</td>
+</tr>
+<tr>
+<td>9E</td>
+<td>00</td>
+<td></td>
+<td>PIN not installed</td>
+</tr>
+<tr>
+<td>9E</td>
+<td>04</td>
+<td></td>
+<td>PIN not succesfully verified, PIN not installed</td>
+</tr>
+<tr>
+<td>9F</td>
+<td>00</td>
+<td></td>
+<td>PIN blocked and Unblock Try Counter is 3</td>
+</tr>
+<tr>
+<td>9F</td>
+<td>04</td>
+<td></td>
+<td>PIN not succesfully verified, PIN blocked and Unblock Try Counter is 3</td>
+</tr>
+<tr>
+<td>9F</td>
+<td>XX</td>
+<td></td>
+<td>Command successfully executed; ‘xx’ bytes of data are available and can be requested using GET RESPONSE.</td>
+</tr>
+<tr>
+<td>9x</td>
+<td>XX</td>
+<td></td>
+<td>Application related status, (ISO 7816-3)</td>
+</tr>
+</tbody></table>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="Update time"></i>
+              2020-12-23
+            </span>
+            
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="Tags"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/EMV/" title="EMV">
+                        <b>#</b> EMV
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/2020/12/23/Complete-list-of-ATRs/" target="_self">
+                <span>Next</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+    </div>
+    
+
+    
+      <div class="comments-container">
+        
+
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+  <div id="gitalk-container"></div>
+  <script src="/js/md5.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: '57cd3399b19f860fecc9',
+      clientSecret: '2190b5d0de9a59b3de639f23ad0b771ead37dcca',
+      repo: 'longxiying.github.io',
+      owner: 'longxiying',
+      admin: ['longxiying'],
+      id: md5(location.pathname),
+      distractionFreeMode: false
+    })
+
+    gitalk.render('gitalk-container')
+  </script>
+
+
+      </div>
+    
+  </div>
+
+
+        <div class="footer">
+  <div class="social">
+    <ul>
+      
+        <li>
+          <a title="github" target="_blank" rel="noopener" href="https://github.com/longxiying">
+            <i class="iconfont icon-github"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="email" href="mailto:longxiying@vip.qq.com">
+            <i class="iconfont icon-envelope"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="facebook" target="_blank" rel="noopener" href="https://www.facebook.com/abtswiath/">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="twitter" target="_blank" rel="noopener" href="https://twitter.com/longxiying">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="wechat" href="">
+            <i class="iconfont icon-wechat"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="weibo" target="_blank" rel="noopener" href="https://weibo.com/579081111/">
+            <i class="iconfont icon-weibo"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="rss" href="/atom.xml">
+            <i class="iconfont icon-rss"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+  
+    <div class="footer-more">
+      
+        <a href="https://emv.cool">Copyright © EMV.COOL 2020</a>
+        
+    </div>
+  
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Theme by Oranges | Powered by Hexo</a>
+        
+    </div>
+  
+</div>
+
+      </div>
+
+      <div class="back-to-top hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/js/backtotop.js"></script>
+
+
+
+      
+  <div class="search-icon" id="search-icon">
+    <a href="javascript: void(0)">
+      <i class="iconfont icon-search"></i>
+    </a>
+  </div>
+
+  <div class="search-overlay hidden">
+    <div class="search-content" tabindex="0">
+      <div class="search-title">
+        <span class="search-icon-input">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-search"></i>
+          </a>
+        </span>
+        
+          <input type="text" class="search-input" id="search-input" placeholder="Search...">
+        
+        <span class="search-close-icon" id="search-close-icon">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-close"></i>
+          </a>
+        </span>
+      </div>
+      <div class="search-result" id="search-result"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var inputArea = document.querySelector("#search-input")
+    var searchOverlayArea = document.querySelector(".search-overlay")
+
+    inputArea.onclick = function() {
+      getSearchFile()
+      this.onclick = null
+    }
+
+    inputArea.onkeydown = function() {
+      if(event.keyCode == 13)
+        return false
+    }
+
+    function openOrHideSearchContent() {
+      let isHidden = searchOverlayArea.classList.contains('hidden')
+      if (isHidden) {
+        searchOverlayArea.classList.remove('hidden')
+        document.body.classList.add('hidden')
+        // inputArea.focus()
+      } else {
+        searchOverlayArea.classList.add('hidden')
+        document.body.classList.remove('hidden')
+      }
+    }
+
+    function blurSearchContent(e) {
+      if (e.target === searchOverlayArea) {
+        openOrHideSearchContent()
+      }
+    }
+
+    document.querySelector("#search-icon").addEventListener("click", openOrHideSearchContent, false)
+    document.querySelector("#search-close-icon").addEventListener("click", openOrHideSearchContent, false)
+    searchOverlayArea.addEventListener("click", blurSearchContent, false)
+
+    var searchFunc = function (path, search_id, content_id) {
+      'use strict';
+      var $input = document.getElementById(search_id);
+      var $resultContent = document.getElementById(content_id);
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'>First search, index file loading, please wait...<span></ul>";
+      $.ajax({
+        // 0x01. load xml file
+        url: path,
+        dataType: "xml",
+        success: function (xmlResponse) {
+          // 0x02. parse xml file
+          var datas = $("entry", xmlResponse).map(function () {
+            return {
+              title: $("title", this).text(),
+              content: $("content", this).text(),
+              url: $("url", this).text()
+            };
+          }).get();
+          $resultContent.innerHTML = "";
+
+          $input.addEventListener('input', function () {
+            // 0x03. parse query to keywords list
+            var str = '<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length <= 0) {
+              return;
+            }
+            // 0x04. perform local searching
+            datas.forEach(function (data) {
+              var isMatch = true;
+              var content_index = [];
+              if (!data.title || data.title.trim() === '') {
+                data.title = "Untitled";
+              }
+              var orig_data_title = data.title.trim();
+              var data_title = orig_data_title.toLowerCase();
+              var orig_data_content = data.content.trim().replace(/<[^>]+>/g, "");
+              var data_content = orig_data_content.toLowerCase();
+              var data_url = data.url;
+              var index_title = -1;
+              var index_content = -1;
+              var first_occur = -1;
+              // only match artiles with not empty contents
+              if (data_content !== '') {
+                keywords.forEach(function (keyword, i) {
+                  index_title = data_title.indexOf(keyword);
+                  index_content = data_content.indexOf(keyword);
+
+                  if (index_title < 0 && index_content < 0) {
+                    isMatch = false;
+                  } else {
+                    if (index_content < 0) {
+                      index_content = 0;
+                    }
+                    if (i == 0) {
+                      first_occur = index_content;
+                    }
+                    // content_index.push({index_content:index_content, keyword_len:keyword_len});
+                  }
+                });
+              } else {
+                isMatch = false;
+              }
+              // 0x05. show search results
+              if (isMatch) {
+                str += "<li><a href='" + data_url + "' class='search-result-title'>" + orig_data_title + "</a>";
+                var content = orig_data_content;
+                if (first_occur >= 0) {
+                  // cut out 100 characters
+                  var start = first_occur - 20;
+                  var end = first_occur + 80;
+
+                  if (start < 0) {
+                    start = 0;
+                  }
+
+                  if (start == 0) {
+                    end = 100;
+                  }
+
+                  if (end > content.length) {
+                    end = content.length;
+                  }
+
+                  var match_content = content.substr(start, end);
+
+                  // highlight all keywords
+                  keywords.forEach(function (keyword) {
+                    var regS = new RegExp(keyword, "gi");
+                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
+                  });
+
+                  str += "<p class=\"search-result-abstract\">" + match_content + "...</p>"
+                }
+                str += "</li>";
+              }
+            });
+            str += "</ul>";
+            if (str.indexOf('<li>') === -1) {
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>No result<span></ul>";
+            }
+            $resultContent.innerHTML = str;
+          });
+        },
+        error: function(xhr, status, error) {
+          $resultContent.innerHTML = ""
+          if (xhr.status === 404) {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The search.xml file was not found, please refer to：<a href='https://github.com/zchengsite/hexo-theme-oranges#configuration' target='_black'>configuration</a><span></ul>";
+          } else {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The request failed, Try to refresh the page or try again later.<span></ul>";
+          }
+        }
+      });
+      $(document).on('click', '#search-close-icon', function() {
+        $('#search-input').val('');
+        $('#search-result').html('');
+      });
+    }
+
+    var getSearchFile = function() {
+        var path = "/search.xml";
+        searchFunc(path, 'search-input', 'search-result');
+    }
+  </script>
+
+
+
+
+    </div>
+  </body>
+</html>

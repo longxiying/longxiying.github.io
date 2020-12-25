@@ -1,31 +1,3676 @@
-extends includes/layout.pug
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-block content
-  #post
-    if top_img === false
-      include includes/header/post-info.pug
+  <head>
+  <meta charset="utf-8">
+  <meta name="author" content="zchengsite, 1451426471@qq.com" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  
+  <title>Complete list of Registered Application Provider   | EMV.COOL</title>
 
-    article#article-container.post-content!=page.content
-    include includes/post/post-copyright.pug
-    .tag_share
-      if (theme.post_meta.post.tags)
-        .post-meta__tag-list
-          each item, index in page.tags.data
-            a(href=url_for(item.path)).post-meta__tags #[=item.name]
-      include includes/third-party/share/index.pug
-        
-    if theme.reward.enable
-      !=partial('includes/post/reward', {}, {cache:theme.fragment_cache})
+  
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+    <link rel="icon" href="/images/favicon.png">
+  
 
-    //- ad
-    if theme.ad && theme.ad.post
-      .ads-wrap!=theme.ad.post
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
-    include includes/pagination.pug
-    if theme.related_post && theme.related_post.enable
-      != related_posts(page,site.posts)
+  <!-- hexo site css -->
+  
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/github-markdown.css">
+<link rel="stylesheet" href="/css/highlight.css">
 
-    if page.comments !== false && theme.comments && theme.comments.use
-      - var commentsJsLoad = true
-      !=partial('includes/third-party/comments/index', {}, {cache:theme.fragment_cache})
+
+  <!-- jquery3.3.1 -->
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- fancybox -->
+  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
+  <script async src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  
+<script src="/js/fancybox.js"></script>
+
+
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144519052-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-144519052-1');
+    </script>
+  
+
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="EMV.COOL" type="application/atom+xml">
+</head>
+
+
+  <body>
+    <div id="app">
+      <div class="header">
+  <div class="avatar">
+    <a href="/">
+      <!-- 头像取消懒加载，添加no-lazy -->
       
+        <img src="/images/avatar.png" alt="">
+      
+    </a>
+    <div class="nickname"><a href="/">EMV.COOL</a></div>
+  </div>
+  <div class="navbar">
+    <ul>
+      
+        <li class="nav-item" data-path="/">
+          <a href="/">Home</a>
+        </li>
+      
+        <li class="nav-item" data-path="/archives/">
+          <a href="/archives/">Archives</a>
+        </li>
+      
+        <li class="nav-item" data-path="/tags/">
+          <a href="/tags/">Tags</a>
+        </li>
+      
+        <li class="nav-item" data-path="/friends/">
+          <a href="/friends/">Friends</a>
+        </li>
+      
+        <li class="nav-item" data-path="/about/">
+          <a href="/about/">About</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<script src="/js/activeNav.js"></script>
+
+
+
+      <div class="flex-container">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">Complete list of Registered Application Provider</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="Update time"></i>
+          2020-12-23
+        </span>
+        
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="Tags"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/EMV/" title="EMV">
+                    <b>#</b> EMV
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <h5 id="List-of-registered-application-provider-identifiers-RID-with-their-description"><a href="#List-of-registered-application-provider-identifiers-RID-with-their-description" class="headerlink" title="List of registered application provider identifiers (RID) with their description."></a>List of registered application provider identifiers (RID) with their description.</h5><table>
+<thead>
+<tr>
+<th><strong>RID</strong></th>
+<th><strong>Provider</strong></th>
+<th><strong>Country</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>315041592E</td>
+<td>Visa International</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>325041592E</td>
+<td>Visa International</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>44464D4641</td>
+<td>DeviceFidelity</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>501649FF20</td>
+<td>Multibanco (Sociedade Interbancária de Serviços S.A.)</td>
+<td>Portugal</td>
+</tr>
+<tr>
+<td>A000000001</td>
+<td>PBS Danmønt A/S</td>
+<td>Denmark</td>
+</tr>
+<tr>
+<td>A000000002</td>
+<td>Mondex International Ltd.</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000003</td>
+<td>Visa International</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000004</td>
+<td>Mastercard International</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000005</td>
+<td>Switch Card Services Ltd.</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000006</td>
+<td>Cardintell S.A.</td>
+<td>Switzerland</td>
+</tr>
+<tr>
+<td>A000000007</td>
+<td>National Westminster Bank Plc</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000008</td>
+<td>GyD Iberica</td>
+<td>Spain</td>
+</tr>
+<tr>
+<td>A000000009</td>
+<td>ETSI</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000010</td>
+<td>Europay International</td>
+<td>Belgium</td>
+</tr>
+<tr>
+<td>A000000011</td>
+<td>TSB Bank Plc</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000012</td>
+<td>BT</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000013</td>
+<td>OTB Card Company Limited</td>
+<td>Hong Kong</td>
+</tr>
+<tr>
+<td>A000000014</td>
+<td>Touch Technology Inc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000015</td>
+<td>Pocket Key S.R.L.</td>
+<td>Italy</td>
+</tr>
+<tr>
+<td>A000000016</td>
+<td>Computercentrum C. van de Velden B:V (CCV)</td>
+<td>Netherlands</td>
+</tr>
+<tr>
+<td>A000000017</td>
+<td>Veron SpA</td>
+<td>Italy</td>
+</tr>
+<tr>
+<td>A000000018</td>
+<td>GEMPLUS</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000019</td>
+<td>ID Data Systems Ltd.</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000020</td>
+<td>Laurel Intelligent Systems Co. Ltd.</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000021</td>
+<td>National CacheCard Co.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000022</td>
+<td>G.I.E. SESAM-VITALE</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000023</td>
+<td>ATA/IATA</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000024</td>
+<td>Midland Bank Plc</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000025</td>
+<td>American Express</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000026</td>
+<td>Nationwide Building Society</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000027</td>
+<td>OSI Plus Corporation</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000028</td>
+<td>MONET+</td>
+<td>Czech Republic</td>
+</tr>
+<tr>
+<td>A000000029</td>
+<td>LINK Interchange Network Ltd</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000030</td>
+<td>Schlumberger Industries Identif d’Encarteur PR050</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000031</td>
+<td>Kokusai Denshin Denwa Co., Ltd.</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000032</td>
+<td>De Post Belgie</td>
+<td>Belgium</td>
+</tr>
+<tr>
+<td>A000000033</td>
+<td>Banque Carrefour de la Securite Sociale</td>
+<td>Belgium</td>
+</tr>
+<tr>
+<td>A000000034</td>
+<td>Bank of Scotland</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000035</td>
+<td>Sistema 4B</td>
+<td>Spain</td>
+</tr>
+<tr>
+<td>A000000036</td>
+<td>The Co-operative Bank</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000037</td>
+<td>SEIS</td>
+<td>Sweden</td>
+</tr>
+<tr>
+<td>A000000038</td>
+<td>Delhaize De Leeuw</td>
+<td>Belgium</td>
+</tr>
+<tr>
+<td>A000000039</td>
+<td>Acorn Group</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000040</td>
+<td>ICL</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000041</td>
+<td>Timelox AB</td>
+<td>Sweden</td>
+</tr>
+<tr>
+<td>A000000042</td>
+<td>Groupement des Cartes Bancaires “CB”</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000043</td>
+<td>Eclipse Medi Save America Corp.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000044</td>
+<td>GSS (Global Specification for Short Range Communication)</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>A000000045</td>
+<td>Barclays</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000046</td>
+<td>Transtex S.A.</td>
+<td>Argentina</td>
+</tr>
+<tr>
+<td>A000000047</td>
+<td>Security Dynamics Techn. Inc.</td>
+<td>Sweden</td>
+</tr>
+<tr>
+<td>A000000048</td>
+<td>CARDAG, Karten und Technologie</td>
+<td>Switzerland</td>
+</tr>
+<tr>
+<td>A000000049</td>
+<td>Clydesdale Bank P.L.C.</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000050</td>
+<td>Yorkshire Bank P.L.C.</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000051</td>
+<td>Northern Bank Limited</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000052</td>
+<td>Sainsbury Supermarkets Ltd. (ATC-payments)</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000053</td>
+<td>Sani Group Italia S.R.L.</td>
+<td>Italy</td>
+</tr>
+<tr>
+<td>A000000054</td>
+<td>Alacarte Engineering</td>
+<td>Belgium</td>
+</tr>
+<tr>
+<td>A000000055</td>
+<td>BankomatCentralen AB</td>
+<td>Sweden</td>
+</tr>
+<tr>
+<td>A000000056</td>
+<td>Datakey, Inc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000057</td>
+<td>Global Chipcard Alliance (GCA)</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000058</td>
+<td>AB InTech</td>
+<td>Estonia</td>
+</tr>
+<tr>
+<td>A000000059</td>
+<td>Zentraler Kreditausschuss (ZKA)</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>A000000060</td>
+<td>Applied Card Technologies Ltd</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000061</td>
+<td>Mycal Card Incorporated</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000062</td>
+<td>Sun Microsystems Inc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000063</td>
+<td>RSA Laboratories</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000064</td>
+<td>Schindler Elevator Corp.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000065</td>
+<td>JCB CO., LTD.</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000066</td>
+<td>Secunet Security Networks GmbH</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>A000000067</td>
+<td>Iris Technologies Sdn. Bhd.</td>
+<td>Malaysia</td>
+</tr>
+<tr>
+<td>A000000068</td>
+<td>CardLogix Corporation</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000069</td>
+<td>Société Européenne de Monnaie Electronique SEME</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000070</td>
+<td>Prism Card Technologies</td>
+<td>South Africa</td>
+</tr>
+<tr>
+<td>A000000071</td>
+<td>Euro Information</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000072</td>
+<td>Royal Bank of Canada</td>
+<td>Canada</td>
+</tr>
+<tr>
+<td>A000000073</td>
+<td>Netlink Consortium</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000074</td>
+<td>Smart Card Solutions (Development Services) Ltd.</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000075</td>
+<td>Open Interactive Limited</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000077</td>
+<td>Oberthur Technologies</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000078</td>
+<td>Welcome Real-Time</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000079</td>
+<td>Activcard Europe S.A.</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000080</td>
+<td>Smart TV</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000081</td>
+<td>Worldcard (2000) Ltd.</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000082</td>
+<td>Union Internationale des Chemins de Fer</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000083</td>
+<td>Percomad B.V.</td>
+<td>Netherlands</td>
+</tr>
+<tr>
+<td>A000000084</td>
+<td>Precise Biometrics AB</td>
+<td>Sweden</td>
+</tr>
+<tr>
+<td>A000000085</td>
+<td>USIS Management Inc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000086</td>
+<td>Strålfors AB</td>
+<td>Sweden</td>
+</tr>
+<tr>
+<td>A000000087</td>
+<td>Third Generation Partnership Project (3GPP)</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000088</td>
+<td>Buypass AS</td>
+<td>Norway</td>
+</tr>
+<tr>
+<td>A000000089</td>
+<td>American Association of Motor Vehicle Administrators</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000090</td>
+<td>Smart Card Solutions, LIC</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000091</td>
+<td>Cybermark</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000092</td>
+<td>Mobile-Mind</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000093</td>
+<td>Ask S.A.</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000094</td>
+<td>MULTOS Promotion Association</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000095</td>
+<td>Incard S.p.A.</td>
+<td>Italy</td>
+</tr>
+<tr>
+<td>A000000096</td>
+<td>Sa Proton World International N.V.</td>
+<td>Belgium</td>
+</tr>
+<tr>
+<td>A000000097</td>
+<td>CIC GLOBAL</td>
+<td>New Zealand</td>
+</tr>
+<tr>
+<td>A000000098</td>
+<td>Visa USA</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000099</td>
+<td>Cryptocard Corporation</td>
+<td>Canada</td>
+</tr>
+<tr>
+<td>A000000100</td>
+<td>Net Time Corp.</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000101</td>
+<td>New Financial Systems, Services &amp; Products, Dept. Financial Systems Division, Hitachi Ltd.</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000102</td>
+<td>Syntactics Limited</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000103</td>
+<td>Catuity Incorporated</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000104</td>
+<td>Israel Credit Cards Ltd.</td>
+<td>Israel</td>
+</tr>
+<tr>
+<td>A000000105</td>
+<td>Digital Pockets, LLC</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000106</td>
+<td>Protective Technology</td>
+<td>Norway</td>
+</tr>
+<tr>
+<td>A000000107</td>
+<td>HSB Cards &amp; Card Systems B.V.</td>
+<td>Netherlands</td>
+</tr>
+<tr>
+<td>A000000108</td>
+<td>AETeurope b.v.</td>
+<td>Netherlands</td>
+</tr>
+<tr>
+<td>A000000109</td>
+<td>Citicorp Development Center Inc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000110</td>
+<td>The Boots Company PLC</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000111</td>
+<td>Die Post Postfinance</td>
+<td>Switzerland</td>
+</tr>
+<tr>
+<td>A000000112</td>
+<td>Lironic, INC.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000113</td>
+<td>Datacard Platform Seven Limited</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000114</td>
+<td>Sila Communications Scandinavia Aps</td>
+<td>Denmark</td>
+</tr>
+<tr>
+<td>A000000115</td>
+<td>NTT Communications Corporation</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000116</td>
+<td>GSA – TFCS</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000117</td>
+<td>Airtel Movil S.A.</td>
+<td>Spain</td>
+</tr>
+<tr>
+<td>A000000118</td>
+<td>Austria Card</td>
+<td>Austria</td>
+</tr>
+<tr>
+<td>A000000119</td>
+<td>Logico Smartcard Solutions GmbH.</td>
+<td>Austria</td>
+</tr>
+<tr>
+<td>A000000120</td>
+<td>PBS Data A/S</td>
+<td>Denmark</td>
+</tr>
+<tr>
+<td>A000000121</td>
+<td>PBS Danmark A/S</td>
+<td>Denmark</td>
+</tr>
+<tr>
+<td>A000000122</td>
+<td>Humetrix.com, Inc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000123</td>
+<td>Smartcard EZ.com, Inc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000124</td>
+<td>The Brodie Group</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000125</td>
+<td>Department of Veterans Affairs</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000126</td>
+<td>Shonkh Technologies International Limited</td>
+<td>India</td>
+</tr>
+<tr>
+<td>A000000127</td>
+<td>SecureNet</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>A000000128</td>
+<td>Infineer Ltd</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000129</td>
+<td>Carde Systems Inc.</td>
+<td>Canada</td>
+</tr>
+<tr>
+<td>A000000130</td>
+<td>Global Consumer Technologies, Inc.</td>
+<td>Canada</td>
+</tr>
+<tr>
+<td>A000000131</td>
+<td>Mxi Technologies Ltd.</td>
+<td>Canada</td>
+</tr>
+<tr>
+<td>A000000132</td>
+<td>Java Card Forum</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000133</td>
+<td>St. Geroge Bank Australia</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>A000000134</td>
+<td>Smartix International Corporation</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000135</td>
+<td>Goldkey Technology Corporation</td>
+<td>Taiwan</td>
+</tr>
+<tr>
+<td>A000000136</td>
+<td>Worldsmart Technology</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>A000000137</td>
+<td>BZA Bargeldlose Zahlungs- und Abrechnungssysteme GmbH</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>A000000138</td>
+<td>Acer Internet Services, Inc.</td>
+<td>Taiwan</td>
+</tr>
+<tr>
+<td>A000000139</td>
+<td>Japan Point Anex Co., Ltd.</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000140</td>
+<td>TDS TODOS DATA SYSTEM AB</td>
+<td>Sweden</td>
+</tr>
+<tr>
+<td>A000000141</td>
+<td>Associazione Bancaria Italiana</td>
+<td>Italy</td>
+</tr>
+<tr>
+<td>A000000142</td>
+<td>Toppan Printing Co. Ltd.</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000143</td>
+<td>ANZ Banking Group</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>A000000144</td>
+<td>Multos Consortium</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000145</td>
+<td>Yokosuka City</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000146</td>
+<td>Keihin Electric Express Railway Co., Ltd.</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000147</td>
+<td>Defense Manpower Data Center</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000149</td>
+<td>CISRA (Canon Research Systems Research Australia Pty Ltd)</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>A000000150</td>
+<td>Smart Chip Limited</td>
+<td>India</td>
+</tr>
+<tr>
+<td>A000000151</td>
+<td>GlobalPlatform, Inc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000152</td>
+<td>Diners Club International Ltd.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000153</td>
+<td>National Credit Card Center of R.O.C.</td>
+<td>Taiwan</td>
+</tr>
+<tr>
+<td>A000000154</td>
+<td>Banrisul – Banco do Estado do Rio Grande do SUL – S.A.</td>
+<td>Brazil</td>
+</tr>
+<tr>
+<td>A000000155</td>
+<td>Deltaknot SDN. BHD.</td>
+<td>Malaysia</td>
+</tr>
+<tr>
+<td>A000000156</td>
+<td>HOB electronic GmbH &amp; Co. KG</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>A000000157</td>
+<td>Zühlke Engineering AG</td>
+<td>Switzerland</td>
+</tr>
+<tr>
+<td>A000000158</td>
+<td>Cornish Key</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000159</td>
+<td>Hyweb Technology Co., Ltd.</td>
+<td>Taiwan</td>
+</tr>
+<tr>
+<td>A000000160</td>
+<td>Chinatrust Commercial Bank</td>
+<td>Taiwan</td>
+</tr>
+<tr>
+<td>A000000161</td>
+<td>Advanced Wave</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000162</td>
+<td>Europay (Switzerland) SA</td>
+<td>Switzerland</td>
+</tr>
+<tr>
+<td>A000000163</td>
+<td>Prepayment Cards Limited</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000164</td>
+<td>Athena Smartcard Ltd</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000165</td>
+<td>S-Card A/S</td>
+<td>Denmark</td>
+</tr>
+<tr>
+<td>A000000166</td>
+<td>Identix Incorporated</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000167</td>
+<td>IBM</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>A000000168</td>
+<td>Dai Nippon Printing Co., Ltd. (DNP)</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000169</td>
+<td>Smart Chip Technologies, LLC</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000170</td>
+<td>The Chinese Bank</td>
+<td>Taiwan</td>
+</tr>
+<tr>
+<td>A000000171</td>
+<td>Decru, Inc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000172</td>
+<td>Financial Information Service Co. Ltd.</td>
+<td>Taiwan</td>
+</tr>
+<tr>
+<td>A000000174</td>
+<td>Sodexho-ccs</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000175</td>
+<td>Panini Italia Srl</td>
+<td>Italy</td>
+</tr>
+<tr>
+<td>A000000176</td>
+<td>Banksys</td>
+<td>Belgium</td>
+</tr>
+<tr>
+<td>A000000177</td>
+<td>Ministère de L’Intérieur</td>
+<td>Belgium</td>
+</tr>
+<tr>
+<td>A000000178</td>
+<td>Europay Austria Zahlungsverkehrssysteme GmbH</td>
+<td>Austria</td>
+</tr>
+<tr>
+<td>A000000179</td>
+<td>Hong Kong University of Science and Technology</td>
+<td>Hong Kong</td>
+</tr>
+<tr>
+<td>A000000180</td>
+<td>Cheque Dejeuner</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000181</td>
+<td>BGP E-Services S.A.</td>
+<td>Belgium</td>
+</tr>
+<tr>
+<td>A000000182</td>
+<td>Thalys International</td>
+<td>Belgium</td>
+</tr>
+<tr>
+<td>A000000183</td>
+<td>Changent Systems Inc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000184</td>
+<td>DSI Direccao dos Servicos de Identificacao</td>
+<td>Macao SAR</td>
+</tr>
+<tr>
+<td>A000000185</td>
+<td>Post Office Limited</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000186</td>
+<td>Oberthur Card systems Ltd.</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000187</td>
+<td>Privacom B.V.</td>
+<td>Netherlands</td>
+</tr>
+<tr>
+<td>A000000188</td>
+<td>Diners Club Switzerland Ltd</td>
+<td>Switzerland</td>
+</tr>
+<tr>
+<td>A000000189</td>
+<td>Consolidated Computer Services</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>A000000190</td>
+<td>Cardis Research &amp; Development</td>
+<td>Israel</td>
+</tr>
+<tr>
+<td>A000000191</td>
+<td>Syscom Technologies Limited</td>
+<td>India</td>
+</tr>
+<tr>
+<td>A000000192</td>
+<td>Syscom Corporation</td>
+<td>India</td>
+</tr>
+<tr>
+<td>A000000193</td>
+<td>AccessArena AG</td>
+<td>Switzerland</td>
+</tr>
+<tr>
+<td>A000000194</td>
+<td>Logos Smart Card A/S</td>
+<td>Denmark</td>
+</tr>
+<tr>
+<td>A000000195</td>
+<td>Amity Software Inc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000196</td>
+<td>Capita Business Services Ltd</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000197</td>
+<td>European Committee for Standardization – CEN</td>
+<td>Belgium</td>
+</tr>
+<tr>
+<td>A000000198</td>
+<td>Israeli Ministry of Treasure</td>
+<td>Israel</td>
+</tr>
+<tr>
+<td>A000000199</td>
+<td>Ichikawa City</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000200</td>
+<td>NonProfit Organization Ichikawa Life Network Club</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000201</td>
+<td>Funabashi City</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000202</td>
+<td>Kishware Co.</td>
+<td>Iran</td>
+</tr>
+<tr>
+<td>A000000203</td>
+<td>National Australia Group Europe Ltd.</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000204</td>
+<td>Association for Payment Clearing Services</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000206</td>
+<td>Nordea Bank Sweden AB</td>
+<td>Sweden</td>
+</tr>
+<tr>
+<td>A000000207</td>
+<td>Cardtronic Technology Inc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000209</td>
+<td>Cassis International Pte. Ltd.</td>
+<td>Singapore</td>
+</tr>
+<tr>
+<td>A000000210</td>
+<td>TheTitan Corporation, Titan Secure Solutions</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000211</td>
+<td>Saflink Corporation</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000212</td>
+<td>Cyberpro Technologies Inc.</td>
+<td>Canada</td>
+</tr>
+<tr>
+<td>A000000213</td>
+<td>Sharp Corporation</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000214</td>
+<td>Landis + Gyr</td>
+<td>South Africa</td>
+</tr>
+<tr>
+<td>A000000215</td>
+<td>HiSmarTech Co., Ltd.</td>
+<td>Republic of Korea</td>
+</tr>
+<tr>
+<td>A000000216</td>
+<td>ITSO Ltd.</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000217</td>
+<td>WAY Systems, Inc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000218</td>
+<td>WEBUNDCO GmbH &amp; Co KG</td>
+<td>Austria</td>
+</tr>
+<tr>
+<td>A000000219</td>
+<td>National Bank of Greece S.A.</td>
+<td>Greece</td>
+</tr>
+<tr>
+<td>A000000220</td>
+<td>Samsung SDS Co., Ltd.</td>
+<td>Republic of Korea</td>
+</tr>
+<tr>
+<td>A000000221</td>
+<td>E.F.G. Eurobank Ergasias S.A.</td>
+<td>Greece</td>
+</tr>
+<tr>
+<td>A000000222</td>
+<td>Easycard Ltd</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000223</td>
+<td>Seagate Technology</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000224</td>
+<td>Tokyu Corporation</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000225</td>
+<td>Laser Card Services Ltd.</td>
+<td>Ireland</td>
+</tr>
+<tr>
+<td>A000000226</td>
+<td>Irish Payment Services Organisation</td>
+<td>Ireland</td>
+</tr>
+<tr>
+<td>A000000227</td>
+<td>KFTC (Korea Financial Telecommunications &amp; Clearings Institute)</td>
+<td>Republic of Korea</td>
+</tr>
+<tr>
+<td>A000000228</td>
+<td>Saudi Arabian Monetary Agency (SAMA)</td>
+<td>Kingdom of Saudi Arabia</td>
+</tr>
+<tr>
+<td>A000000229</td>
+<td>ALIASLAB S.P.A.</td>
+<td>Italy</td>
+</tr>
+<tr>
+<td>A000000230</td>
+<td>ECard Pty Ltd</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>A000000231</td>
+<td>National Police Agency of Japan</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000232</td>
+<td>COREGATE. CO., Ltd</td>
+<td>Republic of Korea</td>
+</tr>
+<tr>
+<td>A000000233</td>
+<td>Professional Performance Systems</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>A000000234</td>
+<td>Thames Card Technology</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000235</td>
+<td>MCS Microsystems SDN BHD</td>
+<td>Malaysia</td>
+</tr>
+<tr>
+<td>A000000236</td>
+<td>Pacific Research Pty Ltd</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>A000000237</td>
+<td>Keycorp Limited</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>A000000238</td>
+<td>A.Little.World Pvt. Ltd.</td>
+<td>India</td>
+</tr>
+<tr>
+<td>A000000239</td>
+<td>Cornwall County Council</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000240</td>
+<td>Paypoint Network Ltd.</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000241</td>
+<td>Visa International</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000242</td>
+<td>NagraCard S.A.</td>
+<td>Switzerland</td>
+</tr>
+<tr>
+<td>A000000243</td>
+<td>SAGEM SA</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000244</td>
+<td>Vasco Data Security NV/SA</td>
+<td>Belgium</td>
+</tr>
+<tr>
+<td>A000000245</td>
+<td>Korea Highway Corporation</td>
+<td>Republic of Korea</td>
+</tr>
+<tr>
+<td>A000000246</td>
+<td>U.S. Department of Agriculture, Food and Nutrition Service</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000247</td>
+<td>ISO JTC1/SC17/WG3</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000248</td>
+<td>ISO JTC1/SC17/WG10</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000249</td>
+<td>Giesecke &amp; Devrient Asia Pte Ltd</td>
+<td>Singapore</td>
+</tr>
+<tr>
+<td>A000000250</td>
+<td>Föreningssparbanken</td>
+<td>Sweden</td>
+</tr>
+<tr>
+<td>A000000251</td>
+<td>Korea Electronic Banking Technology Co., Ltd.</td>
+<td>Republic of Korea</td>
+</tr>
+<tr>
+<td>A000000252</td>
+<td>Federal Reserve Bank of Boston</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000253</td>
+<td>Maas International B.V.</td>
+<td>Netherlands</td>
+</tr>
+<tr>
+<td>A000000254</td>
+<td>Boston Communications Group, Inc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000255</td>
+<td>TellSyn.co.LTD</td>
+<td>Republic of Korea</td>
+</tr>
+<tr>
+<td>A000000256</td>
+<td>Hitachi America Ltd.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000257</td>
+<td>Jatcom Oy</td>
+<td>Finland</td>
+</tr>
+<tr>
+<td>A000000258</td>
+<td>NWI Markkinointi Oy</td>
+<td>Finland</td>
+</tr>
+<tr>
+<td>A000000259</td>
+<td>Softcard Systems, Inc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000260</td>
+<td>Canon Inc.</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000261</td>
+<td>Smart Card Laboratory, Inc.</td>
+<td>Republic of Korea</td>
+</tr>
+<tr>
+<td>A000000262</td>
+<td>Transport Administration Corporation</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>A000000263</td>
+<td>Astute Pte Ltd</td>
+<td>Singapore</td>
+</tr>
+<tr>
+<td>A000000264</td>
+<td>BC Card Co., Ltd.</td>
+<td>Republic of Korea</td>
+</tr>
+<tr>
+<td>A000000265</td>
+<td>RICIOH Company, Ltd.</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000266</td>
+<td>Sodexho – Pass</td>
+<td>Belgium</td>
+</tr>
+<tr>
+<td>A000000267</td>
+<td>Honda Motor Co., Ltd.</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000268</td>
+<td>City of Sunderland Council</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000269</td>
+<td>Thales e-Security Limited</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000270</td>
+<td>Oneempower Pte Ltd</td>
+<td>Singapore</td>
+</tr>
+<tr>
+<td>A000000271</td>
+<td>The Bank of Tokyo-Mitsubishi UFJ Ltd.</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000272</td>
+<td>Bank of the Philippine Islands</td>
+<td>Philippines</td>
+</tr>
+<tr>
+<td>A000000273</td>
+<td>Cabcharge Australia Ltd</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>A000000274</td>
+<td>Glenburn Technologies Private Limited</td>
+<td>India</td>
+</tr>
+<tr>
+<td>A000000275</td>
+<td>Takenaka Corporation</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000276</td>
+<td>MARX CryptoTech LP</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000277</td>
+<td>Interac Association</td>
+<td>Canada</td>
+</tr>
+<tr>
+<td>A000000278</td>
+<td>MOPASS Consortium</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000279</td>
+<td>Poslovno Informacioni Sistemi d.o.o.</td>
+<td>Serbia and Montenegro</td>
+</tr>
+<tr>
+<td>A000000280</td>
+<td>Soci?t? d’Automatisation des Fr?res Bouadou – SATIM –</td>
+<td>Algeria</td>
+</tr>
+<tr>
+<td>A000000281</td>
+<td>Chequespread Plc</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000282</td>
+<td>Sentry Project Management PTY Ltd</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>A000000283</td>
+<td>Chungwa Telecom Co., Ltd. Telecommunication Laboratories</td>
+<td>Taiwan</td>
+</tr>
+<tr>
+<td>A000000284</td>
+<td>AXA, a.s., Bratislava</td>
+<td>Slovakia</td>
+</tr>
+<tr>
+<td>A000000285</td>
+<td>WLAN Smart Card Consortium</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000286</td>
+<td>Thai Smart Card Co., Ltd.</td>
+<td>Thailand</td>
+</tr>
+<tr>
+<td>A000000287</td>
+<td>A4 Vision Inc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000288</td>
+<td>Central Bank of the Islamic Republic of Iran</td>
+<td>Iran</td>
+</tr>
+<tr>
+<td>A000000289</td>
+<td>Publicenter Spa</td>
+<td>Italy</td>
+</tr>
+<tr>
+<td>A000000290</td>
+<td>National Council for Prescription Drug Programs</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000291</td>
+<td>Spirtech</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000292</td>
+<td>Sumitomo Mitsui Banking Corporation</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000293</td>
+<td>Videosystem Srl</td>
+<td>Italy</td>
+</tr>
+<tr>
+<td>A000000294</td>
+<td>Banco INBURSA S.A.</td>
+<td>Mexico</td>
+</tr>
+<tr>
+<td>A000000295</td>
+<td>Irish Life and Permanent – Trading as Permanent TSB</td>
+<td>Ireland</td>
+</tr>
+<tr>
+<td>A000000296</td>
+<td>INSIG2 d.o.o.</td>
+<td>Croatia</td>
+</tr>
+<tr>
+<td>A000000297</td>
+<td>Silex technology, Inc</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000298</td>
+<td>Vodafone global Services</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>A000000299</td>
+<td>ViVOtech, Inc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000300</td>
+<td>Unigram Systems Pty Ltd</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>A000000301</td>
+<td>Arab Islamic Bank</td>
+<td>Palestinian National Authorities</td>
+</tr>
+<tr>
+<td>A000000302</td>
+<td>Cambridgeshire County Council</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000303</td>
+<td>Global Information Technology L.L.C.</td>
+<td>United Arab Emirates</td>
+</tr>
+<tr>
+<td>A000000304</td>
+<td>Far Eastern Electronic Toll collection Co., Ltd.</td>
+<td>Taiwan, R.O.C.</td>
+</tr>
+<tr>
+<td>A000000305</td>
+<td>Sarion Systems Research</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000306</td>
+<td>PS/SC Workgroup</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000307</td>
+<td>Smart Card Integrators, Tnc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000308</td>
+<td>National Institute of Standards and Technology</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000309</td>
+<td>Leo Smart Loyalty Management Sdn. Bhd.</td>
+<td>Malaysia</td>
+</tr>
+<tr>
+<td>A000000310</td>
+<td>Smart Platforms Co., Ltd.</td>
+<td>Korea</td>
+</tr>
+<tr>
+<td>A000000311</td>
+<td>Ubnics Co., Ltd.</td>
+<td>Korea</td>
+</tr>
+<tr>
+<td>A000000312</td>
+<td>Aladdin Knowledge Systems, Inc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000313</td>
+<td>Point Vista Software</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000314</td>
+<td>Integrated Engineering</td>
+<td>The Netherlands</td>
+</tr>
+<tr>
+<td>A000000315</td>
+<td>Currence Holding/PIN BV</td>
+<td>The Netherlands</td>
+</tr>
+<tr>
+<td>A000000316</td>
+<td>One PIN, Inc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000317</td>
+<td>Sony Corporation</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000318</td>
+<td>Minoh City Office</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000319</td>
+<td>Findomestic Banca S.p.A.</td>
+<td>Italy</td>
+</tr>
+<tr>
+<td>A000000320</td>
+<td>Banque Accord</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000321</td>
+<td>SK Telecom Co, Ltd</td>
+<td>Rep. of Korea</td>
+</tr>
+<tr>
+<td>A000000322</td>
+<td>Taipei Smart Card Corp.</td>
+<td>Taiwan</td>
+</tr>
+<tr>
+<td>A000000323</td>
+<td>Identity Alliance</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000324</td>
+<td>Discover Financial Services LLC</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000325</td>
+<td>Goddard Technology Corporation</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000326</td>
+<td>CRYPTAS it-Security &amp; Media GmbH</td>
+<td>Austria</td>
+</tr>
+<tr>
+<td>A000000327</td>
+<td>J &amp; B Computing Services bv</td>
+<td>The Netherlands</td>
+</tr>
+<tr>
+<td>A000000328</td>
+<td>The Minato Bank, Ltd</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000329</td>
+<td>Irdeto Access B.V.</td>
+<td>The Netherlands</td>
+</tr>
+<tr>
+<td>A000000330</td>
+<td>Volvofinans Konto AB</td>
+<td>Sweden</td>
+</tr>
+<tr>
+<td>A000000331</td>
+<td>TV-Card</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000332</td>
+<td>XponCard AB</td>
+<td>Sweden</td>
+</tr>
+<tr>
+<td>A000000333</td>
+<td>China Unionpay Co. Ltd</td>
+<td>China</td>
+</tr>
+<tr>
+<td>A000000334</td>
+<td>oNDS Ltd</td>
+<td>England</td>
+</tr>
+<tr>
+<td>A000000335</td>
+<td>Seeker Wireless Pty Ltd</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>A000000336</td>
+<td>Sagem Denmark A/S</td>
+<td>Danmark</td>
+</tr>
+<tr>
+<td>A000000337</td>
+<td>Groupment Interbancaire Monétique de l’ UEMOA</td>
+<td>Senegal</td>
+</tr>
+<tr>
+<td>A000000338</td>
+<td>Seceti S.p.A</td>
+<td>Italy</td>
+</tr>
+<tr>
+<td>A000000339</td>
+<td>Dexit Inc</td>
+<td>Canada</td>
+</tr>
+<tr>
+<td>A000000340</td>
+<td>SMEG Co Ltd</td>
+<td>Korea</td>
+</tr>
+<tr>
+<td>A000000341</td>
+<td>InfoComm Development Authority of Signapore</td>
+<td>Singapore</td>
+</tr>
+<tr>
+<td>A000000342</td>
+<td>TTA (Telecommunications Technology Association)</td>
+<td>Korea</td>
+</tr>
+<tr>
+<td>A000000343</td>
+<td>Telecommunication Industry Association (3GPP2)</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000344</td>
+<td>C-SAM Inc</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000345</td>
+<td>Broadnet Engineering Limited</td>
+<td>Kina</td>
+</tr>
+<tr>
+<td>A000000346</td>
+<td>ATOS WORLDLINE</td>
+<td>England</td>
+</tr>
+<tr>
+<td>A000000347</td>
+<td>Cryptomatic A/S</td>
+<td>Denmark</td>
+</tr>
+<tr>
+<td>A000000348</td>
+<td>Security Biometric Clearing Network</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000349</td>
+<td>MUTOH Industries LTD</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000350</td>
+<td>Hyundai Motor Company</td>
+<td>Korea 137-938</td>
+</tr>
+<tr>
+<td>A000000351</td>
+<td>Sorefi</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000352</td>
+<td>Groupement Interbancaire de monetique et des transactions electroniques (GIMTEL)</td>
+<td>England</td>
+</tr>
+<tr>
+<td>A000000353</td>
+<td>Ompay, LLC</td>
+<td>U.S.A</td>
+</tr>
+<tr>
+<td>A000000354</td>
+<td>Nokia Corporation</td>
+<td>Finland</td>
+</tr>
+<tr>
+<td>A000000355</td>
+<td>University of Zagres Faculty of electrical engineering and computing</td>
+<td>Croatia</td>
+</tr>
+<tr>
+<td>A000000356</td>
+<td>Transport Ticketing Authority</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>A000000357</td>
+<td>LEGIC Identsystems AG</td>
+<td>Switzerland</td>
+</tr>
+<tr>
+<td>A000000358</td>
+<td>Consorzio Triveneto</td>
+<td>Italy</td>
+</tr>
+<tr>
+<td>A000000359</td>
+<td>Euro Alliance of Payment Schemes s.c.r.l. – EAPS</td>
+<td>Belgium</td>
+</tr>
+<tr>
+<td>A000000360</td>
+<td>ESP Systex Ltd.</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000361</td>
+<td>Atos Worldline</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000362</td>
+<td>AMADEUS IT GROUP S.A.</td>
+<td>Spain</td>
+</tr>
+<tr>
+<td>A000000363</td>
+<td>IOPTE</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000364</td>
+<td>Banque Internationale pour le Commerce et l’industrie du Gabon (BICIG)</td>
+<td>Gabon</td>
+</tr>
+<tr>
+<td>A000000365</td>
+<td>Savvy Technologies ptd Limited</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>A000000366</td>
+<td>Poste Italiane S.P.A</td>
+<td>Italy</td>
+</tr>
+<tr>
+<td>A000000367</td>
+<td>TWIC Program</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000368</td>
+<td>Lloyds TSB Bank Plc</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000369</td>
+<td>OMV Refining and Marketing GmbH</td>
+<td>Austria</td>
+</tr>
+<tr>
+<td>A000000370</td>
+<td>Toshiba Corporation</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000371</td>
+<td>Verve</td>
+<td>Nigeria</td>
+</tr>
+<tr>
+<td>A000000372</td>
+<td>Turkish Armed Forces Smartcard Management Center</td>
+<td>Turkey</td>
+</tr>
+<tr>
+<td>A000000373</td>
+<td>Quality Equipment Benelux B.V</td>
+<td>The Netherlands</td>
+</tr>
+<tr>
+<td>A000000374</td>
+<td>CPS Technologies</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000375</td>
+<td>Reference Point Ltd</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000376</td>
+<td>ECEBS Ltd</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000377</td>
+<td>Texas Health and Human Services Commission</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000378</td>
+<td>Texas Health and Human Services Commission</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000379</td>
+<td>(SOK) Suomen Osuuskauppojen Keskuskunta</td>
+<td>Finland</td>
+</tr>
+<tr>
+<td>A000000380</td>
+<td>E-Kencana</td>
+<td>Maylaysia</td>
+</tr>
+<tr>
+<td>A000000381</td>
+<td>Arval Ltd</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000382</td>
+<td>HID Global</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000383</td>
+<td>Cetelem</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000384</td>
+<td>eftpos, Australian Payments Clearing Association Ltd</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>A000000385</td>
+<td>NATIXIS PAIEMENTS</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000386</td>
+<td>AIRTAG</td>
+<td>FRANCE</td>
+</tr>
+<tr>
+<td>A000000387</td>
+<td>Association Professionnelle des Emetteurs de Titres-Repas Asbl. (A.P.E.T.R)</td>
+<td>Belgium</td>
+</tr>
+<tr>
+<td>A000000388</td>
+<td>Ticket Servicos S/A</td>
+<td>Brazil</td>
+</tr>
+<tr>
+<td>A000000389</td>
+<td>LINEA S.p.A.</td>
+<td>Italy</td>
+</tr>
+<tr>
+<td>A000000390</td>
+<td>Kamsoft</td>
+<td>Poland</td>
+</tr>
+<tr>
+<td>A000000391</td>
+<td>Ministry of Health, Labour and Welfare Office of Medical Devices and Information, Research and Deve</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>A000000392</td>
+<td>Laser Cofinoga</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000393</td>
+<td>Florida Department of Transportation Sunpass Program</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000394</td>
+<td>OMAC (Office Monétique de l’Afrique Centrale)</td>
+<td>Cameroun</td>
+</tr>
+<tr>
+<td>A000000395</td>
+<td>Mobile Money S.A</td>
+<td>Cameroon</td>
+</tr>
+<tr>
+<td>A000000396</td>
+<td>NXP Semiconductors Germany GmbH</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>A000000397</td>
+<td>Microsoft Corporation</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000398</td>
+<td>Queensland Transport</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>A000000399</td>
+<td>Helixion Ltd.</td>
+<td>Scotland</td>
+</tr>
+<tr>
+<td>A000000400</td>
+<td>BlueSky Positioning Centre International de Communication Avancee</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000401</td>
+<td>BlueSky Positioning</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000402</td>
+<td>Mxtran Inc.</td>
+<td>Taiwan R.O.C</td>
+</tr>
+<tr>
+<td>A000000403</td>
+<td>Jelmoli Bonus Card AG</td>
+<td>Schweiz</td>
+</tr>
+<tr>
+<td>A000000404</td>
+<td>Setra/BNEVT</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000405</td>
+<td>European Payment Solutions NV-SA</td>
+<td>Belgium</td>
+</tr>
+<tr>
+<td>A000000406</td>
+<td>Aventra Oy</td>
+<td>Finland</td>
+</tr>
+<tr>
+<td>A000000407</td>
+<td>Fujitsu Services Oy</td>
+<td>Finland</td>
+</tr>
+<tr>
+<td>A000000408</td>
+<td>Svenska Handelsbanken AB</td>
+<td>Sweden</td>
+</tr>
+<tr>
+<td>A000000409</td>
+<td>Banque Casino</td>
+<td>France</td>
+</tr>
+<tr>
+<td>A000000410</td>
+<td>AUSTROADS</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>A000000427</td>
+<td>Unibanco (Hipercard)</td>
+<td>Brazil</td>
+</tr>
+<tr>
+<td>A000000432</td>
+<td>ПРО100</td>
+<td>Russia</td>
+</tr>
+<tr>
+<td>A000000436</td>
+<td>Edenred</td>
+<td>Belgium</td>
+</tr>
+<tr>
+<td>A000000439</td>
+<td>ACCEL/Exchange</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000454</td>
+<td>eTranzact</td>
+<td>Nigeria</td>
+</tr>
+<tr>
+<td>A000000456</td>
+<td>European Commission</td>
+<td>EU</td>
+</tr>
+<tr>
+<td>A000000461</td>
+<td>Bcard</td>
+<td>Bulgary</td>
+</tr>
+<tr>
+<td>A000000476</td>
+<td>Google</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000485</td>
+<td>JVL Ventures, LLC (Softcard)</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000524</td>
+<td>RuPay</td>
+<td>India</td>
+</tr>
+<tr>
+<td>A000000527</td>
+<td>Yubico</td>
+<td>Sweden</td>
+</tr>
+<tr>
+<td>A000000558</td>
+<td>Shell (euroShell Card)</td>
+<td>Netherlands</td>
+</tr>
+<tr>
+<td>A000000559</td>
+<td>GSMA (GSM Association)</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000617</td>
+<td>Fidesmo</td>
+<td>Sweden</td>
+</tr>
+<tr>
+<td>A000000620</td>
+<td>Debit Network Alliance (DNA)</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000626</td>
+<td>SwissPass</td>
+<td>Switzerland</td>
+</tr>
+<tr>
+<td>A000000630</td>
+<td>Dinube (Mobile Payments &amp; Loyalty SL)</td>
+<td>Spain</td>
+</tr>
+<tr>
+<td>A000000635</td>
+<td>Bancnet</td>
+<td>Philippines</td>
+</tr>
+<tr>
+<td>A000000636</td>
+<td>Methics Oy</td>
+<td>Finland</td>
+</tr>
+<tr>
+<td>A000000647</td>
+<td>FIDO Aliance</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000658</td>
+<td>MIR</td>
+<td>Russia</td>
+</tr>
+<tr>
+<td>A000000696</td>
+<td>DEDAPAY S.A.P.I. DE C.V.</td>
+<td>Mexico</td>
+</tr>
+<tr>
+<td>A000000672</td>
+<td>TROY</td>
+<td>Turkey</td>
+</tr>
+<tr>
+<td>A000000676</td>
+<td>Blackboard Inc.</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000740</td>
+<td>Innovative Telecommunication Technology, LLC</td>
+<td>Russia</td>
+</tr>
+<tr>
+<td>A000000741</td>
+<td>Wadaro Ltd.</td>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>A000000747</td>
+<td>Dangerous Things</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>A000000760</td>
+<td>PaySwitch Company Limited</td>
+<td>Ghana</td>
+</tr>
+<tr>
+<td>A000000770</td>
+<td>Indian Oil Corporation Limited</td>
+<td>India</td>
+</tr>
+<tr>
+<td>A000000779</td>
+<td>Zimswitch</td>
+<td>Zimbabwe</td>
+</tr>
+<tr>
+<td>A000000782</td>
+<td>Telematica LLC</td>
+<td>Russia</td>
+</tr>
+<tr>
+<td>A000000819</td>
+<td>Bitcoin.no AS</td>
+<td>Norway</td>
+</tr>
+<tr>
+<td>B012345678</td>
+<td>MasterCard International</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>D040000001</td>
+<td>Paylife</td>
+<td>Austria</td>
+</tr>
+<tr>
+<td>D040000002</td>
+<td>Austria Card</td>
+<td>Austria</td>
+</tr>
+<tr>
+<td>D040000003</td>
+<td>Austria Card</td>
+<td>Austria</td>
+</tr>
+<tr>
+<td>D040000004</td>
+<td>Austria Card</td>
+<td>Austria</td>
+</tr>
+<tr>
+<td>D04000000B</td>
+<td>Austria Card</td>
+<td>Austria</td>
+</tr>
+<tr>
+<td>D04000000C</td>
+<td>Austria Card</td>
+<td>Austria</td>
+</tr>
+<tr>
+<td>D04000000D</td>
+<td>Austria Card</td>
+<td>Austria</td>
+</tr>
+<tr>
+<td>D040000013</td>
+<td>Austria Card</td>
+<td>Austria</td>
+</tr>
+<tr>
+<td>D040000014</td>
+<td>Austria Card</td>
+<td>Austria</td>
+</tr>
+<tr>
+<td>D040000015</td>
+<td>Austria Card</td>
+<td>Austria</td>
+</tr>
+<tr>
+<td>D040000019</td>
+<td>Austria Card</td>
+<td>Austria</td>
+</tr>
+<tr>
+<td>D268000001</td>
+<td>Ministry of Finance of Georgia</td>
+<td>Georgia</td>
+</tr>
+<tr>
+<td>D276000001</td>
+<td>Gesetzl. KrankenV.</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000002</td>
+<td>ZeitControl</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000003</td>
+<td>Deutsche Telek., Telesec</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000004</td>
+<td>Infineon/Siemens HL</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000005</td>
+<td>Giesecke&amp;Devrient</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000006</td>
+<td>Bosch Telecom UC VT</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000007</td>
+<td>Fraunhofer SIT</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000008</td>
+<td>Holtkamp</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000009</td>
+<td>Novacard</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000010</td>
+<td>Bosch Telecom OEV</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000011</td>
+<td>Getronik</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000012</td>
+<td>Kaste Systemcard</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000013</td>
+<td></td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000014</td>
+<td>Siemens SI</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000015</td>
+<td>KODAK</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000016</td>
+<td>Bek</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000017</td>
+<td>Blaupunkt-Werke</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000018</td>
+<td>Celectronic</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000019</td>
+<td>M+S V.- u. S.-Techn.</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000020</td>
+<td>COPILOT</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000021</td>
+<td>Scheidt &amp; Bachmann</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000022</td>
+<td>IBM Laboratories</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000023</td>
+<td>APCON</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000024</td>
+<td>Lufthansa</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000025</td>
+<td>ZKA</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000026</td>
+<td>AutoMeter</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000027</td>
+<td>Meiller ComCard</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000028</td>
+<td>SAGEM ORGA</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000029</td>
+<td>Contidata</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000030</td>
+<td>Hagenuk</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000031</td>
+<td>Mercedes Benz</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000032</td>
+<td>Winter Wertdruck</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000033</td>
+<td>EBS</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000034</td>
+<td>Siemens VT</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000035</td>
+<td>Gemplus</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000036</td>
+<td>TeleTrusT</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000037</td>
+<td>Staatl. Lotterie Bayern</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000038</td>
+<td>SNI</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000039</td>
+<td>MW-Lotto</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000040</td>
+<td>ZI der KV</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000041</td>
+<td>ELGEBA</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000042</td>
+<td>TU Darmstadt</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000043</td>
+<td>AOK Leipzig</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000044</td>
+<td>HTS</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000045</td>
+<td>Cards&amp;Devices</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000046</td>
+<td>ODS</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000047</td>
+<td>DeTeMobil</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000048</td>
+<td>DataCard</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000049</td>
+<td>MARALU</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000050</td>
+<td>Systemform</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000051</td>
+<td>Challenge Card Design</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000052</td>
+<td>Deutsche Telekom, FTZ</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000053</td>
+<td>China Handel</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000054</td>
+<td>DRK</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000055</td>
+<td>Siemens ANL</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000056</td>
+<td>PKV</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000057</td>
+<td>Interflex</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000058</td>
+<td>Bayer AG</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000059</td>
+<td>NOVO</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000060</td>
+<td>Wolfgang Rankl</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000061</td>
+<td>Competition</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000062</td>
+<td>TOWITOKO</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000063</td>
+<td>PAV-CARD</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000064</td>
+<td>Hess</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000065</td>
+<td>ATRON</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000066</td>
+<td>BAPT/BSI</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000067</td>
+<td>DG-Verlag</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000068</td>
+<td>Plail</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000069</td>
+<td>Kaste Zahlungssysteme</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000070</td>
+<td>ARCOR</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000071</td>
+<td>BEWATEC</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000072</td>
+<td>CCS</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000073</td>
+<td>Bull</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000074</td>
+<td>Bank-Verlag</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000075</td>
+<td>DentCard</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000076</td>
+<td>UITIMACO</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000077</td>
+<td>DATEV</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000078</td>
+<td>SI-Elektronik</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000079</td>
+<td>CE Infosys</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000080</td>
+<td>Siemens ICN NES</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000081</td>
+<td>VEGAS</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000082</td>
+<td>Union Tank</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000083</td>
+<td>SECUDE</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000084</td>
+<td>BZA</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000085</td>
+<td>NXP Semiconductors / NFC Forum</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000086</td>
+<td>BUILT</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000087</td>
+<td>PROMEC</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000088</td>
+<td>Beckmann</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000089</td>
+<td>PPC Card Systems</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000090</td>
+<td>SPS</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000091</td>
+<td>ACG Smartgate</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000092</td>
+<td>Endergonic</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000093</td>
+<td>Kahlo</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000094</td>
+<td>Cichon</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000095</td>
+<td>ACG (AG) Identification</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000096</td>
+<td>RMV</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000097</td>
+<td></td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000098</td>
+<td>Cryptovision</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000099</td>
+<td>DSGV</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000100</td>
+<td>Seca Vogel&amp;Halke</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000101</td>
+<td>Celo Communications</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000102</td>
+<td>Logics Software</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000103</td>
+<td>Tally</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000104</td>
+<td>VOEB-ZVD</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000105</td>
+<td>Kobil</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000106</td>
+<td>Siemens A&amp;D</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000107</td>
+<td>TELETEACH</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000108</td>
+<td>card.etc</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000109</td>
+<td>ISS</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000110</td>
+<td>BGS Systemplanung</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000111</td>
+<td>ELME</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000112</td>
+<td>My-tronic</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000113</td>
+<td>AmaTech</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000114</td>
+<td>ECM</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000115</td>
+<td>Medizon</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000116</td>
+<td>Swiss Post Solutions</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000117</td>
+<td>One Smart World</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000118</td>
+<td>Giesecke&amp;Devrient Java Card Telecommunikation</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000119</td>
+<td>TU Berlin</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000120</td>
+<td>EXAKT</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000121</td>
+<td>SII</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000122</td>
+<td>CogniMed</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000123</td>
+<td>UniKiel</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000124</td>
+<td>fsfEurope</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000125</td>
+<td>Wincor Nixdorf</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000126</td>
+<td>Masktech</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000127</td>
+<td>DGN-Service</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000128</td>
+<td>Ostsee-Tourismus</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000129</td>
+<td>FlexoCard</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000130</td>
+<td>SMC-Trust</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000131</td>
+<td>AVS</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000132</td>
+<td>BSI</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000133</td>
+<td>metabit</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000134</td>
+<td>SEFIROT</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000135</td>
+<td>VDV</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000136</td>
+<td>Canoa</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000137</td>
+<td>Compris Intelligence</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000138</td>
+<td>IICS</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000139</td>
+<td>IGEL Technology</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000140</td>
+<td>Globetac Solutions</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000141</td>
+<td>InterComponentWare AG</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000142</td>
+<td>GM Consult IT</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000143</td>
+<td>Web and Cards</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000144</td>
+<td>gematik</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000145</td>
+<td>REA Cards</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000146</td>
+<td>BundesArztekammer</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000147</td>
+<td>gt german telematics</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000148</td>
+<td>Physikalisch-Techn. Bundesanstalt (PTB)</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000149</td>
+<td>TU Dresden</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000150</td>
+<td>IKK Nordrhein</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000151</td>
+<td>RIS-Software</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000152</td>
+<td>Deutscher Sparkassenverlag</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000153</td>
+<td>Muehlbauer</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000154</td>
+<td>Vereinigte IKK</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000155</td>
+<td>IDpendant</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000156</td>
+<td>OSPT</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000157</td>
+<td>sysmocom-systems for mobile communications</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000158</td>
+<td>Intercard GmbH Kartensysteme</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000159</td>
+<td></td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000160</td>
+<td>Softways</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000161</td>
+<td>SimonsVoss Technologies</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000162</td>
+<td>Swissbit Germany</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000163</td>
+<td>SDS – Security Data Systems</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000164</td>
+<td>Telekom Deutschland</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000165</td>
+<td>1aim GmbH</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000166</td>
+<td>Kevin Niehage</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000167</td>
+<td>PAYBACK</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000168</td>
+<td>ICP Entwicklungs GmbH</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000169</td>
+<td>emz Hanauer</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000170</td>
+<td>achelos GmbH</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000171</td>
+<td>Goethe-Universitaet Frankfurt</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000172</td>
+<td>Bundesdruckerei</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000173</td>
+<td>SMARD Transactions</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D276000174</td>
+<td>GS Elektromedizinische Geraete G. Stemple</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>D410000001</td>
+<td></td>
+<td>Republic of Korea</td>
+</tr>
+<tr>
+<td>D528005021</td>
+<td></td>
+<td>The Netherlands</td>
+</tr>
+<tr>
+<td>D578000002</td>
+<td>Bankaxept</td>
+<td>Norway</td>
+</tr>
+<tr>
+<td>D578000002</td>
+<td>Bankaxept</td>
+<td>Norway</td>
+</tr>
+<tr>
+<td>D756000001</td>
+<td>Swiss Travel Fund (Reka)</td>
+<td>Switzerland</td>
+</tr>
+<tr>
+<td>D756000030</td>
+<td>Migros (FCM, GE Money Bank and MasterCard)</td>
+<td>Switzerland</td>
+</tr>
+<tr>
+<td>D804000001</td>
+<td>PROSTIR</td>
+<td>Ukraine</td>
+</tr>
+</tbody></table>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2020/12/23/Complete-list-of-PIN-blocks/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>Prev</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="Update time"></i>
+              2020-12-23
+            </span>
+            
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="Tags"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/EMV/" title="EMV">
+                        <b>#</b> EMV
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/2020/12/23/Complete-list-of-SafeNet-HSM-commands/" target="_self">
+                <span>Next</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+    </div>
+    
+  <div class="post-catalog" id="catalog">
+    <div class="title">Contents</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#List-of-registered-application-provider-identifiers-RID-with-their-description"><span class="toc-text">List of registered application provider identifiers (RID) with their description.</span></a></li></ol>
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
+    
+      <div class="comments-container">
+        
+
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+  <div id="gitalk-container"></div>
+  <script src="/js/md5.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: '57cd3399b19f860fecc9',
+      clientSecret: '2190b5d0de9a59b3de639f23ad0b771ead37dcca',
+      repo: 'longxiying.github.io',
+      owner: 'longxiying',
+      admin: ['longxiying'],
+      id: md5(location.pathname),
+      distractionFreeMode: false
+    })
+
+    gitalk.render('gitalk-container')
+  </script>
+
+
+      </div>
+    
+  </div>
+
+
+        <div class="footer">
+  <div class="social">
+    <ul>
+      
+        <li>
+          <a title="github" target="_blank" rel="noopener" href="https://github.com/longxiying">
+            <i class="iconfont icon-github"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="email" href="mailto:longxiying@vip.qq.com">
+            <i class="iconfont icon-envelope"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="facebook" target="_blank" rel="noopener" href="https://www.facebook.com/abtswiath/">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="twitter" target="_blank" rel="noopener" href="https://twitter.com/longxiying">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="wechat" href="">
+            <i class="iconfont icon-wechat"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="weibo" target="_blank" rel="noopener" href="https://weibo.com/579081111/">
+            <i class="iconfont icon-weibo"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="rss" href="/atom.xml">
+            <i class="iconfont icon-rss"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+  
+    <div class="footer-more">
+      
+        <a href="https://emv.cool">Copyright © EMV.COOL 2020</a>
+        
+    </div>
+  
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Theme by Oranges | Powered by Hexo</a>
+        
+    </div>
+  
+</div>
+
+      </div>
+
+      <div class="back-to-top hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/js/backtotop.js"></script>
+
+
+
+      
+  <div class="search-icon" id="search-icon">
+    <a href="javascript: void(0)">
+      <i class="iconfont icon-search"></i>
+    </a>
+  </div>
+
+  <div class="search-overlay hidden">
+    <div class="search-content" tabindex="0">
+      <div class="search-title">
+        <span class="search-icon-input">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-search"></i>
+          </a>
+        </span>
+        
+          <input type="text" class="search-input" id="search-input" placeholder="Search...">
+        
+        <span class="search-close-icon" id="search-close-icon">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-close"></i>
+          </a>
+        </span>
+      </div>
+      <div class="search-result" id="search-result"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var inputArea = document.querySelector("#search-input")
+    var searchOverlayArea = document.querySelector(".search-overlay")
+
+    inputArea.onclick = function() {
+      getSearchFile()
+      this.onclick = null
+    }
+
+    inputArea.onkeydown = function() {
+      if(event.keyCode == 13)
+        return false
+    }
+
+    function openOrHideSearchContent() {
+      let isHidden = searchOverlayArea.classList.contains('hidden')
+      if (isHidden) {
+        searchOverlayArea.classList.remove('hidden')
+        document.body.classList.add('hidden')
+        // inputArea.focus()
+      } else {
+        searchOverlayArea.classList.add('hidden')
+        document.body.classList.remove('hidden')
+      }
+    }
+
+    function blurSearchContent(e) {
+      if (e.target === searchOverlayArea) {
+        openOrHideSearchContent()
+      }
+    }
+
+    document.querySelector("#search-icon").addEventListener("click", openOrHideSearchContent, false)
+    document.querySelector("#search-close-icon").addEventListener("click", openOrHideSearchContent, false)
+    searchOverlayArea.addEventListener("click", blurSearchContent, false)
+
+    var searchFunc = function (path, search_id, content_id) {
+      'use strict';
+      var $input = document.getElementById(search_id);
+      var $resultContent = document.getElementById(content_id);
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'>First search, index file loading, please wait...<span></ul>";
+      $.ajax({
+        // 0x01. load xml file
+        url: path,
+        dataType: "xml",
+        success: function (xmlResponse) {
+          // 0x02. parse xml file
+          var datas = $("entry", xmlResponse).map(function () {
+            return {
+              title: $("title", this).text(),
+              content: $("content", this).text(),
+              url: $("url", this).text()
+            };
+          }).get();
+          $resultContent.innerHTML = "";
+
+          $input.addEventListener('input', function () {
+            // 0x03. parse query to keywords list
+            var str = '<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length <= 0) {
+              return;
+            }
+            // 0x04. perform local searching
+            datas.forEach(function (data) {
+              var isMatch = true;
+              var content_index = [];
+              if (!data.title || data.title.trim() === '') {
+                data.title = "Untitled";
+              }
+              var orig_data_title = data.title.trim();
+              var data_title = orig_data_title.toLowerCase();
+              var orig_data_content = data.content.trim().replace(/<[^>]+>/g, "");
+              var data_content = orig_data_content.toLowerCase();
+              var data_url = data.url;
+              var index_title = -1;
+              var index_content = -1;
+              var first_occur = -1;
+              // only match artiles with not empty contents
+              if (data_content !== '') {
+                keywords.forEach(function (keyword, i) {
+                  index_title = data_title.indexOf(keyword);
+                  index_content = data_content.indexOf(keyword);
+
+                  if (index_title < 0 && index_content < 0) {
+                    isMatch = false;
+                  } else {
+                    if (index_content < 0) {
+                      index_content = 0;
+                    }
+                    if (i == 0) {
+                      first_occur = index_content;
+                    }
+                    // content_index.push({index_content:index_content, keyword_len:keyword_len});
+                  }
+                });
+              } else {
+                isMatch = false;
+              }
+              // 0x05. show search results
+              if (isMatch) {
+                str += "<li><a href='" + data_url + "' class='search-result-title'>" + orig_data_title + "</a>";
+                var content = orig_data_content;
+                if (first_occur >= 0) {
+                  // cut out 100 characters
+                  var start = first_occur - 20;
+                  var end = first_occur + 80;
+
+                  if (start < 0) {
+                    start = 0;
+                  }
+
+                  if (start == 0) {
+                    end = 100;
+                  }
+
+                  if (end > content.length) {
+                    end = content.length;
+                  }
+
+                  var match_content = content.substr(start, end);
+
+                  // highlight all keywords
+                  keywords.forEach(function (keyword) {
+                    var regS = new RegExp(keyword, "gi");
+                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
+                  });
+
+                  str += "<p class=\"search-result-abstract\">" + match_content + "...</p>"
+                }
+                str += "</li>";
+              }
+            });
+            str += "</ul>";
+            if (str.indexOf('<li>') === -1) {
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>No result<span></ul>";
+            }
+            $resultContent.innerHTML = str;
+          });
+        },
+        error: function(xhr, status, error) {
+          $resultContent.innerHTML = ""
+          if (xhr.status === 404) {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The search.xml file was not found, please refer to：<a href='https://github.com/zchengsite/hexo-theme-oranges#configuration' target='_black'>configuration</a><span></ul>";
+          } else {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The request failed, Try to refresh the page or try again later.<span></ul>";
+          }
+        }
+      });
+      $(document).on('click', '#search-close-icon', function() {
+        $('#search-input').val('');
+        $('#search-result').html('');
+      });
+    }
+
+    var getSearchFile = function() {
+        var path = "/search.xml";
+        searchFunc(path, 'search-input', 'search-result');
+    }
+  </script>
+
+
+
+
+    </div>
+  </body>
+</html>
