@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
   
-  <title>Tag  : Android  | EMV.COOL</title>
+  <title>Android原生使用JSONObject实现json与Map互转   | EMV.COOL</title>
 
   
     <link rel="apple-touch-icon" href="/images/favicon.png">
@@ -48,7 +48,7 @@
   
 
    
-    <meta name="keywords" content="emv,blog,victor,victorlong,龙熙应,longxiying,emv.cool,aid,sale,void,visa,master,android,QuickChip,tag,emvtag,paypass,paywave,dpas,contact,contactless,card,pos,pin,pin-blocks,atrs,hsm,key,dukpt,3des,des,sm4,sm3,apdu,tsys,Hexo,ilovejj">
+    <meta name="keywords" content="android, JSONObject, json, map, java,emv,blog,victor,victorlong,龙熙应,longxiying,emv.cool,aid,sale,void,visa,master,android,QuickChip,tag,emvtag,paypass,paywave,dpas,contact,contactless,card,pos,pin,pin-blocks,atrs,hsm,key,dukpt,3des,des,sm4,sm3,apdu,tsys,Hexo,ilovejj">
     
 
 <meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="EMV.COOL" type="application/atom+xml">
@@ -100,39 +100,135 @@
 
 
       <div class="flex-container">
-        <!-- 标签详情页，展示某个标签下的文章列表，url形式：https://yoursite/tags/某个标签/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<div class="container tag-details">
-  <div class="content-title">
-    <h2>
-      <span>Android</span>
-    </h2>
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">Android原生使用JSONObject实现json与Map互转</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="Update time"></i>
+          2021-01-15
+        </span>
+        
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="Tags"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/Android/" title="Android">
+                    <b>#</b> Android
+                  </a>
+                </span>
+                
+                <span class="span--tag">
+                  <a href="/tags/JSONObject/" title="JSONObject">
+                    <b>#</b> JSONObject
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <h4 id="Map转Json"><a href="#Map转Json" class="headerlink" title="Map转Json"></a>Map转Json</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String jsonStr &#x3D; new JSONObject(map).toString()</span><br></pre></td></tr></table></figure>
+<h3 id="Json转Map"><a href="#Json转Map" class="headerlink" title="Json转Map"></a>Json转Map</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">JSONObject jsonObject &#x3D; new JSONObject(jsonStr);</span><br><span class="line">Map&lt;String, String&gt; map &#x3D; new HashMap&lt;&gt;();</span><br><span class="line">Iterator&lt;String&gt; keys &#x3D; jsonObject.keys();</span><br><span class="line">while (keys.hasNext()) &#123;</span><br><span class="line">    String next &#x3D; keys.next();</span><br><span class="line">    map.put(next, jsonObject.getString(next));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2020/12/24/Enhanced-Contactless-Reader-Capabilities-9F6E-AMEX/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>Prev</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="Update time"></i>
+              2021-01-15
+            </span>
+            
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="Tags"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/Android/" title="Android">
+                        <b>#</b> Android
+                      </a>
+                    </span>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/JSONObject/" title="JSONObject">
+                        <b>#</b> JSONObject
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+          </div>
+        </div>
+      
+    </div>
+    
+  <div class="post-catalog" id="catalog">
+    <div class="title">Contents</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Map%E8%BD%ACJson"><span class="toc-text">Map转Json</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Json%E8%BD%ACMap"><span class="toc-text">Json转Map</span></a>
+    </div>
   </div>
+
   
-    <div class="post-list">
-      <div class="post-item" title="Android原生使用JSONObject实现json与Map互转">
-        <span class="time-m-d">2021-01-15</span>
-        <a href="/2021/01/15/Android%E5%8E%9F%E7%94%9FJSONObject%E4%B8%8EMap%E4%BA%92%E8%BD%AC/">
-          <span>Android原生使用JSONObject实现json与Map互转</span>
-        </a>
-      </div>
-    </div>
-  
-    <div class="post-list">
-      <div class="post-item" title="Android GridView控件">
-        <span class="time-m-d">2020-12-23</span>
-        <a href="/2020/12/23/Android-GridView%E6%8E%A7%E4%BB%B6/">
-          <span>Android GridView控件</span>
-        </a>
-      </div>
-    </div>
-  
-  <nav class="post-navigation">
+<script src="/js/catalog.js"></script>
+
+
+
+
     
-    <span class="page-num">1 / 1</span>
+      <div class="comments-container">
+        
+
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+  <div id="gitalk-container"></div>
+  <script src="/js/md5.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: '57cd3399b19f860fecc9',
+      clientSecret: '2190b5d0de9a59b3de639f23ad0b771ead37dcca',
+      repo: 'longxiying.github.io',
+      owner: 'longxiying',
+      admin: ['longxiying'],
+      id: md5(location.pathname),
+      distractionFreeMode: false
+    })
+
+    gitalk.render('gitalk-container')
+  </script>
+
+
+      </div>
     
-  </nav>
-</div>
+  </div>
+
 
         <div class="footer">
   <div class="social">

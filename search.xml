@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>Android原生使用JSONObject实现json与Map互转</title>
+      <link href="2021/01/15/Android%E5%8E%9F%E7%94%9FJSONObject%E4%B8%8EMap%E4%BA%92%E8%BD%AC/"/>
+      <url>2021/01/15/Android%E5%8E%9F%E7%94%9FJSONObject%E4%B8%8EMap%E4%BA%92%E8%BD%AC/</url>
+      
+        <content type="html"><![CDATA[<h4 id="Map转Json"><a href="#Map转Json" class="headerlink" title="Map转Json"></a>Map转Json</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String jsonStr &#x3D; new JSONObject(map).toString()</span><br></pre></td></tr></table></figure><h3 id="Json转Map"><a href="#Json转Map" class="headerlink" title="Json转Map"></a>Json转Map</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">JSONObject jsonObject &#x3D; new JSONObject(jsonStr);</span><br><span class="line">Map&lt;String, String&gt; map &#x3D; new HashMap&lt;&gt;();</span><br><span class="line">Iterator&lt;String&gt; keys &#x3D; jsonObject.keys();</span><br><span class="line">while (keys.hasNext()) &#123;</span><br><span class="line">    String next &#x3D; keys.next();</span><br><span class="line">    map.put(next, jsonObject.getString(next));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Android </tag>
+            
+            <tag> JSONObject </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Enhanced Contactless Reader Capabilities(9F6E)(AMEX)</title>
       <link href="2020/12/24/Enhanced-Contactless-Reader-Capabilities-9F6E-AMEX/"/>
       <url>2020/12/24/Enhanced-Contactless-Reader-Capabilities-9F6E-AMEX/</url>

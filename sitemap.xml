@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://emv.cool/2021/01/15/Android%E5%8E%9F%E7%94%9FJSONObject%E4%B8%8EMap%E4%BA%92%E8%BD%AC/</loc>
+    
+    <lastmod>2021-01-15</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://emv.cool/2020/12/24/Contactless-Reader-Capabilities-9F6D-AEMX/</loc>
     
     <lastmod>2020-12-25</lastmod>
@@ -186,7 +193,7 @@
 
   <url>
     <loc>http://emv.cool/</loc>
-    <lastmod>2020-12-25</lastmod>
+    <lastmod>2021-01-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -194,42 +201,49 @@
   
   <url>
     <loc>http://emv.cool/tags/AMEX/</loc>
-    <lastmod>2020-12-25</lastmod>
+    <lastmod>2021-01-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://emv.cool/tags/qPBOC/</loc>
-    <lastmod>2020-12-25</lastmod>
+    <lastmod>2021-01-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://emv.cool/tags/PayWave/</loc>
-    <lastmod>2020-12-25</lastmod>
+    <lastmod>2021-01-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://emv.cool/tags/EMV/</loc>
-    <lastmod>2020-12-25</lastmod>
+    <lastmod>2021-01-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://emv.cool/tags/Android/</loc>
-    <lastmod>2020-12-25</lastmod>
+    <lastmod>2021-01-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://emv.cool/tags/GridView/</loc>
-    <lastmod>2020-12-25</lastmod>
+    <lastmod>2021-01-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://emv.cool/tags/JSONObject/</loc>
+    <lastmod>2021-01-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
