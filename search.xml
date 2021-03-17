@@ -56,9 +56,9 @@
       
         <tags>
             
-            <tag> AMEX </tag>
-            
             <tag> EMV </tag>
+            
+            <tag> AMEX </tag>
             
         </tags>
       
@@ -77,9 +77,9 @@
       
         <tags>
             
-            <tag> AMEX </tag>
-            
             <tag> EMV </tag>
+            
+            <tag> AMEX </tag>
             
         </tags>
       
@@ -98,9 +98,9 @@
       
         <tags>
             
-            <tag> qPBOC </tag>
-            
             <tag> EMV </tag>
+            
+            <tag> qPBOC </tag>
             
         </tags>
       
@@ -119,9 +119,9 @@
       
         <tags>
             
-            <tag> PayWave </tag>
-            
             <tag> EMV </tag>
+            
+            <tag> PayWave </tag>
             
         </tags>
       

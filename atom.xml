@@ -82,9 +82,9 @@
     
     
     
-    <category term="AMEX" scheme="http://emv.cool/tags/AMEX/"/>
-    
     <category term="EMV" scheme="http://emv.cool/tags/EMV/"/>
+    
+    <category term="AMEX" scheme="http://emv.cool/tags/AMEX/"/>
     
   </entry>
   
@@ -106,9 +106,9 @@
     
     
     
-    <category term="AMEX" scheme="http://emv.cool/tags/AMEX/"/>
-    
     <category term="EMV" scheme="http://emv.cool/tags/EMV/"/>
+    
+    <category term="AMEX" scheme="http://emv.cool/tags/AMEX/"/>
     
   </entry>
   
@@ -130,9 +130,9 @@
     
     
     
-    <category term="qPBOC" scheme="http://emv.cool/tags/qPBOC/"/>
-    
     <category term="EMV" scheme="http://emv.cool/tags/EMV/"/>
+    
+    <category term="qPBOC" scheme="http://emv.cool/tags/qPBOC/"/>
     
   </entry>
   
@@ -154,9 +154,9 @@
     
     
     
-    <category term="PayWave" scheme="http://emv.cool/tags/PayWave/"/>
-    
     <category term="EMV" scheme="http://emv.cool/tags/EMV/"/>
+    
+    <category term="PayWave" scheme="http://emv.cool/tags/PayWave/"/>
     
   </entry>
   
