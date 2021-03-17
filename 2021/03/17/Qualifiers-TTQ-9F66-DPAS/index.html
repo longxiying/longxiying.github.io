@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
   
-  <title>Tag   | EMV.COOL</title>
+  <title>Terminal Transaction Qualifiers(TTQ)(9F66)(DPAS)   | EMV.COOL</title>
 
   
     <link rel="apple-touch-icon" href="/images/favicon.png">
@@ -48,7 +48,7 @@
   
 
    
-    <meta name="keywords" content="emv,blog,victor,victorlong,龙熙应,longxiying,emv.cool,aid,sale,void,visa,master,android,QuickChip,tag,emvtag,paypass,paywave,dpas,contact,contactless,card,pos,pin,pin-blocks,atrs,hsm,key,dukpt,3des,des,sm4,sm3,apdu,tsys,Hexo,ilovejj">
+    <meta name="keywords" content="9f66,emv,blog,victor,victorlong,龙熙应,longxiying,emv.cool,aid,sale,void,visa,master,android,QuickChip,tag,emvtag,paypass,paywave,dpas,contact,contactless,card,pos,pin,pin-blocks,atrs,hsm,key,dukpt,3des,des,sm4,sm3,apdu,tsys,Hexo,ilovejj">
     
 
 <meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="EMV.COOL" type="application/atom+xml">
@@ -104,21 +104,493 @@
 <!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
 
-  <!-- 标签页 url形式：https://yoursite/tags/ -->
-  <div class="container tag-index">
-    <div>
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AMEX/" rel="tag">AMEX</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/" rel="tag">Android</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DPAS/" rel="tag">DPAS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/EMV/" rel="tag">EMV</a><span class="tag-list-count">21</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GridView/" rel="tag">GridView</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JSONObject/" rel="tag">JSONObject</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PayWave/" rel="tag">PayWave</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/qPBOC/" rel="tag">qPBOC</a><span class="tag-list-count">1</span></li></ul>
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">Terminal Transaction Qualifiers(TTQ)(9F66)(DPAS)</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="Update time"></i>
+          2021-03-17
+        </span>
+        
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="Tags"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/EMV/" title="EMV">
+                    <b>#</b> EMV
+                  </a>
+                </span>
+                
+                <span class="span--tag">
+                  <a href="/tags/DPAS/" title="DPAS">
+                    <b>#</b> DPAS
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <h2 id="DPAS"><a href="#DPAS" class="headerlink" title="DPAS"></a>DPAS</h2><h3 id="TTQ-9F66"><a href="#TTQ-9F66" class="headerlink" title="TTQ (9F66)"></a>TTQ (9F66)</h3><h5 id="Tag-9F66"><a href="#Tag-9F66" class="headerlink" title="Tag: 9F66"></a>Tag: 9F66</h5><h5 id="Length-4"><a href="#Length-4" class="headerlink" title="Length: 4"></a>Length: 4</h5><h5 id="Value"><a href="#Value" class="headerlink" title="Value:"></a>Value:</h5><table>
+<thead>
+<tr>
+<th>B yte 1 Reader Capabilities</th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th>b8</th>
+<th>b7</th>
+<th>b6</th>
+<th>b5</th>
+<th>b4</th>
+<th>b3</th>
+<th>b2</th>
+<th>b1</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1=Magnetic stripe mode supported</td>
+</tr>
+<tr>
+<td></td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>RFU</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1=EMV Mode supported</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1=EMV contact chip supported</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1=Offline-only reader</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>1=Online PIN supported</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>1=Signature supported</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td>RFU</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Byte 2 Reader CVM Requirements</th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th>b8</th>
+<th>b7</th>
+<th>b6</th>
+<th>b5</th>
+<th>b4</th>
+<th>b3</th>
+<th>b2</th>
+<th>b1</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1=Online cryptogram required</td>
+</tr>
+<tr>
+<td></td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1=CVM required</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1=(Contact Chip) Offline PIN supported</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>RFU</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+<td>RFU</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td></td>
+<td></td>
+<td>RFU</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>RFU</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td>RFU</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Byte 3</th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th>b8</th>
+<th>b7</th>
+<th>b6</th>
+<th>b5</th>
+<th>b4</th>
+<th>b3</th>
+<th>b2</th>
+<th>b1</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1=Issuer Update Processing supported</td>
+</tr>
+<tr>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1=Consumer Device CVM supported</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>RFU</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>RFU</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+<td>RFU</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td></td>
+<td></td>
+<td>RFU</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>RFU</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td>RFU</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Byte 4</th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th>b8</th>
+<th>b7</th>
+<th>b6</th>
+<th>b5</th>
+<th>b4</th>
+<th>b3</th>
+<th>b2</th>
+<th>b1</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>All bits are RFU</td>
+</tr>
+</tbody></table>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2021/01/15/Android%E5%8E%9F%E7%94%9FJSONObject%E4%B8%8EMap%E4%BA%92%E8%BD%AC/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>Prev</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="Update time"></i>
+              2021-03-17
+            </span>
+            
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="Tags"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/EMV/" title="EMV">
+                        <b>#</b> EMV
+                      </a>
+                    </span>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/DPAS/" title="DPAS">
+                        <b>#</b> DPAS
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+          </div>
+        </div>
+      
+    </div>
+    
+  <div class="post-catalog" id="catalog">
+    <div class="title">Contents</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#DPAS"><span class="toc-text">DPAS</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#TTQ-9F66"><span class="toc-text">TTQ (9F66)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Tag-9F66"><span class="toc-text">Tag: 9F66</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Length-4"><span class="toc-text">Length: 4</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Value"><span class="toc-text">Value:</span></a></li></ol></li></ol></li></ol></li></ol>
     </div>
   </div>
-  
 
   
+<script src="/js/catalog.js"></script>
 
-  
 
-  
 
-  
+
+    
+      <div class="comments-container">
+        
+
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+  <div id="gitalk-container"></div>
+  <script src="/js/md5.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: '57cd3399b19f860fecc9',
+      clientSecret: '2190b5d0de9a59b3de639f23ad0b771ead37dcca',
+      repo: 'longxiying.github.io',
+      owner: 'longxiying',
+      admin: ['longxiying'],
+      id: md5(location.pathname),
+      distractionFreeMode: false
+    })
+
+    gitalk.render('gitalk-container')
+  </script>
+
+
+      </div>
+    
+  </div>
+
 
         <div class="footer">
   <div class="social">
